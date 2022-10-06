@@ -1,0 +1,24 @@
+//メデイアクエリの管理
+$pc: 691px; /* PCはWidthが691pxより大きい */
+$smartphone: 690px; /* スマホはWidthが690pxより小さい */
+
+// PCのメディアクエリ
+@mixin pc {
+    @media (min-width: ($pc)) {
+      @content;
+    }
+}
+
+// スマートフォンのメディアクエリ
+@mixin smartphone {
+    @media (max-width: ($smartphone)) {
+      @content;
+    }
+}
+
+// 縦中央寄せ
+@mixin verticalcenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
