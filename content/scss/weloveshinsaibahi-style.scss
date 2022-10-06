@@ -1,4 +1,16 @@
 //foundation
 @use './foundation/reset';
-
 @use './foundation/base';
+
+//layout 
+@use './layout/l-header';
+
+//object-component 
+@use './object/component/c-hambergerbuttom';
+@use './object/component/c-grid';
+@use './object/component/c-underline';
+
+//object-project
+@use './object/project/p-header';
+@use './object/project/p-main';
+

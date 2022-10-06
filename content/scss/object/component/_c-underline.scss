@@ -1,0 +1,26 @@
+// リンクの下線のアニメーションのスタイリング
+
+.c-underline {
+  &__black {
+    position: relative;
+        &::after{
+           // 共通の下線のスタイリング
+          position: absolute; // 共通の下線位置の基準
+          bottom: -2px;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 0.5px;
+
+          // 共通の左から右への下線のアニメーションのスタイリング
+          transform-origin: left top;
+          transform: scale(0, 1);
+          transition: transform 0.3s;
+          background-color:#303030;
+            
+                }
+        &:hover::after{
+            transform: scale(1, 1);   
+                       }
+  }
+}
