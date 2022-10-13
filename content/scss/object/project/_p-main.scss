@@ -27,7 +27,7 @@
 }
 
 .p-topnumber {
-    &__redline, &__yellowline{
+    &__redline, &__yellowline,&__orangeline {
         position: relative;
 
         &::after {
@@ -46,7 +46,11 @@
     }
 
     &__yellowline::after {
-        background-color:#FFD433 ;
+        background-color: #FFD433 ;
+    }
+
+    &__orangeline::after {
+        background-color: #FFAD33;
     }
 
 }
@@ -114,7 +118,90 @@
         justify-content: space-between;
 
     }
+}
+
+
+//グルメとショッピングの共通部分のスタイリング
+.p-topfood__grid,.p-topshop__grid {
+    width: 920px;
+    display: grid;
+    row-gap:115px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows : repeat(2, 2fr);
+}
+
+
+.p-topfood {
+    width: 100%;
+    height: 1440px;
+    background:#F8F8F8 url(/content/img/Gourmet.png) no-repeat  300px/900px;
+    background-position: calc(100% - 10px) 60px;
+    @include mixin.verticalcenter;
+
+    // &__grid {
+    //     width: 920px;
+    //     display: grid;
+    //     row-gap:115px;
+    //     grid-template-columns: repeat(4, 1fr);
+    //     grid-template-rows : repeat(2, 2fr);
+    // }
+
+    &__gheader {
+        height: 62px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__gtitle {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+.p-topshop {
+    width: 100%;
+    height: 1500px;
+    background: #ffffff url(/content/img/Shopping.png) no-repeat  300px/1000px;
+    background-position: 10px 60px;
+    @include mixin.verticalcenter;
+
+
+    &__contents, &__gtitle {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__contents {
+        height: 345px;
+
+        > a {
+            display: inline-block;
+            height: 100%;
+        }
+    }
+
+    &__gheader {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__gtitle {
+        height: 110px;
+       
+        >p {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+    }
 
     
 
 }
+

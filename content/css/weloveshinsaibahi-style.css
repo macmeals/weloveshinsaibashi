@@ -503,7 +503,7 @@ p {
   transform: scale(1, 1);
 }
 
-.c-topnumber__red, .c-topnumber__yellow, .c-topnumber__perpule {
+.c-topnumber__red, .c-topnumber__yellow, .c-topnumber__orange {
   font-size: 96px;
 }
 
@@ -513,6 +513,10 @@ p {
 
 .c-topnumber__yellow {
   color: #FFD433;
+}
+
+.c-topnumber__orange {
+  color: #FFAD33;
 }
 
 .c-topsubtitle {
@@ -547,9 +551,26 @@ p {
   background-color: #A533FF;
 }
 
+.c-topfood__title {
+  font-size: 24px;
+}
+
 .c-photo__newscard {
   width: 280px;
   height: 200px;
+}
+
+.c-photo__topfood, .c-photo__topshop {
+  width: 200px;
+  height: 200px;
+}
+
+.c-photo__topfood {
+  box-shadow: 5px 5px #FFAD33;
+}
+
+.c-photo__topshop {
+  box-shadow: 5px 5px #FF3333;
 }
 
 .c-button__small, .c-button__large {
@@ -608,6 +629,27 @@ p {
   width: 280px;
   height: 50px;
   line-height: 48px;
+  font-size: 24px;
+}
+
+.c-illust__food {
+  width: 52px;
+  height: 62px;
+}
+
+.c-illust__rectant {
+  width: 10px;
+  height: 36px;
+}
+
+.c-illust__shop {
+  widows: 63px;
+  height: 63px;
+}
+
+.c-illust__yokorectant {
+  width: 36px;
+  height: 10px;
 }
 
 .p-header__pc {
@@ -658,11 +700,11 @@ p {
   justify-content: space-between;
 }
 
-.p-topnumber__redline, .p-topnumber__yellowline {
+.p-topnumber__redline, .p-topnumber__yellowline, .p-topnumber__orangeline {
   position: relative;
 }
 
-.p-topnumber__redline::after, .p-topnumber__yellowline::after {
+.p-topnumber__redline::after, .p-topnumber__yellowline::after, .p-topnumber__orangeline::after {
   position: absolute;
   top: 135%;
   left: 25%;
@@ -678,6 +720,10 @@ p {
 
 .p-topnumber__yellowline::after {
   background-color: #FFD433;
+}
+
+.p-topnumber__orangeline::after {
+  background-color: #FFAD33;
 }
 
 .p-topnotice {
@@ -746,11 +792,95 @@ p {
   justify-content: space-between;
 }
 
+.p-topfood__grid, .p-topshop__grid {
+  width: 920px;
+  display: grid;
+  row-gap: 115px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+}
+
+.p-topfood {
+  width: 100%;
+  height: 1440px;
+  background: #F8F8F8 url(/content/img/Gourmet.png) no-repeat 300px/900px;
+  background-position: calc(100% - 10px) 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-topfood__gheader {
+  height: 62px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-topfood__gtitle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.p-topshop {
+  width: 100%;
+  height: 1500px;
+  background: #ffffff url(/content/img/Shopping.png) no-repeat 300px/1000px;
+  background-position: 10px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-topshop__contents, .p-topshop__gtitle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.p-topshop__contents {
+  height: 345px;
+}
+
+.p-topshop__contents > a {
+  display: inline-block;
+  height: 100%;
+}
+
+.p-topshop__gheader {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topshop__gtitle {
+  height: 110px;
+}
+
+.p-topshop__gtitle > p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.u-margin__top15 {
+  margin-top: 15px;
+}
+
 .u-margin__pc-top35 {
   margin-top: 35px;
 }
 
 .u-margin__pc-top60 {
   margin-top: 60px;
+}
+
+.u-margin__pc-top115 {
+  margin-top: 115px;
+}
+
+.u-margin__left10 {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=weloveshinsaibahi-style.css.map */

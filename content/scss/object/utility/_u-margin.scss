@@ -1,10 +1,24 @@
 .u-margin {
+    &__top15 {
+        margin-top: 15px;
+    }
+
     &__pc-top35 {
         margin-top: 35px;
-
     }
+
     &__pc-top60 {
         margin-top: 60px;
     }
+
+    &__pc-top115 {
+        margin-top: 115px;
+    }
+
+    &__left10 {
+        margin-left: 10px;
+    }
+
+
 
 }

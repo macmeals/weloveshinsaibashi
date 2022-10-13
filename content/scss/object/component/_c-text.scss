@@ -1,6 +1,6 @@
 // サブタイトルの数字
 .c-topnumber {
-    &__red ,&__yellow ,&__perpule  {
+    &__red ,&__yellow ,&__orange  {
         font-size: 96px;
     }
 
@@ -10,6 +10,10 @@
 
     &__yellow {
         color: #FFD433
+    }
+
+    &__orange {
+        color: #FFAD33;
     }
 
     
@@ -52,11 +56,16 @@
 
     &__purple {
         background-color: #A533FF;
-    }
-
-   
-
-    
+    }   
 
 }
 
+// toppageのグルメの横棒のあしらい
+
+.c-topfood { 
+    &__title {
+        font-size: 24px;
+        
+
+    }
+}
