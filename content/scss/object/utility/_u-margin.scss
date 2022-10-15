@@ -1,4 +1,8 @@
 .u-margin {
+    &__top5 {
+        margin-top: 5px;
+    }
+
     &__top15 {
         margin-top: 15px;
     }
@@ -11,8 +15,17 @@
         margin-top: 60px;
     }
 
+    &__pc-topbot60 {
+        margin: 60px 0 60px 0;
+    }
+
+
     &__pc-top115 {
         margin-top: 115px;
+    }
+
+    &__pc-topbot115 {
+        margin: 115px 0 115px 0;
     }
 
     &__left10 {

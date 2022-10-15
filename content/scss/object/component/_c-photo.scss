@@ -4,7 +4,7 @@
         height: 200px;
     }
 
-    &__topfood,&__topshop {
+    &__topfood,&__topshop,&__tophotel {
         width: 200px;
         height: 200px;
         
@@ -16,5 +16,9 @@
 
     &__topshop {
         box-shadow: 5px 5px #FF3333;
+    }
+
+    &__tophotel {
+        box-shadow: 5px 5px #FFD433;
     }
 }
