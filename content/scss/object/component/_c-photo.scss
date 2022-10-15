@@ -1,0 +1,24 @@
+.c-photo {
+    &__newscard {
+        width: 280px;
+        height: 200px;
+    }
+
+    &__topfood,&__topshop,&__tophotel {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    &__topfood {
+        box-shadow: 5px 5px #FFAD33;
+    }
+
+    &__topshop {
+        box-shadow: 5px 5px #FF3333;
+    }
+
+    &__tophotel {
+        box-shadow: 5px 5px #FFD433;
+    }
+}

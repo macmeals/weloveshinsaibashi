@@ -9,8 +9,15 @@
 @use './object/component/c-hambergerbuttom';
 @use './object/component/c-grid';
 @use './object/component/c-underline';
+@use './object/component/c-text';
+@use './object/component/c-photo';
+@use './object/component/c-button';
+@use './object/component/c-illust';
 
 //object-project
 @use './object/project/p-header';
 @use './object/project/p-main';
+
+//object-utility 
+@use './object/utility/u-margin';
 

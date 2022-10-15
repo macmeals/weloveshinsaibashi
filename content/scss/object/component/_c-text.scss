@@ -1,0 +1,71 @@
+// サブタイトルの数字
+.c-topnumber {
+    &__red ,&__yellow ,&__orange  {
+        font-size: 96px;
+    }
+
+    &__red {
+        color: #FF3333; 
+    }
+
+    &__yellow {
+        color: #FFD433;
+    }
+
+    &__orange {
+        color: #FFAD33;
+    }
+
+    
+}
+
+// サブタイトルの数字の大きさ
+.c-topsubtitle {
+    font-size: 64px;
+}
+
+// お知らせのカテゴリーの大きさ
+.c-categoly {
+    &__red , &__yellow, &__purple, &__date {
+        width: 120px;
+        height: 31px;
+
+        >p {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    
+    }  
+
+    &__date {
+         >p {
+             justify-content: end;
+         }
+    }
+
+    &__red {
+        background-color: #FF3333;
+    }
+
+    &__yellow {
+        background-color: #FFD433;
+    }
+
+    &__purple {
+        background-color: #A533FF;
+    }   
+
+}
+
+// toppageのグルメの横棒のあしらい
+
+.c-topfood { 
+    &__title {
+        font-size: 24px;
+        
+
+    }
+}

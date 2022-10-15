@@ -386,6 +386,10 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  line-height: 2;
+}
+
 /* PCはWidthが691pxより大きい */
 /* スマホはWidthが690pxより小さい */
 .l-header {
@@ -499,6 +503,159 @@ h2 {
   transform: scale(1, 1);
 }
 
+.c-topnumber__red, .c-topnumber__yellow, .c-topnumber__orange {
+  font-size: 96px;
+}
+
+.c-topnumber__red {
+  color: #FF3333;
+}
+
+.c-topnumber__yellow {
+  color: #FFD433;
+}
+
+.c-topnumber__orange {
+  color: #FFAD33;
+}
+
+.c-topsubtitle {
+  font-size: 64px;
+}
+
+.c-categoly__red, .c-categoly__yellow, .c-categoly__purple, .c-categoly__date {
+  width: 120px;
+  height: 31px;
+}
+
+.c-categoly__red > p, .c-categoly__yellow > p, .c-categoly__purple > p, .c-categoly__date > p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-categoly__date > p {
+  justify-content: end;
+}
+
+.c-categoly__red {
+  background-color: #FF3333;
+}
+
+.c-categoly__yellow {
+  background-color: #FFD433;
+}
+
+.c-categoly__purple {
+  background-color: #A533FF;
+}
+
+.c-topfood__title {
+  font-size: 24px;
+}
+
+.c-photo__newscard {
+  width: 280px;
+  height: 200px;
+}
+
+.c-photo__topfood, .c-photo__topshop, .c-photo__tophotel {
+  width: 200px;
+  height: 200px;
+}
+
+.c-photo__topfood {
+  box-shadow: 5px 5px #FFAD33;
+}
+
+.c-photo__topshop {
+  box-shadow: 5px 5px #FF3333;
+}
+
+.c-photo__tophotel {
+  box-shadow: 5px 5px #FFD433;
+}
+
+.c-button__small, .c-button__large {
+  border: #303030 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  transition: ease 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.c-button__small > span, .c-button__large > span {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: #303030;
+  z-index: 3;
+}
+
+.c-button__small > span:hover, .c-button__large > span:hover {
+  color: white;
+}
+
+.c-button__small::before, .c-button__large::before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /*色や形状*/
+  background: #303030; /*背景色*/
+  width: 100%;
+  height: 100%;
+  /*アニメーション*/
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+
+.c-button__small:hover::before, .c-button__large:hover::before {
+  z-index: 2;
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.c-button__small {
+  width: 200px;
+  height: 28px;
+  line-height: 26px;
+}
+
+.c-button__large {
+  width: 280px;
+  height: 50px;
+  line-height: 48px;
+  font-size: 24px;
+}
+
+.c-illust__food {
+  width: 52px;
+  height: 62px;
+}
+
+.c-illust__rectant {
+  width: 10px;
+  height: 36px;
+}
+
+.c-illust__shop {
+  widows: 63px;
+  height: 63px;
+}
+
+.c-illust__yokorectant {
+  width: 36px;
+  height: 10px;
+}
+
 .p-header__pc {
   width: 920px;
   display: flex;
@@ -539,10 +696,232 @@ h2 {
   background-color: #F8F8F8;
 }
 
+.p-topsubtitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.p-topnumber__redline, .p-topnumber__yellowline, .p-topnumber__orangeline {
+  position: relative;
+}
+
+.p-topnumber__redline::after, .p-topnumber__yellowline::after, .p-topnumber__orangeline::after {
+  position: absolute;
+  top: 135%;
+  left: 25%;
+  content: "";
+  width: 60px;
+  height: 1px;
+  transform: rotate(90deg);
+}
+
+.p-topnumber__redline::after {
+  background-color: #FF3333;
+}
+
+.p-topnumber__yellowline::after {
+  background-color: #FFD433;
+}
+
+.p-topnumber__orangeline::after {
+  background-color: #FFAD33;
+}
+
 .p-topnotice {
-  width: 100%;
-  height: 725px;
   background: #F8F8F8 url(/content/img/ShinsaiBashi.png) no-repeat 600px/750px;
-  background-position: right 20px;
+  background-position: calc(100% - 10px) 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-topnotice__text {
+  width: 600px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-topnews {
+  background: #fff url(/content/img/News.png) no-repeat 300px/600px;
+  background-position: 10px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-topnews__contents {
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-newscard {
+  width: 280px;
+  height: 400px;
+  border: #303030 solid 0.5px;
+  box-shadow: 2px 2px 4px rgba(48, 48, 48, 0.25);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-newscard > p {
+  margin-top: 8px;
+  height: 50px;
+  width: 240px;
+  font-weight: 700;
+}
+
+.p-newscard__top {
+  height: 47px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-newscard__categoly {
+  width: 264px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topfood__grid, .p-topshop__grid, .p-tophotel__grid {
+  width: 920px;
+  display: grid;
+  row-gap: 115px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.p-topfood {
+  background: #F8F8F8 url(/content/img/Gourmet.png) no-repeat 300px/900px;
+  background-position: calc(100% - 10px) 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-topfood__gheader {
+  height: 62px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-topfood__gtitle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.p-topshop {
+  background: #ffffff url(/content/img/Shopping.png) no-repeat 300px/1000px;
+  background-position: 10px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-topshop__contents, .p-topshop__gtitle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.p-topshop__contents {
+  height: 345px;
+}
+
+.p-topshop__contents > a {
+  display: inline-block;
+  height: 100%;
+}
+
+.p-topshop__gheader {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topshop__gtitle {
+  height: 110px;
+}
+
+.p-topshop__gtitle > p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.p-tophotel {
+  background: #F8F8F8 url(/content/img/hotel.png) no-repeat 300px/560px;
+  background-position: calc(100% - 10px) 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-tophotel__gheader {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-tophotel__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-tophotel__text > p {
+  line-height: 1.5;
+}
+
+.p-toprequest {
+  background: #ffffff url(/content/img/toprequest/Request.png) no-repeat 300px/1000px;
+  background-position: 10px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.u-margin__top5 {
+  margin-top: 5px;
+}
+
+.u-margin__top15 {
+  margin-top: 15px;
+}
+
+.u-margin__pc-top35 {
+  margin-top: 35px;
+}
+
+.u-margin__pc-top60 {
+  margin-top: 60px;
+}
+
+.u-margin__pc-topbot60 {
+  margin: 60px 0 60px 0;
+}
+
+.u-margin__pc-top115 {
+  margin-top: 115px;
+}
+
+.u-margin__pc-topbot115 {
+  margin: 115px 0 115px 0;
+}
+
+.u-margin__left10 {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=weloveshinsaibahi-style.css.map */

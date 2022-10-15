@@ -1,0 +1,77 @@
+.c-button {
+    // &__small , &__large の共通のスタイリング
+    &__small , &__large {
+        border: #303030 1px solid;
+        border-radius: 5px;
+        text-align: center;
+        transition: ease 0.2s;
+  
+        //ボタンのアニメーションの基準
+        position: relative;
+
+        // 子要素の縦中央揃え
+        display: flex;
+        align-items: center;
+
+
+        >span {
+            display:inline-block; //親要素とwidth/heightを同じにする為必要
+            height: 100%;
+            width: 100%;
+           
+            
+            position: relative;  //これがないとZ-indexが効かない
+            color: #303030;
+            z-index: 3;
+
+        &:hover {
+            color: white;
+        }
+      }
+
+    // &__small , &__large の共通疑似要素のスタイリング
+        &::before {
+            content: '';
+            /*絶対配置で位置を指定*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+           
+            /*色や形状*/
+            background: #303030 ;/*背景色*/
+            width: 100%;
+            height: 100%;
+            
+            /*アニメーション*/
+            transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+            transform: scale(0, 1);
+            transform-origin: right top;
+        }
+
+        &:hover::before {
+            z-index: 2;
+            transform-origin:left top;
+            transform:scale(1, 1);
+
+            
+        }  
+    }
+
+    // &__smallと&__largeのそれぞれのスタイリング
+
+    &__small { 
+      width: 200px;
+      height: 28px;
+      line-height: 26px;
+
+    }
+
+    &__large { 
+        width: 280px;
+        height: 50px;
+        line-height: 48px;
+        font-size: 24px;
+
+    }
+}
