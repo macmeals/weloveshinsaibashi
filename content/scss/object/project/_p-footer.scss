@@ -1,0 +1,29 @@
+@use '../../foundation/mixin' as mixin;
+
+.p-footer {
+    @include mixin.verticalcenter ;
+    // align-content: space-between;
+    background-color: #F8F8F8; 
+    justify-content: space-between;
+    height: 240px;
+
+    &__company,&__address,&__list {
+        display: flex;
+      
+    }
+
+    &__company , &__list{
+        width: 320px;
+        justify-content: space-between;
+    }
+
+    &__address {
+        flex-direction: column;
+    }
+
+    &__list {
+        width: 320px;  
+       
+    }
+   
+}

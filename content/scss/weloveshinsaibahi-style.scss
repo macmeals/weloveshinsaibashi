@@ -4,6 +4,11 @@
 
 //layout 
 @use './layout/l-header';
+@use './layout/l-wrapper';
+@use './layout/l-container';
+@use './layout/l-main';
+@use './layout/l-side';
+
 
 //object-component 
 @use './object/component/c-hambergerbuttom';
@@ -17,7 +22,9 @@
 //object-project
 @use './object/project/p-header';
 @use './object/project/p-main';
+@use './object/project/p-footer';
 
 //object-utility 
 @use './object/utility/u-margin';
+@use './object/utility/u-padding';
 
