@@ -3,26 +3,71 @@
   height: 30px;
   position: relative;
 
-  &__bar {
-    display: block;
+  &__upperbar,&__middlebar,&__underbar {
+    display: inline-block;
     width: 100%;
     height: 1px;
+    transition: all .4s;/*アニメーションの設定*/
     position: absolute;
     left: 0;
     background: #303030;
-
   }
-  &__bar:nth-child(1)  {
+
+  &__upperbar {
     top: 0;
+    
+
+    &.is-open {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
   }
 
-  &__bar:nth-child(2)  {
-    top: 50%;
+  &__middlebar {
+      top: 50%;
+
+      &.is-open {
+        opacity: 0;
+      }
   }
 
-  &__bar:nth-child(3)  {
-    top: 100%;
+  &__underbar {
+      top: 100%;
+
+      &.is-open {
+        top:50%;
+        transform: rotate(45deg);
+      }
   }
 
 
-}
+      // &:nth-child(1) {
+      //     top: 0;
+      // }
+
+      // &:nth-child(2) {
+      //     top: 50%;
+      // }
+
+      // &:nth-child(3)  {
+      //     top: 100%;
+      // }
+  }
+ 
+  // &__bar {
+  //   &.is-open {
+
+  //     &:nth-child(1) {
+  //       transform: rotate(-45deg);
+  //     }
+
+  //     &:nth-child(2) {
+  //         opacity: 0;
+  //     }
+
+  //     &:nth-child(3)  {
+  //       transform: rotate(45deg);
+  //     }
+
+  //   }
+  // } 

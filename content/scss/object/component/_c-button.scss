@@ -1,3 +1,5 @@
+@use '../../foundation/mixin' as mixin;
+
 .c-button {
     // &__small , &__large の共通のスタイリング
     &__small , &__large {
@@ -13,6 +15,10 @@
         display: flex;
         align-items: center;
 
+        @include mixin.smartphone {
+            background: linear-gradient(90deg, #303030 11.79%, #6B6B6B 111.79%);
+        }
+
 
         >span {
             display:inline-block; //親要素とwidth/heightを同じにする為必要
@@ -23,6 +29,12 @@
             position: relative;  //これがないとZ-indexが効かない
             color: #303030;
             z-index: 3;
+
+            @include mixin.smartphone {
+                color:white;
+            }
+
+
 
         &:hover {
             color: white;
@@ -65,6 +77,13 @@
       height: 28px;
       line-height: 26px;
 
+      @include mixin.smartphone {
+        width: 186px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
     }
 
     &__large { 
@@ -72,6 +91,15 @@
         height: 50px;
         line-height: 48px;
         font-size: 24px;
+
+        @include mixin.smartphone {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 38px;
+        }
+
+
 
     }
 }

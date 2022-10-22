@@ -1,3 +1,5 @@
+@use '../../foundation/mixin' as mixin;
+
 .c-gridA {
     background:url(/content/img/grid1.png) no-repeat center/cover;
 }
@@ -8,14 +10,23 @@
 
 .c-gridC {
     background:url(/content/img/grid3.png) no-repeat center/cover;
+    @include mixin.smartphone {
+        background:url(/content/img/grid5.png) no-repeat center/cover;
+    }
 }
 
 .c-gridD {
     background:url(/content/img/grid4.png) no-repeat center/cover;
+    @include mixin.smartphone {
+        background:url(/content/img/welovelogo.png) no-repeat center center / 95% 95%;
+    }
 }
 
 .c-gridE {
     background:url(/content/img/grid5.png) no-repeat center/cover;
+    @include mixin.smartphone {
+        background:url(/content/img/grid3.png) no-repeat center/cover;
+    }
 
 }
 
@@ -23,10 +34,18 @@
     background:url(/content/img/grid6大.png) no-repeat center/cover;
     grid-column: 1 / 3;
     grid-row: 2 / 4;
+
+    @include mixin.smartphone {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 }
 
 .c-gridG {
     background:url(/content/img/welovelogo.png) no-repeat center/cover;
+    @include mixin.smartphone { 
+        background:url(/content/img/grid4.png) no-repeat center/cover;
+    }
 }
 
 .c-gridH {

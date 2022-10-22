@@ -23,6 +23,25 @@
 
     &__list {
         width: 675px;  
+
+        @include mixin.smartphone {
+           font-size: 14px;
+           @include mixin.verticalcenter ;
+           width: 340px;
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-rows: 1fr 1fr ;
+           gap: 20px 0;
+        }
+
+        >a { 
+           @include mixin.smartphone {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+           }
+          
+        }
        
     }
    

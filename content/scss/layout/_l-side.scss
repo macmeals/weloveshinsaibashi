@@ -1,8 +1,18 @@
+@use '../foundation/mixin' as mixin;
+
 .l-side {
     height: 100%;
     width: 100vw;
-    background-color: burlywood;
+    background-color: white;
     position: absolute;
     left: 100%;
     top: 0;
+
+    transition: all .4s;/*アニメーションの設定*/
+
+    @include mixin.verticalcenter;
+
+    &.is-open {
+       left: 0%
+    }
 }

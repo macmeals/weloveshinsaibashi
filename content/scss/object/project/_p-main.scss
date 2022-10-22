@@ -17,11 +17,28 @@
     gap: 10px 10px;
     background-color: #F8F8F8;
     
+    @include mixin.smartphone {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:calc(calc(100% - 125px) / 2)
+                              125px 
+                              calc(calc(100% - 125px) / 2);
+        grid-template-rows: calc(calc(100vh - 125px) / 3)
+                             125px                      
+                             calc(calc(100vh - 125px) / 3)
+                             calc(calc(100vh - 125px) / 3);
+
+        // grid-template-columns: repeat(3,1fr);
+        // grid-template-rows: repeat(4,1fr);
+        gap: 0px 0px;
+
+    }
 }
 
 .p-topsubtitle {
     @include mixin.verticalcenter;
-    height: 300px;
+    // height: 300px;
     justify-content: space-between;
 
 }
@@ -36,8 +53,14 @@
             left: 25%;
             content : "";
             width: 60px;
-            height: 1px;
+            height: 2px;
             transform: rotate(90deg);
+
+            @include mixin.smartphone {
+                top:155%;
+                width: 30px;
+                height: 1px;
+            }
             
         }
     }
@@ -59,15 +82,25 @@
 .p-topnotice {
     background:#F8F8F8 url(/content/img/ShinsaiBashi.png) no-repeat  600px/750px;
     background-position: calc(100% - 10px) 60px;
-
     @include mixin.verticalcenter;
+
+    @include mixin.smartphone {
+        background:#F8F8F8 url(/content/img/ShinsaiBashi.png) no-repeat  280px/340px;
+        background-position: calc(100% - 20px) 20px;
+    }
 
     &__text {
         width: 600px;
-        height: 220px;
+        height: 160px;
 
         @include mixin.verticalcenter;
         justify-content: space-between;
+
+        @include mixin.smartphone {
+            width: 300px;
+            height: 300px;
+        }
+
     }
 
    
@@ -78,10 +111,25 @@
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
+    @include mixin.smartphone {
+        background:#fff url(/content/img/News.png) no-repeat  185px/340px;
+        background-position: 10px 30px;
+    }
+
     &__contents {
-        width: 920px;
-        display: flex;
-        justify-content: space-between;
+        @include mixin.pc {
+            width: 920px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        @include mixin.smartphone {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+           
+        }
 
     }
 }
@@ -119,11 +167,14 @@
 
 //グルメ、ショッピング、ホテルの共通部分のスタイリング
 .p-topfood__grid,.p-topshop__grid ,.p-tophotel__grid{
-    width: 920px;
-    display: grid;
-    row-gap:115px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows : repeat(2, 1fr);
+    @include mixin.pc {
+        width: 920px;
+        display: grid;
+        row-gap:115px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows : repeat(2, 1fr);
+    }
+    
 }
 
 
@@ -131,6 +182,11 @@
     background:#F8F8F8 url(/content/img/Gourmet.png) no-repeat  300px/900px;
     background-position: calc(100% - 10px) 60px;
     @include mixin.verticalcenter;
+
+    @include mixin.smartphone {
+        background:#F8F8F8 url(/content/img/Gourmet.png) no-repeat  115px/340px;
+        background-position: calc(100% - 10px) 20px;
+    }
 
     &__gheader {
         height: 62px;
@@ -152,6 +208,11 @@
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
+    @include mixin.smartphone {
+        background: #ffffff url(/content/img/Shopping.png) no-repeat  105px/340px;
+        background-position: 10px 30px;
+    }
+
 
     &__contents, &__gtitle {
         display: flex;
@@ -162,10 +223,14 @@
     &__contents {
         height: 345px;
 
-        > a {
-            display: inline-block;
-            height: 100%;
+        @include mixin.smartphone {
+            height: 300px;
         }
+
+        // > a {
+        //     display: inline-block;
+        //     height: 100%;
+        // }
     }
 
     &__gheader {
@@ -176,10 +241,18 @@
 
     &__gtitle {
         height: 110px;
+
+        @include mixin.smartphone {
+            height: 86px;
+        }
        
         >p {
             font-size: 24px;
             line-height: 1.5;
+
+            @include mixin.smartphone {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -189,12 +262,27 @@
     background-position: calc(100% - 10px) 60px;
     @include mixin.verticalcenter;
 
+    @include mixin.smartphone {
+        background:#F8F8F8 url(/content/img/hotel.png) no-repeat  180px/340px;
+        background-position: calc(100% - 10px) 20px;
+    }
+
+    &__grid {
+        @include mixin.smartphone {
+            @include mixin.verticalcenter;
+        }
+    }
+
     &__gheader {
         width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+    }
+
+    &__contents {
+        display: inline-block
     }
 
     &__text {
@@ -211,4 +299,17 @@
     background: #ffffff url(/content/img/toprequest/Request.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
+
+    @include mixin.smartphone {
+        background: #ffffff url(/content/img/toprequest/Request.png) no-repeat  145px/340px;
+        background-position: 10px 30px;
+    }
+
+    &__text {
+        @include mixin.verticalcenter;
+        @include mixin.smartphone {
+            width: 300px;
+        }
+        
+    }
 }

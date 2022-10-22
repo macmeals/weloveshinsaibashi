@@ -1,7 +1,14 @@
+@use '../../foundation/mixin' as mixin;
+
+
 // サブタイトルの数字
 .c-topnumber {
     &__red ,&__yellow ,&__orange  {
         font-size: 96px;
+
+        @include mixin.smartphone {
+            font-size: 48px;
+        }
     }
 
     &__red {
@@ -19,9 +26,13 @@
     
 }
 
-// サブタイトルの数字の大きさ
+// サブタイトルの文字の大きさ
 .c-topsubtitle {
     font-size: 64px;
+
+    @include mixin.smartphone {
+        font-size: 24px;
+    }
 }
 
 // お知らせのカテゴリーの大きさ

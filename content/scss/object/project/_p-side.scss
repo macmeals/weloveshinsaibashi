@@ -1,0 +1,12 @@
+@use '../../foundation/mixin' as mixin;
+
+.p-side {
+   @include mixin.verticalcenter;
+   height: 440px;
+   justify-content: space-around;
+
+   &__text {
+      font-size: 24px;
+   }
+
+}

@@ -1,4 +1,13 @@
 jQuery( function( $ ) {
+    $('.c-hambergerbutton').on( "click", function() {
+			$( ".c-hambergerbutton__upperbar" ).toggleClass( "is-open" );
+			$( ".c-hambergerbutton__middlebar" ).toggleClass( "is-open" );
+			$( ".c-hambergerbutton__underbar" ).toggleClass( "is-open" );
+			$( ".p-header__mobile" ).toggleClass( "is-open" );
+			$( ".l-side" ).toggleClass( "is-open" );
+	})
+
+
 
 	function fadeAnime(){
 		$('.c-fadeTriger').each(function(){ //c-fadeTrigerというクラス名が

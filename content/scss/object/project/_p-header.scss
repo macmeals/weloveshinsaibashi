@@ -25,6 +25,12 @@
         @include mixin.pc {
             display: none;
         }
+
+        transition: all .4s;/*アニメーションの設定*/
+
+        &.is-open {
+            background-color: white;
+        }
       
       
   }
