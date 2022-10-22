@@ -665,6 +665,11 @@ p {
   box-shadow: 5px 5px #FFD433;
 }
 
+.c-photo__newsfirstview {
+  height: 350px;
+  background-size: cover;
+}
+
 .c-button__small, .c-button__large {
   border: #303030 1px solid;
   border-radius: 5px;
