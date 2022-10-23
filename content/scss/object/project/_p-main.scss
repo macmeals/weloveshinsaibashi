@@ -313,3 +313,25 @@
         
     }
 }
+
+/////New一覧ページ/////////////////////////////////
+
+.p-news {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/News.png) no-repeat  300px/585px;
+    background-position: 10px 60px;
+
+    >h2 {
+        font-size: 48px;
+    }
+
+    &__grid {
+        @include mixin.pc {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows : repeat(3, 1fr);
+            gap: 80px 40px;
+        }
+        
+    }
+}
