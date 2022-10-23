@@ -59,4 +59,12 @@
         
     }
 
+    &__sp-topbot40 {
+        @include mixin.smartphone {
+            margin: 40px 0 40px 0;
+        }
+        
+    }
+
+
 }
