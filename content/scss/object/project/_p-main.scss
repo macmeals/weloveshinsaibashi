@@ -315,14 +315,30 @@
 }
 
 /////New一覧ページ/////////////////////////////////
+.p-newsfirstview {
+    height: 350px;
+    background: url(/content/img/news/newsfirstview.png) no-repeat  center/cover; 
+    @include mixin.smartphone {
+        height: 200px;
+    }
+}
+
 
 .p-news {
     @include mixin.verticalcenter;
     background:#fff url(/content/img/News.png) no-repeat  300px/585px;
     background-position: 10px 60px;
 
+    @include mixin.smartphone {
+        background:#fff url(/content/img/News.png) no-repeat  80px/150px;
+        background-position: 10px 20px;
+    }
+
     >h2 {
         font-size: 48px;
+        @include mixin.smartphone {
+            font-size: 24px;
+        }
     }
 
     &__grid {
