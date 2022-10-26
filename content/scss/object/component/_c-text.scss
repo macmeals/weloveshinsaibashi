@@ -51,6 +51,22 @@
     
     }  
 
+    &__largeorange  {
+        width: 200px;
+        height: 32px;
+
+        >p {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+
+        }
+    
+    }  
+
     &__date {
          >p {
              justify-content: end;
@@ -69,6 +85,10 @@
         background-color: #A533FF;
     }   
 
+    &__largeorange {
+        background-color: #FFAD33;
+    }
+
 }
 
 // toppageのグルメの横棒のあしらい
@@ -78,5 +98,11 @@
         font-size: 24px;
         
 
+    }
+}
+
+.c-newsdetail {
+    &__title {
+        font-size: 32px;
     }
 }

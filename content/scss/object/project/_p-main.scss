@@ -317,7 +317,8 @@
 /////New一覧ページ/////////////////////////////////
 .p-newsfirstview {
     height: 350px;
-    background: url(/content/img/news/newsfirstview.png) no-repeat  center/cover; 
+    width: 100%;
+    background: url(/content/img/news/newsfirstview.webp) no-repeat  center/cover; 
     @include mixin.smartphone {
         height: 200px;
     }
@@ -350,4 +351,26 @@
         }
         
     }
+}
+
+.p-newsdetail {
+    @include mixin.verticalcenter;
+        &__header {
+            width: 920px;
+            display: flex;
+            justify-content: space-between;
+
+            >p {
+                font-size: 36px;
+            }
+        }
+
+        &__contents {
+            width: 760px;
+            height: 290px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
 }
