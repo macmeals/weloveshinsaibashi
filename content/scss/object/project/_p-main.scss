@@ -329,6 +329,7 @@
     @include mixin.verticalcenter;
     background:#fff url(/content/img/News.png) no-repeat  300px/585px;
     background-position: 10px 60px;
+    width: 100%;
 
     @include mixin.smartphone {
         background:#fff url(/content/img/News.png) no-repeat  80px/150px;
@@ -360,8 +361,22 @@
             display: flex;
             justify-content: space-between;
 
+            @include mixin.smartphone {
+                width: 300px;
+            }
+
             >p {
                 font-size: 36px;
+                @include mixin.smartphone {
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        &__title {
+            @include mixin.smartphone {
+                width: 300px;
             }
         }
 
@@ -371,6 +386,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mixin.smartphone {
+                width: 300px;
+            }
         }
     
 }
