@@ -588,16 +588,26 @@ p {
   height: 50px;
 }
 
+@media (max-width: 690px) {
+  .c-underline__news {
+    width: 300px;
+  }
+}
 .c-underline__news::after {
   position: absolute;
-  bottom: 50%;
+  bottom: 0%;
   left: 0%;
   content: "";
   height: 1px;
-  width: 900px;
+  width: 920px;
   background-color: #303030;
 }
 
+@media (max-width: 690px) {
+  .c-underline__news::after {
+    width: 300px;
+  }
+}
 .c-topnumber__red, .c-topnumber__yellow, .c-topnumber__orange {
   font-size: 96px;
 }
@@ -645,6 +655,12 @@ p {
   height: 32px;
 }
 
+@media (max-width: 690px) {
+  .c-categoly__largeorange {
+    width: 150px;
+    height: 25px;
+  }
+}
 .c-categoly__largeorange > p {
   height: 100%;
   display: flex;
@@ -654,6 +670,11 @@ p {
   color: white;
 }
 
+@media (max-width: 690px) {
+  .c-categoly__largeorange > p {
+    font-size: 16px;
+  }
+}
 .c-categoly__date > p {
   justify-content: end;
 }
@@ -682,6 +703,11 @@ p {
   font-size: 32px;
 }
 
+@media (max-width: 690px) {
+  .c-newsdetail__title {
+    font-size: 24px;
+  }
+}
 .c-photo__newscard {
   width: 280px;
   height: 200px;
@@ -1199,6 +1225,7 @@ p {
   flex-direction: column;
   background: #fff url(/content/img/News.png) no-repeat 300px/585px;
   background-position: 10px 60px;
+  width: 100%;
 }
 
 @media (max-width: 690px) {
@@ -1236,10 +1263,25 @@ p {
   justify-content: space-between;
 }
 
+@media (max-width: 690px) {
+  .p-newsdetail__header {
+    width: 300px;
+  }
+}
 .p-newsdetail__header > p {
   font-size: 36px;
 }
 
+@media (max-width: 690px) {
+  .p-newsdetail__header > p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 690px) {
+  .p-newsdetail__title {
+    width: 300px;
+  }
+}
 .p-newsdetail__contents {
   width: 760px;
   height: 290px;
@@ -1248,6 +1290,11 @@ p {
   justify-content: space-between;
 }
 
+@media (max-width: 690px) {
+  .p-newsdetail__contents {
+    width: 300px;
+  }
+}
 .p-side {
   display: flex;
   align-items: center;
@@ -1332,6 +1379,14 @@ p {
 
 .u-margin__pc-top115 {
   margin-top: 115px;
+}
+
+.u-margin__pc-bot50 {
+  margin-bottom: 50px;
+}
+
+.u-margin__pc-topbot100 {
+  margin: 100px 0 100px 0;
 }
 
 .u-margin__pc-topbot115 {

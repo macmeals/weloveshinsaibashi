@@ -55,6 +55,11 @@
         width: 200px;
         height: 32px;
 
+        @include mixin.smartphone {
+            width: 150px;
+            height: 25px;
+        }
+
         >p {
             height: 100%;
             display: flex;
@@ -62,6 +67,10 @@
             align-items: center;
             font-size: 24px;
             color: white;
+
+            @include mixin.smartphone {
+                font-size: 16px;
+            }
 
         }
     
@@ -104,5 +113,9 @@
 .c-newsdetail {
     &__title {
         font-size: 32px;
+
+        @include mixin.smartphone {
+            font-size: 24px;
+        }
     }
 }
