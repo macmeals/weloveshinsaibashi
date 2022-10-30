@@ -29,8 +29,6 @@
                              calc(calc(100vh - 125px) / 3)
                              calc(calc(100vh - 125px) / 3);
 
-        // grid-template-columns: repeat(3,1fr);
-        // grid-template-rows: repeat(4,1fr);
         gap: 0px 0px;
 
     }
@@ -38,7 +36,6 @@
 
 .p-topsubtitle {
     @include mixin.verticalcenter;
-    // height: 300px;
     justify-content: space-between;
 
 }
@@ -226,11 +223,6 @@
         @include mixin.smartphone {
             height: 300px;
         }
-
-        // > a {
-        //     display: inline-block;
-        //     height: 100%;
-        // }
     }
 
     &__gheader {
@@ -336,13 +328,6 @@
         background-position: 10px 20px;
     }
 
-    >h2 {
-        font-size: 48px;
-        @include mixin.smartphone {
-            font-size: 24px;
-        }
-    }
-
     &__grid {
         @include mixin.pc {
             display: grid;
@@ -393,3 +378,206 @@
         }
     
 }
+
+/////Mainページ(グルメ、ショッピング、ホテル）////////////////////////
+.p-mainfirstview {
+    width: 100%;
+    height: 500px;
+    background: url(/content/img/main/main-map.webp) no-repeat  center/cover; 
+}
+
+.p-main {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/main/ShinsaiBashi_main.png) no-repeat  600px/780px;
+    background-position: 10px 60px;
+    width: 100%;
+
+        @include mixin.smartphone {
+            background:#fff url(/content/img/ShinsaiBashi.png) no-repeat  80px/150px;
+            background-position: 10px 20px;
+        }
+
+    &__tab {
+        display: flex;
+        width: 920px;
+        justify-content: space-between;
+    }
+
+    &__orangetab, &__redtab, &__yellowtab {
+        // display: block;
+        background:grey;
+        width: 300px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+
+        >a {
+            display: block;
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 24px;
+
+
+        }
+    }
+
+    //activeのクラスが着くと＃FFAD33に変わる。
+    &__orangetab {
+        &.active {
+            background: #FFAD33;
+        }
+    }
+
+    &__redtab {
+        &.active { 
+            background:#FF3333 ;
+        }
+    }
+
+    &__yellowtab {
+        &.active { 
+            background:#FFD433 ;
+        }
+    }
+
+    &__contents {
+        display: none;/*はじめは非表示*/
+	    opacity: 0;/*透過0*/
+	    background: #fff;
+        padding:50px 20px;
+       
+        
+        &.is-active {
+            display: block;/*表示*/
+            animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            background: transparent;
+            @include mixin.verticalcenter;
+        }
+    }
+
+    &__shoplinks {
+        @include mixin.verticalcenter;
+        background: transparent;
+
+    }
+
+    &__contentheader ,&__subtitle {
+        font-size: 32px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__contentheader {
+        width: 920px;
+    }
+
+    &__subtitle {
+        width: 330px;
+
+        >p:nth-child(2) {
+            width: 250px;
+        }
+        
+    }
+
+    &__titlelink {
+        display: block;
+        line-height: 64px;
+
+        > span {
+            color: #FFAD33
+        }
+    }
+
+    &__shoplink {
+        @include mixin.pc {
+            display: grid;
+            grid-template-columns: repeat(2, 440px);
+            grid-template-rows: repeat(2,70px);
+        }
+    }
+
+    &__shop {
+        display: block;
+        @include mixin.verticalcenter ;
+        justify-content: center;
+        background: rgba(255, 173, 51, 0.25);
+
+        &:nth-child(2),&:nth-child(3) {
+            background-color:transparent;
+        }
+    }
+
+    &__shopname {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+
+        > p {
+            width: 200px;
+        }
+
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        >p {
+            width: 160px;
+            height: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+    }
+
+
+
+}
+
+@keyframes displayAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.p-mainnumber{
+    &__orange{
+        font-size: 32px;
+        color: #FFAD33;
+        position: relative; 
+    
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 200%;
+            content : "";
+            width: 40px;
+            height: 1px;
+            background: #FFAD33;
+            
+    
+            @include mixin.smartphone {
+                // top:155%;
+                // width: 30px;
+                // height: 1px;
+            }
+            
+        }
+    }
+ 
+}
+
+
+

@@ -119,3 +119,11 @@
         }
     }
 }
+
+.c-pagetitle {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 48px;
+    @include mixin.smartphone {
+        font-size: 24px;
+    }
+}
