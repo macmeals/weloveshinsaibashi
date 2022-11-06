@@ -28,7 +28,7 @@
         height: 36px;
     }
   
-  // ショッピング
+  // ショッピングアイコン
 
     &__shop {
         widows: 60px;
@@ -36,19 +36,27 @@
     }
 
     &__yokorectant {
-       width: 36px;
-       height: 10px;
+        width: 36px;
+        height: 10px;
     }
 
     &__logo {
-      height: 115px;
-      width: 115px;
-        @include mixin.smartphone {
-            height: 115px;
-            width: 115px;
-        }
+        height: 115px;
+        width: 115px;
+            @include mixin.smartphone {
+                height: 115px;
+                width: 115px;
+            }
 
     }
+
+     // ホテルアイコン
+
+     &__smallhotel {
+         height: 20px;
+         width: 24px;
+     }
+
 
 
 }
