@@ -1,8 +1,8 @@
 @use '../../foundation/mixin' as mixin;
 
+////////Topページ////////// 
 
-//各articleコンテンツの幅はWidth、Heightはautoとする
-//ファーストビューのグリッド
+//Topページのファーストビューのグリッド
 .p-gridcontainer {
     width: 100%;
     display: grid;
@@ -339,6 +339,7 @@
     }
 }
 
+/////News詳細ページ/////////////////////////////////
 .p-newsdetail {
     @include mixin.verticalcenter;
         &__header {
@@ -469,29 +470,42 @@
         font-size: 32px;
         display: flex;
         justify-content: space-between;
+        
 
     }
 
     &__contentheader {
         width: 920px;
+        align-items: center;
     }
 
     &__subtitle {
-        width: 330px;
-
-        >p:nth-child(2) {
-            width: 250px;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
     }
 
-    &__titlelink {
-        display: block;
-        line-height: 64px;
+// グルメ、ショッピング、ホテルのタイトルナンバー
+    &__subnumber, &__subshopnumber {
+        display: flex;
+        justify-content: space-between;
+    }
 
-        > span {
-            color: #FFAD33
-        }
+    &__subnumber {
+        width: 300px;
+    }
+
+    &__subshopnumber {
+        width: 500px;
+    }
+
+    &__category {
+        width: 220px;
+    }
+
+    &__shopcategory {
+        width: 420px;
     }
 
     &__shoplink {
@@ -502,15 +516,22 @@
         }
     }
 
-    &__shop {
+    &__shop ,&__store{
         display: block;
         @include mixin.verticalcenter ;
         justify-content: center;
-        background: rgba(255, 173, 51, 0.25);
 
         &:nth-child(2),&:nth-child(3) {
             background-color:transparent;
         }
+    }
+
+    &__shop {
+        background: rgba(255, 173, 51, 0.25);
+    }
+
+    &__store {
+        background: rgba(255, 51, 51, 0.25);
     }
 
     &__shopname {
@@ -523,22 +544,10 @@
         }
 
     }
-
-    &__location {
-        display: flex;
-        align-items: center;
-        >p {
-            width: 160px;
-            height: 30px;
-            text-align: center;
-            background-color: white;
-        }
-
-    }
-
-
-
+ 
 }
+
+// タブの切り替えアニメーション
 
 @keyframes displayAnime {
     from {
@@ -553,11 +562,10 @@
 
 
 .p-mainnumber{
-    &__orange{
+    &__orange ,&__red { 
         font-size: 32px;
-        color: #FFAD33;
-        position: relative; 
-    
+        position: relative;
+
         &::after {
             position: absolute;
             top: 50%;
@@ -565,15 +573,21 @@
             content : "";
             width: 40px;
             height: 1px;
-            background: #FFAD33;
-            
-    
-            @include mixin.smartphone {
-                // top:155%;
-                // width: 30px;
-                // height: 1px;
-            }
-            
+        }
+
+    }
+
+    &__orange {
+        color: #FFAD33;
+        &::after {
+            background: #FFAD33;    
+        }
+    }
+
+    &__red {
+        color: #FF3333;
+        &::after {
+            background: #FF3333;    
         }
     }
  

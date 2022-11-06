@@ -1,10 +1,26 @@
 @use '../../foundation/mixin' as mixin;
 
 .c-illust {
-  //グルメ
+  //グルメアイコン
+    &__sushi {
+        width: 74px;
+        height: 40px;
+    }
+
     &__food {
         width: 52px;
         height: 62px; 
+    }
+
+    &__chinafood {
+        width: 57px;
+        height: 50px;
+
+    }
+
+    &__cafe {
+        width: 60px;
+        height: 51px;
     }
 
     &__rectant {
@@ -15,8 +31,8 @@
   // ショッピング
 
     &__shop {
-        widows: 63px;
-        height: 63px;
+        widows: 60px;
+        height: 60px;
     }
 
     &__yokorectant {
