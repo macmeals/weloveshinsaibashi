@@ -1,5 +1,6 @@
 @use '../../foundation/mixin' as mixin;
 
+// 文字や数字、記号（▶︎）に関するスタイル
 
 // サブタイトルの数字
 .c-topnumber {
@@ -119,3 +120,68 @@
         }
     }
 }
+
+// 各ページのタイトル
+.c-pagetitle {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 48px;
+    @include mixin.smartphone {
+        font-size: 24px;
+    }
+}
+
+
+// お店一覧のリンクの矢印の色
+.c-allow {
+    &__orange {
+       color :  #FFAD33;
+    }
+
+    &__red {
+       color :  #FF3333;
+     }
+
+} 
+
+// 場所のラベルのスタイリング
+.c-location {
+    &__orange, &__red , &__yellow, &__white {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__orange,&__red , &__yellow, &__white {
+        > P {
+            width: 160px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+
+    &__orange {
+        >p {
+            background: rgba(255, 173, 51, 0.25);
+        }
+    }
+    &__red {
+        >p {
+            background: rgba(255, 51, 51, 0.25);
+        }
+    }
+
+    &__yellow {
+        >p {
+            background:#FFF4CC;
+        }
+    }
+
+    &__white {
+        >p {
+            background:white;
+        }
+    }
+
+
+}
+

@@ -708,6 +708,51 @@ p {
     font-size: 24px;
   }
 }
+.c-pagetitle {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 48px;
+}
+
+@media (max-width: 690px) {
+  .c-pagetitle {
+    font-size: 24px;
+  }
+}
+.c-allow__orange {
+  color: #FFAD33;
+}
+
+.c-allow__red {
+  color: #FF3333;
+}
+
+.c-location__orange, .c-location__red, .c-location__yellow, .c-location__white {
+  display: flex;
+  align-items: center;
+}
+
+.c-location__orange > P, .c-location__red > P, .c-location__yellow > P, .c-location__white > P {
+  width: 160px;
+  height: 30px;
+  text-align: center;
+}
+
+.c-location__orange > p {
+  background: rgba(255, 173, 51, 0.25);
+}
+
+.c-location__red > p {
+  background: rgba(255, 51, 51, 0.25);
+}
+
+.c-location__yellow > p {
+  background: #FFF4CC;
+}
+
+.c-location__white > p {
+  background: white;
+}
+
 .c-photo__newscard {
   width: 280px;
   height: 200px;
@@ -815,9 +860,24 @@ p {
     line-height: 38px;
   }
 }
+.c-illust__sushi {
+  width: 74px;
+  height: 40px;
+}
+
 .c-illust__food {
   width: 52px;
   height: 62px;
+}
+
+.c-illust__chinafood {
+  width: 57px;
+  height: 50px;
+}
+
+.c-illust__cafe {
+  width: 60px;
+  height: 51px;
 }
 
 .c-illust__rectant {
@@ -826,8 +886,8 @@ p {
 }
 
 .c-illust__shop {
-  widows: 63px;
-  height: 63px;
+  widows: 60px;
+  height: 60px;
 }
 
 .c-illust__yokorectant {
@@ -846,6 +906,11 @@ p {
     width: 115px;
   }
 }
+.c-illust__smallhotel {
+  height: 20px;
+  width: 24px;
+}
+
 .c-fadeTriger {
   opacity: 0;
 }
@@ -1234,15 +1299,6 @@ p {
     background-position: 10px 20px;
   }
 }
-.p-news > h2 {
-  font-size: 48px;
-}
-
-@media (max-width: 690px) {
-  .p-news > h2 {
-    font-size: 24px;
-  }
-}
 @media (min-width: 691px) {
   .p-news__grid {
     display: grid;
@@ -1295,6 +1351,233 @@ p {
     width: 300px;
   }
 }
+.p-mainfirstview {
+  width: 100%;
+  height: 500px;
+  background: url(/content/img/main/main-map.webp) no-repeat center/cover;
+}
+
+.p-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff url(/content/img/main/ShinsaiBashi_main.png) no-repeat 600px/780px;
+  background-position: 10px 60px;
+  width: 100%;
+}
+
+@media (max-width: 690px) {
+  .p-main {
+    background: #fff url(/content/img/ShinsaiBashi.png) no-repeat 80px/150px;
+    background-position: 10px 20px;
+  }
+}
+.p-main__tab {
+  display: flex;
+  width: 920px;
+  justify-content: space-between;
+}
+
+.p-main__orangetab, .p-main__redtab, .p-main__yellowtab {
+  background: #F8F8F8;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.p-main__orangetab > a, .p-main__redtab > a, .p-main__yellowtab > a {
+  display: block;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.p-main__orangetab.active {
+  background: #FFAD33;
+}
+
+.p-main__redtab.active {
+  background: #FF3333;
+}
+
+.p-main__yellowtab.active {
+  background: #FFD433;
+}
+
+.p-main__contents {
+  display: none; /*はじめは非表示*/
+  opacity: 0; /*透過0*/
+  background: #fff;
+  padding: 50px 20px;
+}
+
+.p-main__contents.is-active {
+  display: block; /*表示*/
+  animation-name: displayAnime; /*ふわっと表示させるためのアニメーション*/
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-main__shoplinks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+}
+
+.p-main__contentheader, .p-main__subtitle {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-main__contentheader {
+  width: 920px;
+  align-items: center;
+}
+
+.p-main__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-main__subnumber, .p-main__subshopnumber {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-main__subnumber {
+  width: 300px;
+}
+
+.p-main__subshopnumber {
+  width: 500px;
+}
+
+.p-main__category {
+  width: 220px;
+}
+
+.p-main__shopcategory {
+  width: 420px;
+}
+
+@media (min-width: 691px) {
+  .p-main__shoplink {
+    display: grid;
+    grid-template-columns: repeat(2, 440px);
+    grid-template-rows: repeat(2, 70px);
+  }
+}
+.p-main__shop, .p-main__store, .p-main__yellowhotel, .p-main__whitehotel {
+  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-main__shop:nth-child(2), .p-main__shop:nth-child(3), .p-main__store:nth-child(2), .p-main__store:nth-child(3) {
+  background-color: transparent;
+}
+
+.p-main__shop {
+  background: rgba(255, 173, 51, 0.25);
+}
+
+.p-main__store {
+  background: rgba(255, 51, 51, 0.25);
+}
+
+.p-main__yellowhotel {
+  background: #FFF4CC;
+}
+
+.p-main__whitehotel {
+  background: white;
+}
+
+.p-main__shopname {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-main__shopname > p {
+  width: 200px;
+}
+
+.p-main__shopname {
+  width: 400px;
+}
+
+@media (min-width: 691px) {
+  .p-main__hotellink {
+    display: grid;
+    grid-template-columns: repeat(2, 440px);
+    grid-template-rows: repeat(6, 70px);
+  }
+}
+.p-main__hotelcontents, .p-main__hotelname {
+  display: flex;
+}
+
+.p-main__hotelname {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-main__hotelname > p {
+  width: 200px;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.p-mainnumber__orange, .p-mainnumber__red {
+  font-size: 32px;
+  position: relative;
+}
+
+.p-mainnumber__orange::after, .p-mainnumber__red::after {
+  position: absolute;
+  top: 50%;
+  left: 200%;
+  content: "";
+  width: 40px;
+  height: 1px;
+}
+
+.p-mainnumber__orange {
+  color: #FFAD33;
+}
+
+.p-mainnumber__orange::after {
+  background: #FFAD33;
+}
+
+.p-mainnumber__red {
+  color: #FF3333;
+}
+
+.p-mainnumber__red::after {
+  background: #FF3333;
+}
+
 .p-side {
   display: flex;
   align-items: center;
@@ -1379,6 +1662,14 @@ p {
 
 .u-margin__pc-top115 {
   margin-top: 115px;
+}
+
+.u-margin__pc-top120 {
+  margin-top: 115px;
+}
+
+.u-margin__pc-bot40 {
+  margin-bottom: 40px;
 }
 
 .u-margin__pc-bot50 {
