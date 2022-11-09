@@ -405,8 +405,7 @@
     }
 
     &__orangetab, &__redtab, &__yellowtab {
-        // display: block;
-        background:grey;
+        background:#F8F8F8;
         width: 300px;
         height: 50px;
         display: flex;
@@ -516,15 +515,18 @@
         }
     }
 
-    &__shop ,&__store{
+    &__shop ,&__store, &__yellowhotel, &__whitehotel {
         display: block;
         @include mixin.verticalcenter ;
         justify-content: center;
 
+    }
+
+     &__shop ,&__store {
         &:nth-child(2),&:nth-child(3) {
             background-color:transparent;
         }
-    }
+     }
 
     &__shop {
         background: rgba(255, 173, 51, 0.25);
@@ -534,15 +536,50 @@
         background: rgba(255, 51, 51, 0.25);
     }
 
-    &__shopname {
+    &__yellowhotel {
+        background: #FFF4CC;
+        
+    }
+
+    &__whitehotel {
+        background: white;
+        
+    }
+
+
+    &__shopname  {
         display: flex;
         justify-content: space-between;
-        width: 400px;
 
         > p {
             width: 200px;
         }
+    }
 
+    &__shopname {
+        width: 400px;
+    }
+
+    &__hotellink {
+        @include mixin.pc {
+            display: grid;
+            grid-template-columns: repeat(2, 440px);
+            grid-template-rows: repeat(6,70px);
+        }
+    }
+
+    &__hotelcontents, &__hotelname {
+        display: flex;
+    }
+
+    &__hotelname {
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >p {
+            width: 200px;
+        }
     }
  
 }

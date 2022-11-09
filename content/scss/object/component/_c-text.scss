@@ -170,10 +170,18 @@
         }
     }
 
+    &__yellow {
+        >p {
+            background:#FFF4CC;
+        }
+    }
+
     &__white {
         >p {
             background:white;
         }
     }
+
+
 }
 
