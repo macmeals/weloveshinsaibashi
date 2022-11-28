@@ -1,6 +1,19 @@
 @use '../../foundation/mixin' as mixin;
 
-////////Topページ////////// 
+// 共通のスタイリング：：；：ーファーストビュー
+
+.p-newsfirstview,.p-foodfirstview {
+    height: 350px;
+    width: 100%;
+    @include mixin.smartphone {
+        height: 200px;
+    }
+}
+
+
+
+
+////////Topページ////////////////////////////////////////////////////////////// 
 
 //Topページのファーストビューのグリッド
 .p-gridcontainer {
@@ -267,6 +280,7 @@
 
     &__gheader {
         width: 200px;
+        height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -279,6 +293,7 @@
 
     &__text {
         @include mixin.verticalcenter;
+        width: 100px;
 
         >p { line-height: 1.5;
         
@@ -308,14 +323,8 @@
 
 /////New一覧ページ/////////////////////////////////
 .p-newsfirstview {
-    height: 350px;
-    width: 100%;
     background: url(/content/img/news/newsfirstview.webp) no-repeat  center/cover; 
-    @include mixin.smartphone {
-        height: 200px;
-    }
 }
-
 
 .p-news {
     @include mixin.verticalcenter;
@@ -339,13 +348,13 @@
     }
 }
 
-/////News詳細ページ/////////////////////////////////
+/////News詳細ページ///////////////////////////////////////////////////////////
 .p-newsdetail {
-    @include mixin.verticalcenter;
         &__header {
             width: 920px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             @include mixin.smartphone {
                 width: 300px;
@@ -380,7 +389,7 @@
     
 }
 
-/////Mainページ(グルメ、ショッピング、ホテル）////////////////////////
+/////Mainページ(グルメ、ショッピング、ホテル）///////////////////////////////////////////////////////////////
 .p-mainfirstview {
     width: 100%;
     height: 500px;
@@ -629,6 +638,94 @@
     }
  
 }
+
+
+
+////////グルメ詳細ページ////////////////////////////////////////////////////////////// 
+
+.p-foodfirstview {
+    background: url(/content/img/fooddetail/foodfirstview.webp) no-repeat  center/cover; 
+}
+
+////////グルメ、ショップ詳細の写真のグリッド////////////////////////////////////////////////////////////// 
+.p-detailgridcontainer {
+    width: 440px;
+    height: 675px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows : repeat(3, 1fr);
+    gap: 20px 20px;
+}
+
+
+
+.p-fooddetail {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/Gourmet.png) no-repeat  300px/950px;
+    background-position: 10px 60px;
+    width: 100%;
+
+    &__subtitle {
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__shopname {
+        display: flex;
+        align-items: center;
+
+        >P {
+            font-size: 32px;
+        }
+    }
+
+    &__contentstitle  {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__text {
+        width: 440px;
+        @include mixin.verticalcenter;
+
+    }
+
+    &__contents {
+       width: 920px;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    &__artcle {
+        width: 440px;
+        @include mixin.verticalcenter;
+        justify-content: space-between;
+    }
+
+}
+
+//グルメとショッピングのスペシャル動画のスタイリング
+.p-specialmovie {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+
+    &__contents {
+        @include mixin.verticalcenter;
+    }
+
+    &__orangetext {
+        font-size: 24px;
+        color: #FFAD33;
+        font-weight: 900;
+    }
+        
+
+} 
+
 
 
 
