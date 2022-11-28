@@ -50,7 +50,7 @@ $('.p-main__orangetab a,.p-main__redtab a,.p-main__yellowtab a').on('click', fun
 });
 
 //タブ(aタブ)をクリックして、タブと、コンテンツにActiveのクラスを付与する
- function GethashID (hashIDName){
+function GethashID (hashIDName){
 	if(hashIDName){
 		//タブ設定
 		$('.p-main__tab li').find('a').each(function() { //タブ内のaタグ全てを取得
@@ -67,6 +67,28 @@ $('.p-main__orangetab a,.p-main__redtab a,.p-main__yellowtab a').on('click', fun
 		});
 	}
 }
+
+// $(function(){
+//   $("#modal div").click(function() {
+//     $("#graydisplay").html($(this).prop('outerHTML'));
+//     $("#graydisplay").fadeIn(200);
+//   });
+//   $("#graydisplay, #graydisplay div").click(function() {
+//     $("#graydisplay").fadeOut(200);
+//   });
+// });
+
+$(function(){
+  $(".c-specialfoodgrid,.c-normalfoodgrid").click(function() {
+		$('.c-graydisplay').html($(this).prop('outerHTML'));
+		$('.c-graydisplay').fadeIn(200);
+	
+  });
+  $('.c-graydisplay,.c-graydisplay img').click(function() {
+		$('.c-graydisplay').fadeOut(200);
+  });
+});
+
 
 
 	

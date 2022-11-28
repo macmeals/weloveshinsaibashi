@@ -38,7 +38,7 @@
 
 // お知らせのカテゴリーの大きさ
 .c-categoly {
-    &__red , &__yellow, &__purple, &__date {
+    &__red , &__yellow, &__orange, &__date {
         width: 120px;
         height: 31px;
 
@@ -91,8 +91,8 @@
         background-color: #FFD433;
     }
 
-    &__purple {
-        background-color: #A533FF;
+    &__orange {
+        background-color: #FFAD33;
     }   
 
     &__largeorange {
@@ -145,13 +145,13 @@
 
 // 場所のラベルのスタイリング
 .c-location {
-    &__orange, &__red , &__yellow, &__white {
+    &__orange, &__deeporange, &__red , &__yellow, &__white {
         display: flex;
         align-items: center;
 
     }
 
-    &__orange,&__red , &__yellow, &__white {
+    &__orange, &__deeporange, &__red , &__yellow, &__white {
         > P {
             width: 160px;
             height: 30px;
@@ -164,6 +164,15 @@
             background: rgba(255, 173, 51, 0.25);
         }
     }
+
+    &__deeporange {
+        >p {
+            background: #FFAD33;
+        }
+    }
+
+
+
     &__red {
         >p {
             background: rgba(255, 51, 51, 0.25);
@@ -181,7 +190,9 @@
             background:white;
         }
     }
-
-
 }
 
+//リンクを太くするためのスタイル
+.c-link {
+    font-weight: bold;
+} 

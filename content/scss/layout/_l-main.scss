@@ -1,5 +1,8 @@
+@use '../foundation/mixin' as mixin;
+
 .l-main {
     height: 100%;
     width: 100%;
     background-color: white;
+    @include mixin.verticalcenter;
 }

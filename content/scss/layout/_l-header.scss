@@ -6,8 +6,15 @@
     display: flex;
     justify-content: center;
     background-color: #F8F8F8;
+    position: fixed;
+    z-index: 20;
    
         @include mixin.smartphone {
             height: 50px;
+        }
+
+        &.is-modalopen  {
+            display: none;
+
         }
 }
