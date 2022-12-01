@@ -1152,6 +1152,7 @@ p {
 }
 
 .p-topnotice {
+  width: 100%;
   background: #F8F8F8 url(/content/img/ShinsaiBashi.png) no-repeat 600px/750px;
   background-position: calc(100% - 10px) 60px;
   display: flex;
@@ -1181,6 +1182,7 @@ p {
   }
 }
 .p-topnews {
+  width: 100%;
   background: #fff url(/content/img/News.png) no-repeat 300px/600px;
   background-position: 10px 60px;
   display: flex;
@@ -1249,6 +1251,7 @@ p {
   }
 }
 .p-topfood {
+  width: 100%;
   background: #F8F8F8 url(/content/img/Gourmet.png) no-repeat 300px/900px;
   background-position: calc(100% - 10px) 60px;
   display: flex;
@@ -1277,6 +1280,7 @@ p {
 }
 
 .p-topshop {
+  width: 100%;
   background: #ffffff url(/content/img/Shopping.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
   display: flex;
@@ -1331,6 +1335,7 @@ p {
   }
 }
 .p-tophotel {
+  width: 100%;
   background: #F8F8F8 url(/content/img/hotel.png) no-repeat 300px/560px;
   background-position: calc(100% - 10px) 60px;
   display: flex;
@@ -1375,6 +1380,7 @@ p {
 }
 
 .p-toprequest {
+  width: 100%;
   background: #ffffff url(/content/img/toprequest/Request.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
   display: flex;
