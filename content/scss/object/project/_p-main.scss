@@ -1,17 +1,5 @@
 @use '../../foundation/mixin' as mixin;
 
-// 共通のスタイリング：：；：ーファーストビュー
-
-.p-newsfirstview,.p-foodfirstview {
-    height: 350px;
-    width: 100%;
-    @include mixin.smartphone {
-        height: 200px;
-    }
-}
-
-
-
 
 ////////Topページ////////////////////////////////////////////////////////////// 
 
@@ -327,9 +315,6 @@
 }
 
 /////New一覧ページ/////////////////////////////////
-.p-newsfirstview {
-    background: url(/content/img/news/newsfirstview.webp) no-repeat  center/cover; 
-}
 
 .p-news {
     @include mixin.verticalcenter;
@@ -395,11 +380,6 @@
 }
 
 /////Mainページ(グルメ、ショッピング、ホテル）///////////////////////////////////////////////////////////////
-.p-mainfirstview {
-    width: 100%;
-    height: 500px;
-    background: url(/content/img/main/main-map.webp) no-repeat  center/cover; 
-}
 
 .p-main {
     @include mixin.verticalcenter;
@@ -647,11 +627,6 @@
 
 
 ////////グルメ詳細ページ////////////////////////////////////////////////////////////// 
-
-.p-foodfirstview {
-    background: url(/content/img/fooddetail/foodfirstview.webp) no-repeat  center/cover; 
-}
-
 ////////グルメ、ショップ詳細の写真のグリッド////////////////////////////////////////////////////////////// 
 .p-detailgridcontainer {
     width: 440px;
@@ -731,6 +706,88 @@
 
 } 
 
+///////////グルメショップ、ショッピングのショップのグリッド//////
+.p-shopgrid {
+    @include mixin.pc {
+        width: 920px;
+        height: 675px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows : repeat(3, 1fr);
+        gap: 20px 20px;
 
+    }
+    
+    
+}
+
+///////////グルメショップのページ//////////////////////////////////
+
+.p-gourmetshop {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/Gourmet.png) no-repeat  300px/950px;
+    background-position: 10px 60px;
+    width: 100%;
+
+    &__location {
+        width: 680px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__access {
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__special {
+        @include mixin.verticalcenter;
+        width: 760px;
+    }
+
+    &__specialtitle,&__contentstitle {
+        display: flex;
+        align-items: center;
+    }
+
+    &__specialtitle {
+        width: 440px;
+
+    }
+
+    &__contentstitle {
+        justify-content: space-between;
+        width: 250px;
+    }
+
+    &__sns {
+        width: 920px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tiktok {
+        @include mixin.verticalcenter;
+        > p {
+            font-size: 24px;
+            color: #FFAD33;
+        }
+    }
+
+}
+
+.p-shopcontentgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows : repeat(2, 1fr);
+    gap: 40px 0;
+
+    >div {
+        @include mixin.verticalcenter;
+    }
+
+}
+ 
 
 

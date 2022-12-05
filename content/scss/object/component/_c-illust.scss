@@ -1,6 +1,22 @@
 @use '../../foundation/mixin' as mixin;
 
 .c-illust {
+  //ヘッダアイコン
+   &__headerlogo {
+       width: 273px;
+       height: 30px;
+
+       @include mixin.smartphone {
+           width: 183px;
+           height: 15pt;
+       }
+
+       //ハンバーガーメニュが開いたら、消えるようにする。
+       &.is-open  {
+         display: none;
+       }
+   }
+
   //グルメアイコン
     &__sushi {
         width: 74px;
@@ -96,6 +112,18 @@
          width: 20px;
      }
 
+     // グルメ用のコメントアイコン 
+     &__comment {
+        height: 50px;
+        width: 50px;
+     }
+
+     // スペシャル映像用のアイコン 
+     &__camera {
+         height: 60px;
+         width: 60px;
+     } 
+
      //縦のスペシャル動画のあしらい
      &__special {
          width: 20px;
@@ -108,6 +136,13 @@
      &__pagenation {
          height: 30px;
          width: 188px;
+
+     }
+
+     &__snsbar {
+         height: 700px;
+         width: 20px;
+
 
      }
 

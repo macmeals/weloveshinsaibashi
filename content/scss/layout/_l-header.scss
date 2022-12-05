@@ -13,8 +13,7 @@
             height: 50px;
         }
 
-        &.is-modalopen  {
-            display: none;
-
+        &.is-open  {
+            background-color: white;
         }
 }
