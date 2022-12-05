@@ -4,7 +4,7 @@
     &__pc  {
         width: 920px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
             @include mixin.smartphone {
                 display: none;
@@ -18,9 +18,10 @@
     }
 
     &__mobile {
-        width: 100%;
-        justify-content: center;
-        @include mixin.verticalcenter;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @include mixin.pc {
             display: none;
         }

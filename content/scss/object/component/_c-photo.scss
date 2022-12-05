@@ -24,6 +24,22 @@
         box-shadow: 5px 5px #FFD433;
     }
 
+    &__smallview {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        @include mixin.smartphone {
+            height: 200px;
+        }
+    }
+
+    &__bigview {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
 }
 
 //写真をモーダルで表示

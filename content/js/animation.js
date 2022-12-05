@@ -1,12 +1,16 @@
 jQuery( function( $ ) {
+////ハンバーガーのアニメーション/////////////////////////////////////////////////////////	
     $('.c-hambergerbutton').on( "click", function() {
 			$( ".c-hambergerbutton__upperbar" ).toggleClass( "is-open" );
 			$( ".c-hambergerbutton__middlebar" ).toggleClass( "is-open" );
 			$( ".c-hambergerbutton__underbar" ).toggleClass( "is-open" );
 			$( ".p-header__mobile" ).toggleClass( "is-open" );
 			$( ".l-side" ).toggleClass( "is-open" );
+			$( ".l-header" ).toggleClass( "is-open" );
+			$( ".c-illust__headerlogo" ).toggleClass( "is-open" );
 	})
 
+////フワッとアニメーション/////////////////////////////////////////////////////////	
 	function fadeAnime(){
 		$('.c-fadeTriger').each(function(){ //c-fadeTrigerというクラス名が
 			var elemPostion = $(this).offset().top-50; //要素より、50px上の
@@ -68,18 +72,10 @@ function GethashID (hashIDName){
 	}
 }
 
-// $(function(){
-//   $("#modal div").click(function() {
-//     $("#graydisplay").html($(this).prop('outerHTML'));
-//     $("#graydisplay").fadeIn(200);
-//   });
-//   $("#graydisplay, #graydisplay div").click(function() {
-//     $("#graydisplay").fadeOut(200);
-//   });
-// });
+
 
 $(function(){
-  $(".c-specialfoodgrid,.c-normalfoodgrid").click(function() {
+  $(".c-specialfoodgrid,.c-normalfoodgrid,.c-shopgrid__foodspecial,.c-shopgrid__foodnormal").click(function() {
 		$('.c-graydisplay').html($(this).prop('outerHTML'));
 		$('.c-graydisplay').fadeIn(200);
 	
