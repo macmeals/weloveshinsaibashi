@@ -71,6 +71,10 @@
         margin-left: 10px;
     }
 
+    &__pc-left15 {
+        margin-left: 15px;
+    }
+
 //////smartPhone
     &__sp-top40 {
         @include mixin.smartphone {
