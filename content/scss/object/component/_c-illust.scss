@@ -136,14 +136,17 @@
      &__pagenation {
          height: 30px;
          width: 188px;
-
      }
 
      &__snsbar {
          height: 700px;
          width: 20px;
+     }
 
-
+     //ショッピング一覧のアイコン
+     &__goods {
+        height: 53px;
+        width: 50px;
      }
 
 }

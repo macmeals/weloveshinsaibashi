@@ -587,20 +587,25 @@ blockquote {
   background: url(/content/img/grid12.webp) no-repeat center/cover;
 }
 
-.c-specialfoodgrid {
+.c-specialfoodgrid, .c-specialgoodsgrid {
   grid-column: 1/3;
   grid-row: 1/3;
   width: 440px;
   height: 440px;
 }
 
-.c-normalfoodgrid {
+.c-normalfoodgrid, .c-normalgoodsgrid {
   width: 210px;
   height: 210px;
 }
 
 .c-specialfoodgrid, .c-normalfoodgrid {
   box-shadow: #FFAD33 5px 5px;
+  cursor: pointer;
+}
+
+.c-specialgoodsgrid, .c-normalgoodsgrid {
+  box-shadow: #FF3333 5px 5px;
   cursor: pointer;
 }
 
@@ -1091,6 +1096,11 @@ blockquote {
 .c-illust__snsbar {
   height: 700px;
   width: 20px;
+}
+
+.c-illust__goods {
+  height: 53px;
+  width: 50px;
 }
 
 .c-fadeTriger {
@@ -1745,7 +1755,7 @@ blockquote {
   background: #FF3333;
 }
 
-.p-detailgridcontainer {
+.p-listgrid {
   width: 440px;
   height: 675px;
   display: grid;
@@ -1754,7 +1764,7 @@ blockquote {
   gap: 20px 20px;
 }
 
-.p-fooddetail {
+.p-foodlist {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1763,65 +1773,47 @@ blockquote {
   width: 100%;
 }
 
-.p-fooddetail__subtitle {
+.p-foodlist__subtitle {
   width: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.p-fooddetail__shopname {
+.p-foodlist__shopname {
   display: flex;
   align-items: center;
 }
 
-.p-fooddetail__shopname > P {
+.p-foodlist__shopname > P {
   font-size: 32px;
 }
 
-.p-fooddetail__contentstitle {
+.p-foodlist__contentstitle {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.p-fooddetail__text {
+.p-foodlist__text {
   width: 440px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.p-fooddetail__contents {
+.p-foodlist__contents {
   width: 920px;
   display: flex;
   justify-content: space-between;
 }
 
-.p-fooddetail__artcle {
+.p-foodlist__artcle {
   width: 440px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.p-specialmovie {
-  width: 920px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.p-specialmovie__contents {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.p-specialmovie__orangetext {
-  font-size: 24px;
-  color: #FFAD33;
-  font-weight: 900;
 }
 
 @media (min-width: 691px) {
@@ -1834,7 +1826,7 @@ blockquote {
     gap: 20px 20px;
   }
 }
-.p-gourmetshop {
+.p-foodshop {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1843,52 +1835,52 @@ blockquote {
   width: 100%;
 }
 
-.p-gourmetshop__location {
+.p-foodshop__location {
   width: 680px;
   display: flex;
   justify-content: space-between;
 }
 
-.p-gourmetshop__access {
+.p-foodshop__access {
   width: 400px;
   display: flex;
   align-items: center;
 }
 
-.p-gourmetshop__special {
+.p-foodshop__special {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 760px;
 }
 
-.p-gourmetshop__specialtitle, .p-gourmetshop__contentstitle {
+.p-foodshop__specialtitle, .p-foodshop__contentstitle {
   display: flex;
   align-items: center;
 }
 
-.p-gourmetshop__specialtitle {
+.p-foodshop__specialtitle {
   width: 440px;
 }
 
-.p-gourmetshop__contentstitle {
+.p-foodshop__contentstitle {
   justify-content: space-between;
   width: 250px;
 }
 
-.p-gourmetshop__sns {
+.p-foodshop__sns {
   width: 920px;
   display: flex;
   justify-content: space-between;
 }
 
-.p-gourmetshop__tiktok {
+.p-foodshop__tiktok {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.p-gourmetshop__tiktok > p {
+.p-foodshop__tiktok > p {
   font-size: 24px;
   color: #FFAD33;
 }
@@ -1904,6 +1896,19 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.p-goodslist {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff url(/content/img/Shopping.png) no-repeat 300px/950px;
+  background-position: 10px 60px;
+  width: 100%;
+}
+
+.p-goodslist__item {
+  width: 100%;
 }
 
 .p-side {
@@ -2029,6 +2034,10 @@ blockquote {
 }
 .u-margin__left10 {
   margin-left: 10px;
+}
+
+.u-margin__pc-left15 {
+  margin-left: 15px;
 }
 
 @media (max-width: 690px) {

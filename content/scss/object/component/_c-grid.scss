@@ -71,7 +71,7 @@
 }
 
 //グルメ一覧のスペシャル写真のグリッド
-.c-specialfoodgrid {
+.c-specialfoodgrid,.c-specialgoodsgrid {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
     width: 440px;
@@ -79,21 +79,27 @@
 }
 
 //グルメ一覧の普通の写真のグリッド
-.c-normalfoodgrid {
+.c-normalfoodgrid,.c-normalgoodsgrid {
     width: 210px;
     height: 210px;
 }
 
 
-//グルメ詳細のボックスシャドウの色
+//グルメ一覧のボックスシャドウの色
 .c-specialfoodgrid,.c-normalfoodgrid {
     box-shadow: #FFAD33 5px 5px;
     cursor: pointer;
 }
 
+//ショップ一覧のボックスシャドウの色
+.c-specialgoodsgrid,.c-normalgoodsgrid {
+    box-shadow: #FF3333 5px 5px;
+    cursor: pointer;
+}
+
+
 //グルメ、ショッピングのショップのスペシャル写真のグリッド
 .c-shopgrid {
-   
     &__foodspecial {
         width: 440px;
         height: 440px;

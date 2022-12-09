@@ -626,9 +626,9 @@
 
 
 
-////////グルメ詳細ページ////////////////////////////////////////////////////////////// 
-////////グルメ、ショップ詳細の写真のグリッド////////////////////////////////////////////////////////////// 
-.p-detailgridcontainer {
+////////グルメ一覧ページ////////////////////////////////////////////////////////////// 
+////////グルメ、ショップ一覧の写真のグリッド////////////////////////////////////////////////////////////// 
+.p-listgrid {
     width: 440px;
     height: 675px;
     display: grid;
@@ -637,9 +637,9 @@
     gap: 20px 20px;
 }
 
+////////グルメ一覧ページ////////////////////////////////////////////////////////////// 
 
-
-.p-fooddetail {
+.p-foodlist {
     @include mixin.verticalcenter;
     background:#fff url(/content/img/Gourmet.png) no-repeat  300px/950px;
     background-position: 10px 60px;
@@ -687,26 +687,8 @@
 
 }
 
-//グルメとショッピングのスペシャル動画のスタイリング
-.p-specialmovie {
-    width: 920px;
-    display: flex;
-    justify-content: space-between;
 
-    &__contents {
-        @include mixin.verticalcenter;
-    }
-
-    &__orangetext {
-        font-size: 24px;
-        color: #FFAD33;
-        font-weight: 900;
-    }
-        
-
-} 
-
-///////////グルメショップ、ショッピングのショップのグリッド//////
+///////////グルメショップ、ショッピングのショップページメイン写真のグリッド//////////////
 .p-shopgrid {
     @include mixin.pc {
         width: 920px;
@@ -717,13 +699,11 @@
         gap: 20px 20px;
 
     }
-    
-    
 }
 
 ///////////グルメショップのページ//////////////////////////////////
 
-.p-gourmetshop {
+.p-foodshop {
     @include mixin.verticalcenter;
     background:#fff url(/content/img/Gourmet.png) no-repeat  300px/950px;
     background-position: 10px 60px;
@@ -777,6 +757,8 @@
 
 }
 
+///////グルメ、ショッピングのショップのコンテンツ情報のグリッド//////////////////////////////////
+
 .p-shopcontentgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -788,6 +770,16 @@
     }
 
 }
- 
 
+///////////ショッピングのショップ一覧のページ//////////////////////////////////
 
+.p-goodslist {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/Shopping.png) no-repeat  300px/950px;
+    background-position: 10px 60px;
+    width: 100%;
+
+    &__item {
+        width: 100%;
+    }
+}

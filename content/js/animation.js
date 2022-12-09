@@ -72,10 +72,11 @@ function GethashID (hashIDName){
 	}
 }
 
-
+////モーダルウィンドウ
 
 $(function(){
-  $(".c-specialfoodgrid,.c-normalfoodgrid,.c-shopgrid__foodspecial,.c-shopgrid__foodnormal").click(function() {
+  $(".c-specialfoodgrid,.c-normalfoodgrid,.c-shopgrid__foodspecial,.c-shopgrid__foodnormal,.c-specialgoodsgrid,.c-normalgoodsgrid").click(function() {
+////クリックしたHTML要素を取得して、.c-graydisplayへ入れた後、fade-inさせる
 		$('.c-graydisplay').html($(this).prop('outerHTML'));
 		$('.c-graydisplay').fadeIn(200);
 	
