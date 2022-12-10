@@ -194,3 +194,16 @@
 .c-link {
     font-weight: bold;
 } 
+
+//Tiktokのテキスト
+.c-tiktok {
+    &__yellow {
+        font-size: 24px;
+        color: #FFAD33;
+    }
+
+    &__red {
+        font-size: 24px;
+        color: #FF3333;
+    }
+}

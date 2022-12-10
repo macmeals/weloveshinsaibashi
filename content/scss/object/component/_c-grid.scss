@@ -100,14 +100,14 @@
 
 //グルメ、ショッピングのショップのスペシャル写真のグリッド
 .c-shopgrid {
-    &__foodspecial {
+    &__foodspecial ,&__goodspecial {
         width: 440px;
         height: 440px;
         grid-column: 1 / 3;
         grid-row: 1 / 3;
      }
     
-    &__foodnormal {
+    &__foodnormal, &__goodsnormal {
         width: 210px;
         height: 210px;  
      }
@@ -115,6 +115,11 @@
 //グルメショップのボックスシャドウの色
      &__foodspecial,&__foodnormal {
         box-shadow: #FFAD33 5px 5px;
+        cursor: pointer;
+    }
+
+    &__goodspecial, &__goodsnormal {
+        box-shadow: #FF3333 5px 5px;
         cursor: pointer;
     }
 

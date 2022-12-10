@@ -701,6 +701,39 @@
     }
 }
 
+///////////グルメショップ、ショッピングのショップの各種情報のグリッド//////////////
+.p-shopcontentgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows : repeat(2, 1fr);
+    gap: 40px 0;
+
+    >div {
+        @include mixin.verticalcenter;
+    }
+
+}
+
+.p-shopcontents {
+     width: 440px;
+     justify-content: space-between;
+
+     &__title {
+         width: 250px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     &__text {
+         height: 64px;
+         @include mixin.verticalcenter;
+         justify-content: center;
+     }
+
+
+}
+
 ///////////グルメショップのページ//////////////////////////////////
 
 .p-foodshop {
@@ -726,7 +759,7 @@
         width: 760px;
     }
 
-    &__specialtitle,&__contentstitle {
+    &__specialtitle {
         display: flex;
         align-items: center;
     }
@@ -734,11 +767,6 @@
     &__specialtitle {
         width: 440px;
 
-    }
-
-    &__contentstitle {
-        justify-content: space-between;
-        width: 250px;
     }
 
     &__sns {
@@ -749,27 +777,11 @@
 
     &__tiktok {
         @include mixin.verticalcenter;
-        > p {
-            font-size: 24px;
-            color: #FFAD33;
-        }
+        
     }
 
 }
 
-///////グルメ、ショッピングのショップのコンテンツ情報のグリッド//////////////////////////////////
-
-.p-shopcontentgrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows : repeat(2, 1fr);
-    gap: 40px 0;
-
-    >div {
-        @include mixin.verticalcenter;
-    }
-
-}
 
 ///////////ショッピングのショップ一覧のページ//////////////////////////////////
 
@@ -782,4 +794,30 @@
     &__item {
         width: 100%;
     }
+}
+
+///////////ショッピングのショップページ//////////////////////////////////
+
+.p-goodsshop {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/Shopping.png) no-repeat  300px/950px;
+    background-position: 10px 60px;
+    width: 100%;
+
+    &__contentstitle { 
+        display: flex;
+        align-items: center;
+        width: 400px;
+    }
+
+    &__tiktok {
+
+        @include mixin.verticalcenter;
+        > p {
+            font-size: 24px;
+            color: #FF3333 ;
+        }
+
+    }
+
 }
