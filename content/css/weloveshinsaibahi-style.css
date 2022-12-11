@@ -559,7 +559,7 @@ blockquote {
   }
 }
 .c-gridG {
-  background: url(/content/img/welovelogo.png) no-repeat center/cover;
+  background: url(/content/img/welovelogo2.png) no-repeat center/cover;
 }
 
 @media (max-width: 690px) {
@@ -1463,7 +1463,7 @@ blockquote {
 
 .p-toprequest {
   width: 100%;
-  background: #ffffff url(/content/img/toprequest/Request.png) no-repeat 300px/1000px;
+  background: #ffffff url(/content/img/Admission.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
   display: flex;
   align-items: center;
@@ -1472,7 +1472,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-toprequest {
-    background: #ffffff url(/content/img/toprequest/Request.png) no-repeat 145px/340px;
+    background: #ffffff url(/content/img/Admission.png) no-repeat 145px/340px;
     background-position: 10px 30px;
   }
 }
