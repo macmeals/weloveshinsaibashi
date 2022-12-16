@@ -207,3 +207,48 @@
         color: #FF3333;
     }
 }
+
+//WeLove心斎橋の入会金
+.c-admission {
+    &__price {
+        font-size: 24px;
+    }
+
+    &__must {
+        background-color: #FFAD33;
+        border-radius: 10px;
+        font-size: 14px;
+        width: 45px;
+        height: 30px;
+        text-align:center;
+        line-height:30px;
+        color: white;
+        
+    }
+
+    &__textbox ,&__shortbox {
+        border: .5px solid #303030;
+        border-radius: 2px;
+        height: 30px;
+       
+    }
+
+    &__textbox {
+        width: 440px;
+    }
+
+    &__shortbox {
+        width: 60px;
+    }
+
+    &__thankyou {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    &__text {
+        width: 920px;
+    }
+
+
+}

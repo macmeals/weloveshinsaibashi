@@ -296,12 +296,12 @@
 
 .p-toprequest {
     width: 100%;
-    background: #ffffff url(/content/img/toprequest/Request.png) no-repeat  300px/1000px;
+    background: #ffffff url(/content/img/Admission.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(/content/img/toprequest/Request.png) no-repeat  145px/340px;
+        background: #ffffff url(/content/img/Admission.png) no-repeat  145px/340px;
         background-position: 10px 30px;
     }
 
@@ -483,6 +483,7 @@
     &__subnumber, &__subshopnumber {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__subnumber {
@@ -820,4 +821,64 @@
 
     }
 
+}
+
+///////////We Love 心斎橋入会方法のショップページ//////////////////////////////////
+
+.p-admission  {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/Admission.png) no-repeat  300px/950px;
+    background-position: 10px 60px;
+    width: 100%;
+
+
+    &__title {
+        width: 220px;
+        font-size: 24px;
+    }
+
+    &__text {
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    &__applyforms {
+        display: flex;
+        flex-direction: column;
+        height: 660px;
+        justify-content: space-between;
+    }
+
+    &__apply,&__applytitle,&__radio,&__choice {
+        display: flex;
+        align-items: center;
+    }
+
+    &__applytitle {
+        width: 240px;        
+    }
+
+    &__radio,&__post {
+        width: 440px;
+    }
+
+    &__choice {
+        width: 160px;
+    }
+
+    &__post {
+        display: flex;
+        height: 30px;
+    }
+
+    &__infotitle {
+        display: flex;
+        > P {
+            font-size: 24px;
+        }
+    }
+
+    
 }
