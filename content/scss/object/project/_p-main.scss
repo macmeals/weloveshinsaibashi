@@ -829,7 +829,7 @@
     @include mixin.verticalcenter;
     background:#fff url(/content/img/Admission.png) no-repeat  300px/950px;
     background-position: 10px 60px;
-    width: 920px;
+    width: 100%;
 
 
     &__title {
@@ -871,6 +871,13 @@
     &__post {
         display: flex;
         height: 30px;
+    }
+
+    &__infotitle {
+        display: flex;
+        > P {
+            font-size: 24px;
+        }
     }
 
     

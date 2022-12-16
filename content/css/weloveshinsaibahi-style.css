@@ -878,6 +878,15 @@ blockquote {
   width: 60px;
 }
 
+.c-admission__thankyou {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.c-admission__text {
+  width: 920px;
+}
+
 .c-photo__newscard {
   width: 280px;
   height: 200px;
@@ -2011,7 +2020,7 @@ blockquote {
   flex-direction: column;
   background: #fff url(/content/img/Admission.png) no-repeat 300px/950px;
   background-position: 10px 60px;
-  width: 920px;
+  width: 100%;
 }
 
 .p-admission__title {
@@ -2053,6 +2062,14 @@ blockquote {
 .p-admission__post {
   display: flex;
   height: 30px;
+}
+
+.p-admission__infotitle {
+  display: flex;
+}
+
+.p-admission__infotitle > P {
+  font-size: 24px;
 }
 
 .p-side {
