@@ -864,14 +864,18 @@ blockquote {
   color: white;
 }
 
-.c-admission__textbox, .c-admission__shortbox {
+.c-admission__largebox, .c-admission__middlebox, .c-admission__shortbox {
   border: 0.5px solid #303030;
   border-radius: 2px;
   height: 30px;
 }
 
-.c-admission__textbox {
+.c-admission__largebox {
   width: 440px;
+}
+
+.c-admission__middlebox {
+  width: 210px;
 }
 
 .c-admission__shortbox {
@@ -885,6 +889,21 @@ blockquote {
 
 .c-admission__text {
   width: 920px;
+}
+
+.c-inquiry__textarea, .c-inquiry__commentarea {
+  border-radius: 2px;
+  height: 120px;
+  width: 440px;
+}
+
+.c-inquiry__textarea {
+  border: 0.5px solid #303030;
+}
+
+.c-inquiry__commentarea {
+  display: flex;
+  align-items: center;
 }
 
 .c-photo__newscard {
@@ -2070,6 +2089,22 @@ blockquote {
 
 .p-admission__infotitle > P {
   font-size: 24px;
+}
+
+.p-inquiry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff url(/content/img/Inquiry.png) no-repeat 300px/770px;
+  background-position: 10px 60px;
+  width: 100%;
+}
+
+.p-inquiry__applyforms {
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  justify-content: space-between;
 }
 
 .p-side {

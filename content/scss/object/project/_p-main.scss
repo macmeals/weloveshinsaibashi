@@ -879,6 +879,24 @@
             font-size: 24px;
         }
     }
-
     
+}
+
+///////////We Love 心斎橋問い合わせページ//////////////////////////////////
+
+.p-inquiry  {
+    @include mixin.verticalcenter;
+    background:#fff url(/content/img/Inquiry.png) no-repeat  300px/770px;
+    background-position: 10px 60px;
+    width: 100%; 
+
+    &__applyforms {
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        justify-content: space-between;
+    }
+
+
+
 }
