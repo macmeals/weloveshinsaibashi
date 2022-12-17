@@ -208,7 +208,7 @@
     }
 }
 
-//WeLove心斎橋の入会金
+//WeLove心斎橋の入会について
 .c-admission {
     &__price {
         font-size: 24px;
@@ -226,15 +226,19 @@
         
     }
 
-    &__textbox ,&__shortbox {
+    &__largebox ,&__middlebox ,&__shortbox {
         border: .5px solid #303030;
         border-radius: 2px;
         height: 30px;
        
     }
 
-    &__textbox {
+    &__largebox {
         width: 440px;
+    }
+
+    &__middlebox {
+        width: 210px;
     }
 
     &__shortbox {
@@ -248,6 +252,26 @@
 
     &__text {
         width: 920px;
+    }
+
+}
+
+//WeLove心斎橋の問い合わせ
+.c-inquiry {
+    &__textarea, &__commentarea {
+        border-radius: 2px;
+        height: 120px;
+        width: 440px;
+    }
+
+    &__textarea  {
+        border: .5px solid #303030;
+        
+    }
+
+    &__commentarea {
+       display: flex;
+       align-items: center;
     }
 
 
