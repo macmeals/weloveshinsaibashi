@@ -392,12 +392,12 @@ h3 {
   font-size: 24px;
 }
 
-p {
+p, li {
   line-height: 2;
 }
 
 @media (max-width: 690px) {
-  p {
+  p, li {
     font-size: 15px;
   }
 }
@@ -652,18 +652,18 @@ blockquote {
   transform: scale(1, 1);
 }
 
-.c-underline__news, .c-underline__price {
+.c-underline__news, .c-underline__price, .c-underline__regulation {
   position: relative;
   width: 920px;
   height: 50px;
 }
 
 @media (max-width: 690px) {
-  .c-underline__news, .c-underline__price {
+  .c-underline__news, .c-underline__price, .c-underline__regulation {
     width: 300px;
   }
 }
-.c-underline__news::after, .c-underline__price::after {
+.c-underline__news::after, .c-underline__price::after, .c-underline__regulation::after {
   position: absolute;
   bottom: 0%;
   left: 0%;
@@ -674,7 +674,7 @@ blockquote {
 }
 
 @media (max-width: 690px) {
-  .c-underline__news::after, .c-underline__price::after {
+  .c-underline__news::after, .c-underline__price::after, .c-underline__regulation::after {
     width: 300px;
   }
 }
@@ -684,6 +684,15 @@ blockquote {
 
 .c-underline__price::after {
   width: 760px;
+}
+
+.c-underline__regulation {
+  width: 240px;
+}
+
+.c-underline__regulation::after {
+  width: 240px;
+  bottom: 25px;
 }
 
 .c-topnumber__red, .c-topnumber__yellow, .c-topnumber__orange {
@@ -904,6 +913,15 @@ blockquote {
 .c-inquiry__commentarea {
   display: flex;
   align-items: center;
+}
+
+.c-regulation__title {
+  font-size: 24px;
+}
+
+.c-regulation__list {
+  list-style-type: decimal;
+  width: 880px;
 }
 
 .c-photo__newscard {
@@ -2107,6 +2125,34 @@ blockquote {
   justify-content: space-between;
 }
 
+.p-regulation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff url(/content/img/Regulation.png) no-repeat 300px/770px;
+  background-position: 10px 60px;
+  width: 100%;
+}
+
+.p-regulation__title, .p-regulation__subtitle, .p-regulation__subtitlename {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-regulation__title {
+  width: 500px;
+}
+
+.p-regulation__subtitle {
+  width: 920px;
+}
+
+.p-regulation__subtitlename {
+  display: flex;
+  align-items: center;
+}
+
 .p-side {
   display: flex;
   align-items: center;
@@ -2173,52 +2219,61 @@ blockquote {
   margin-top: 15px;
 }
 
-.u-margin__pc-top35 {
-  margin-top: 35px;
+@media (min-width: 691px) {
+  .u-margin__pc-top35 {
+    margin-top: 35px;
+  }
 }
-
 @media (min-width: 691px) {
   .u-margin__pc-top40 {
     margin-top: 40px;
   }
 }
-.u-margin__pc-top60 {
-  margin-top: 60px;
+@media (min-width: 691px) {
+  .u-margin__pc-top60 {
+    margin-top: 60px;
+  }
 }
-
-.u-margin__pc-topbot60 {
-  margin: 60px 0 60px 0;
+@media (min-width: 691px) {
+  .u-margin__pc-topbot60 {
+    margin: 60px 0 60px 0;
+  }
 }
-
-.u-margin__pc-topbot90 {
-  margin: 90px 0 90px 0;
+@media (min-width: 691px) {
+  .u-margin__pc-topbot90 {
+    margin: 90px 0 90px 0;
+  }
 }
-
-.u-margin__pc-top100 {
-  margin-top: 100px;
+@media (min-width: 691px) {
+  .u-margin__pc-top100 {
+    margin-top: 100px;
+  }
 }
-
-.u-margin__pc-top115 {
-  margin-top: 115px;
+@media (min-width: 691px) {
+  .u-margin__pc-top115 {
+    margin-top: 115px;
+  }
 }
-
 @media (min-width: 691px) {
   .u-margin__pc-top120 {
     margin-top: 115px;
   }
 }
-.u-margin__pc-bot40 {
-  margin-bottom: 40px;
+@media (min-width: 691px) {
+  .u-margin__pc-bot40 {
+    margin-bottom: 40px;
+  }
 }
-
-.u-margin__pc-bot50 {
-  margin-bottom: 50px;
+@media (min-width: 691px) {
+  .u-margin__pc-bot50 {
+    margin-bottom: 50px;
+  }
 }
-
-.u-margin__pc-topbot100 {
-  margin: 100px 0 100px 0;
+@media (min-width: 691px) {
+  .u-margin__pc-topbot100 {
+    margin: 100px 0 100px 0;
+  }
 }
-
 .u-margin__pc-topbot115 {
   margin: 115px 0 115px 0;
 }
@@ -2228,14 +2283,16 @@ blockquote {
     margin-left: 5px;
   }
 }
-.u-margin__left10 {
-  margin-left: 10px;
+@media (min-width: 691px) {
+  .u-margin__left10 {
+    margin-left: 10px;
+  }
 }
-
-.u-margin__pc-left15 {
-  margin-left: 15px;
+@media (min-width: 691px) {
+  .u-margin__pc-left15 {
+    margin-left: 15px;
+  }
 }
-
 @media (max-width: 690px) {
   .u-margin__sp-top40 {
     margin-top: 40px;

@@ -14,13 +14,14 @@ h3 {
     font-size: 24px;
 }
 
-p {
+p,li {
     line-height: 2;
 
     @include mixin.smartphone {
         font-size: 15px;
      }
 }
+
 
 blockquote {
     box-shadow: #FFAD33 5px 5px;
