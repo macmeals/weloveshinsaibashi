@@ -10,7 +10,9 @@
     }
 
     &__pc-top35 {
-        margin-top: 35px;
+        @include mixin.pc {
+            margin-top: 35px;
+        }
     }
 
     &__pc-top40 {
@@ -26,19 +28,27 @@
     }
 
     &__pc-topbot60 {
-        margin: 60px 0 60px 0;
-    }
+        @include mixin.pc {
+            margin: 60px 0 60px 0;
+        }
+    } 
 
     &__pc-topbot90 {
-        margin: 90px 0 90px 0;
+        @include mixin.pc {
+            margin: 90px 0 90px 0;
+        }
     }
 
     &__pc-top100 {
-        margin-top: 100px;
+        @include mixin.pc {
+            margin-top: 100px;
+        }
     }
 
     &__pc-top115 {
-        margin-top: 115px;
+        @include mixin.pc {
+            margin-top: 115px;
+        }
     }
 
     &__pc-top120 {
@@ -48,18 +58,25 @@
     }
 
     &__pc-bot40 {
-        margin-bottom: 40px;
+        @include mixin.pc {
+            margin-bottom: 40px;
+        }
     }
 
     &__pc-bot50 {
-        margin-bottom: 50px;
+        @include mixin.pc {
+            margin-bottom: 50px;
+        }
     }
 
     &__pc-topbot100 {
-        margin: 100px 0 100px 0;
+        @include mixin.pc {
+            margin: 100px 0 100px 0;
+        }
     }
 
     &__pc-topbot115 {
+
         margin: 115px 0 115px 0;
     }
 
@@ -70,12 +87,17 @@
     }
 
     &__left10 {
-        margin-left: 10px;
+        @include mixin.pc {
+            margin-left: 10px;
+        }
     }
 
     &__pc-left15 {
-        margin-left: 15px;
+        @include mixin.pc {
+            margin-left: 15px;
+        }
     }
+
 
 //////smartPhone
     &__sp-top40 {
