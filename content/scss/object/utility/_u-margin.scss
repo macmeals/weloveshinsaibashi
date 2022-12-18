@@ -20,7 +20,9 @@
     }
 
     &__pc-top60 {
-        margin-top: 60px;
+        @include mixin.pc {
+           margin-top: 60px;
+        }
     }
 
     &__pc-topbot60 {

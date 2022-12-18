@@ -274,5 +274,16 @@
        align-items: center;
     }
 
+}
 
+//利用規格
+.c-regulation {
+    &__title {
+        font-size: 24px;
+    }
+
+    &__list {
+        list-style-type: decimal;
+        width: 880px;
+    }
 }
