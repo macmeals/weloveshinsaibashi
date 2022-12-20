@@ -534,7 +534,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .c-gridD {
-    background: url(/content/img/welovelogo.png) no-repeat center center/95% 95%;
+    background: url(/content/img/welovelogo2.png) no-repeat center center/95% 95%;
   }
 }
 .c-gridE {
@@ -795,6 +795,10 @@ blockquote {
     font-size: 24px;
   }
 }
+.c-newsdetail__list {
+  list-style: inside;
+}
+
 .c-pagetitle {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 48px;
@@ -1348,7 +1352,7 @@ blockquote {
 @media (max-width: 690px) {
   .p-topnotice__text {
     width: 300px;
-    height: 300px;
+    height: 240px;
   }
 }
 .p-topnews {
@@ -1362,7 +1366,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-topnews {
-    background: #fff url(/content/img/News.png) no-repeat 185px/340px;
+    background: #fff url(/content/img/News.png) no-repeat 150px/280px;
     background-position: 10px 30px;
   }
 }
@@ -1460,7 +1464,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-topshop {
-    background: #ffffff url(/content/img/Shopping.png) no-repeat 105px/340px;
+    background: #ffffff url(/content/img/Shopping.png) no-repeat 140px/360px;
     background-position: 10px 30px;
   }
 }
@@ -1515,7 +1519,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-tophotel {
-    background: #F8F8F8 url(/content/img/hotel.png) no-repeat 180px/340px;
+    background: #F8F8F8 url(/content/img/hotel.png) no-repeat 100px/240px;
     background-position: calc(100% - 10px) 20px;
   }
 }
@@ -1560,7 +1564,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-toprequest {
-    background: #ffffff url(/content/img/Admission.png) no-repeat 145px/340px;
+    background: #ffffff url(/content/img/Admission.png) no-repeat 160px/370px;
     background-position: 10px 30px;
   }
 }
@@ -1586,7 +1590,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-news {
-    background: #fff url(/content/img/News.png) no-repeat 80px/150px;
+    background: #fff url(/content/img/News.png) no-repeat 150px/280px;
     background-position: 10px 20px;
   }
 }
@@ -1626,10 +1630,6 @@ blockquote {
 }
 .p-newsdetail__contents {
   width: 760px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 @media (max-width: 690px) {
@@ -2294,6 +2294,16 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
+  .u-margin__sp-top30 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-top35 {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 690px) {
   .u-margin__sp-top40 {
     margin-top: 40px;
   }
@@ -2309,8 +2319,28 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
+  .u-margin__sp-top90 {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-bot60 {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-topbot30 {
+    margin: 30px 0 30px 0;
+  }
+}
+@media (max-width: 690px) {
   .u-margin__sp-topbot40 {
     margin: 40px 0 40px 0;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-topbot60 {
+    margin: 60px 0 60px 0;
   }
 }
 .u-padding__pc-topbot30 {

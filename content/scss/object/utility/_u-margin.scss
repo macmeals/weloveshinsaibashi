@@ -100,6 +100,22 @@
 
 
 //////smartPhone
+    &__sp-top30 {
+        @include mixin.smartphone {
+            margin-top: 30px;
+        }
+        
+    }
+    
+    &__sp-top35 {
+        @include mixin.smartphone {
+            margin-top: 35px;
+        }
+        
+    }
+
+
+
     &__sp-top40 {
         @include mixin.smartphone {
             margin-top: 40px;
@@ -121,6 +137,29 @@
         
     }
 
+    &__sp-top90 {
+        @include mixin.smartphone {
+            margin-top: 90px;
+        }
+        
+    }
+
+    &__sp-bot60 {
+        @include mixin.smartphone {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__sp-topbot30 {
+        @include mixin.smartphone {
+            margin: 30px 0 30px 0;
+        }
+        
+    }
+
+
+
+
     &__sp-topbot40 {
         @include mixin.smartphone {
             margin: 40px 0 40px 0;
@@ -128,5 +167,11 @@
         
     }
 
+    &__sp-topbot60 {
+        @include mixin.smartphone {
+            margin: 60px 0 60px 0;
+        }
+        
+    }
 
 }
