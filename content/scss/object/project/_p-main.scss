@@ -97,7 +97,7 @@
 
         @include mixin.smartphone {
             width: 300px;
-            height: 300px;
+            height: 240px;
         }
 
     }
@@ -111,7 +111,7 @@
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background:#fff url(/content/img/News.png) no-repeat  185px/340px;
+        background:#fff url(/content/img/News.png) no-repeat  150px/280px;
         background-position: 10px 30px;
     }
 
@@ -210,7 +210,7 @@
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(/content/img/Shopping.png) no-repeat  105px/340px;
+        background: #ffffff url(/content/img/Shopping.png) no-repeat  140px/360px;
         background-position: 10px 30px;
     }
 
@@ -260,7 +260,7 @@
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background:#F8F8F8 url(/content/img/hotel.png) no-repeat  180px/340px;
+        background:#F8F8F8 url(/content/img/hotel.png) no-repeat  100px/240px;
         background-position: calc(100% - 10px) 20px;
     }
 
@@ -301,7 +301,7 @@
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(/content/img/Admission.png) no-repeat  145px/340px;
+        background: #ffffff url(/content/img/Admission.png) no-repeat  160px/370px;
         background-position: 10px 30px;
     }
 
@@ -323,7 +323,7 @@
     width: 100%;
 
     @include mixin.smartphone {
-        background:#fff url(/content/img/News.png) no-repeat  80px/150px;
+        background:#fff url(/content/img/News.png) no-repeat  150px/280px;
         background-position: 10px 20px;
     }
 
@@ -367,11 +367,7 @@
 
         &__contents {
             width: 760px;
-            height: 290px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
+        
             @include mixin.smartphone {
                 width: 300px;
             }
