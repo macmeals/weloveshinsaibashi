@@ -147,18 +147,23 @@
 
 // 場所のラベルのスタイリング
 .c-location {
-    &__orange, &__deeporange, &__red , &__yellow, &__white {
+    &__orange, &__deeporange, &__red , &__yellow, &__white ,&__foodwhite, &__foodorange,&__shopwhite,&__shopred,&__hotelwhite,&__hotelyellow {
         display: flex;
         align-items: center;
 
-    }
-
-    &__orange, &__deeporange, &__red , &__yellow, &__white {
         > P {
             width: 160px;
             height: 30px;
             text-align: center;
+
+            @include mixin.smartphone {
+                width: 80px;
+                height: 30px;
+            }
+
+            
         }
+
     }
 
     &__orange {
@@ -192,6 +197,80 @@
             background:white;
         }
     }
+
+    //PC版は白、スマホ版はオレンジ
+    &__foodwhite {
+        >p {
+            background:white;
+
+            @include mixin.smartphone {
+                background: rgba(255, 173, 51, 0.25);
+            }
+        }
+    }
+
+     //PC版はオレンジ、スマホ版は白
+    &__foodorange {
+        >p {
+            background: rgba(255, 173, 51, 0.25);
+
+            @include mixin.smartphone {
+                background:white;
+            }
+        }
+
+    }
+
+    //PC版は白、スマホ版はレッド
+    &__shopwhite {
+        >p {
+            background:white;
+
+            @include mixin.smartphone {
+                background: rgba(255, 51, 51, 0.25);
+            }
+        }
+
+    }
+
+   //PC版はレッド、スマホ版は白
+    &__shopred {
+        >p {
+            background: rgba(255, 51, 51, 0.25);
+
+            @include mixin.smartphone {
+                background:white;
+            }
+        }
+
+    }
+
+     //PC版は白、スマホ版はイエロー
+     &__hotelwhite {
+        >p {
+            background:white;
+
+            @include mixin.smartphone {
+                background:#FFF4CC;
+            }
+        }
+     }
+
+     //PC版は白、スマホ版はイエロー
+     &__hotelyellow {
+        >p {
+            background:#FFF4CC;
+
+            @include mixin.smartphone {
+                background:white;
+            }
+        }
+     }
+
+
+
+
+
 }
 
 //リンクを太くするためのスタイル

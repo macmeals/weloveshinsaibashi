@@ -817,17 +817,23 @@ blockquote {
   color: #FF3333;
 }
 
-.c-location__orange, .c-location__deeporange, .c-location__red, .c-location__yellow, .c-location__white {
+.c-location__orange, .c-location__deeporange, .c-location__red, .c-location__yellow, .c-location__white, .c-location__foodwhite, .c-location__foodorange, .c-location__shopwhite, .c-location__shopred, .c-location__hotelwhite, .c-location__hotelyellow {
   display: flex;
   align-items: center;
 }
 
-.c-location__orange > P, .c-location__deeporange > P, .c-location__red > P, .c-location__yellow > P, .c-location__white > P {
+.c-location__orange > P, .c-location__deeporange > P, .c-location__red > P, .c-location__yellow > P, .c-location__white > P, .c-location__foodwhite > P, .c-location__foodorange > P, .c-location__shopwhite > P, .c-location__shopred > P, .c-location__hotelwhite > P, .c-location__hotelyellow > P {
   width: 160px;
   height: 30px;
   text-align: center;
 }
 
+@media (max-width: 690px) {
+  .c-location__orange > P, .c-location__deeporange > P, .c-location__red > P, .c-location__yellow > P, .c-location__white > P, .c-location__foodwhite > P, .c-location__foodorange > P, .c-location__shopwhite > P, .c-location__shopred > P, .c-location__hotelwhite > P, .c-location__hotelyellow > P {
+    width: 80px;
+    height: 30px;
+  }
+}
 .c-location__orange > p {
   background: rgba(255, 173, 51, 0.25);
 }
@@ -848,6 +854,60 @@ blockquote {
   background: white;
 }
 
+.c-location__foodwhite > p {
+  background: white;
+}
+
+@media (max-width: 690px) {
+  .c-location__foodwhite > p {
+    background: rgba(255, 173, 51, 0.25);
+  }
+}
+.c-location__foodorange > p {
+  background: rgba(255, 173, 51, 0.25);
+}
+
+@media (max-width: 690px) {
+  .c-location__foodorange > p {
+    background: white;
+  }
+}
+.c-location__shopwhite > p {
+  background: white;
+}
+
+@media (max-width: 690px) {
+  .c-location__shopwhite > p {
+    background: rgba(255, 51, 51, 0.25);
+  }
+}
+.c-location__shopred > p {
+  background: rgba(255, 51, 51, 0.25);
+}
+
+@media (max-width: 690px) {
+  .c-location__shopred > p {
+    background: white;
+  }
+}
+.c-location__hotelwhite > p {
+  background: white;
+}
+
+@media (max-width: 690px) {
+  .c-location__hotelwhite > p {
+    background: #FFF4CC;
+  }
+}
+.c-location__hotelyellow > p {
+  background: #FFF4CC;
+}
+
+@media (max-width: 690px) {
+  .c-location__hotelyellow > p {
+    background: white;
+  }
+}
 .c-link {
   font-weight: bold;
 }
@@ -1090,34 +1150,19 @@ blockquote {
   display: none;
 }
 
-.c-illust__sushi {
-  width: 74px;
+.c-illust__sushiicon {
+  width: 54px;
   height: 40px;
 }
 
-.c-illust__food {
-  width: 52px;
-  height: 62px;
-}
-
-.c-illust__chinafood {
-  width: 57px;
+.c-illust__foodicon, .c-illust__shopicon {
+  width: 50px;
   height: 50px;
-}
-
-.c-illust__cafe {
-  width: 60px;
-  height: 51px;
 }
 
 .c-illust__rectant {
   width: 10px;
   height: 36px;
-}
-
-.c-illust__shop {
-  widows: 60px;
-  height: 60px;
 }
 
 .c-illust__yokorectant {
@@ -1130,12 +1175,6 @@ blockquote {
   width: 115px;
 }
 
-@media (max-width: 690px) {
-  .c-illust__logo {
-    height: 115px;
-    width: 115px;
-  }
-}
 .c-illust__hotel {
   height: 50px;
   width: 54px;
@@ -1658,6 +1697,11 @@ blockquote {
   justify-content: space-between;
 }
 
+@media (max-width: 690px) {
+  .p-main__tab {
+    width: 340px;
+  }
+}
 .p-main__orangetab, .p-main__redtab, .p-main__yellowtab {
   background: #F8F8F8;
   width: 300px;
@@ -1666,6 +1710,12 @@ blockquote {
   justify-content: center;
 }
 
+@media (max-width: 690px) {
+  .p-main__orangetab, .p-main__redtab, .p-main__yellowtab {
+    width: 110px;
+    height: 40px;
+  }
+}
 .p-main__orangetab > a, .p-main__redtab > a, .p-main__yellowtab > a {
   display: block;
   width: 300px;
@@ -1675,6 +1725,14 @@ blockquote {
   font-size: 24px;
 }
 
+@media (max-width: 690px) {
+  .p-main__orangetab > a, .p-main__redtab > a, .p-main__yellowtab > a {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+}
 .p-main__orangetab.active {
   background: #FFAD33;
 }
@@ -1718,17 +1776,34 @@ blockquote {
   justify-content: space-between;
 }
 
+@media (max-width: 690px) {
+  .p-main__contentheader, .p-main__subtitle {
+    font-size: 16px;
+  }
+}
 .p-main__contentheader {
   width: 920px;
   align-items: center;
 }
 
+@media (max-width: 690px) {
+  .p-main__contentheader {
+    width: 300px;
+    align-items: baseline;
+  }
+}
 .p-main__subtitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (max-width: 690px) {
+  .p-main__subtitle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .p-main__subnumber, .p-main__subshopnumber {
   display: flex;
   justify-content: space-between;
@@ -1739,23 +1814,52 @@ blockquote {
   width: 300px;
 }
 
+@media (max-width: 690px) {
+  .p-main__subnumber {
+    width: 130px;
+  }
+}
 .p-main__subshopnumber {
   width: 500px;
 }
 
+@media (max-width: 690px) {
+  .p-main__subshopnumber {
+    width: 180px;
+  }
+}
 .p-main__category {
   width: 220px;
 }
 
+@media (max-width: 690px) {
+  .p-main__category {
+    font-size: 16px;
+    width: 80px;
+  }
+}
 .p-main__shopcategory {
   width: 420px;
 }
 
+@media (max-width: 690px) {
+  .p-main__shopcategory {
+    font-size: 16px;
+    width: 130px;
+  }
+}
 @media (min-width: 691px) {
   .p-main__shoplink {
     display: grid;
     grid-template-columns: repeat(2, 440px);
     grid-template-rows: repeat(2, 70px);
+  }
+}
+@media (max-width: 690px) {
+  .p-main__shoplink {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(4, 70px);
   }
 }
 .p-main__shop, .p-main__store, .p-main__yellowhotel, .p-main__whitehotel {
@@ -1766,10 +1870,16 @@ blockquote {
   justify-content: center;
 }
 
-.p-main__shop:nth-child(2), .p-main__shop:nth-child(3), .p-main__store:nth-child(2), .p-main__store:nth-child(3) {
-  background-color: transparent;
+@media (min-width: 691px) {
+  .p-main__shop:nth-child(2), .p-main__shop:nth-child(3), .p-main__store:nth-child(2), .p-main__store:nth-child(3) {
+    background-color: transparent;
+  }
 }
-
+@media (max-width: 690px) {
+  .p-main__shop:nth-child(2), .p-main__shop:nth-child(4), .p-main__store:nth-child(2), .p-main__store:nth-child(4) {
+    background-color: transparent;
+  }
+}
 .p-main__shop {
   background: rgba(255, 173, 51, 0.25);
 }
@@ -1782,28 +1892,54 @@ blockquote {
   background: #FFF4CC;
 }
 
+@media (max-width: 690px) {
+  .p-main__yellowhotel:nth-of-type(2n) {
+    background-color: transparent;
+  }
+}
 .p-main__whitehotel {
-  background: white;
+  background: transparent;
 }
 
+@media (max-width: 690px) {
+  .p-main__whitehotel:nth-of-type(2n+1) {
+    background: #FFF4CC;
+  }
+}
 .p-main__shopname {
+  width: 400px;
   display: flex;
   justify-content: space-between;
 }
 
+@media (max-width: 690px) {
+  .p-main__shopname {
+    width: 280px;
+  }
+}
 .p-main__shopname > p {
   width: 200px;
 }
 
-.p-main__shopname {
-  width: 400px;
+@media (max-width: 690px) {
+  .p-main__shopname > p {
+    width: 180px;
+  }
+}
+.p-main__hotellink {
+  display: grid;
 }
 
 @media (min-width: 691px) {
   .p-main__hotellink {
-    display: grid;
     grid-template-columns: repeat(2, 440px);
     grid-template-rows: repeat(6, 70px);
+  }
+}
+@media (max-width: 690px) {
+  .p-main__hotellink {
+    grid-template-columns: repeat(1, 340px);
+    grid-template-rows: repeat(8, 70px);
   }
 }
 .p-main__hotelcontents, .p-main__hotelname {
@@ -1834,6 +1970,11 @@ blockquote {
   position: relative;
 }
 
+@media (max-width: 690px) {
+  .p-mainnumber__orange, .p-mainnumber__red {
+    font-size: 16px;
+  }
+}
 .p-mainnumber__orange::after, .p-mainnumber__red::after {
   position: absolute;
   top: 50%;
@@ -1843,6 +1984,11 @@ blockquote {
   height: 1px;
 }
 
+@media (max-width: 690px) {
+  .p-mainnumber__orange::after, .p-mainnumber__red::after {
+    width: 20px;
+  }
+}
 .p-mainnumber__orange {
   color: #FFAD33;
 }
@@ -2274,10 +2420,11 @@ blockquote {
     margin: 100px 0 100px 0;
   }
 }
-.u-margin__pc-topbot115 {
-  margin: 115px 0 115px 0;
+@media (min-width: 691px) {
+  .u-margin__pc-topbot115 {
+    margin: 115px 0 115px 0;
+  }
 }
-
 @media (min-width: 691px) {
   .u-margin__pc-left5 {
     margin-left: 5px;
@@ -2326,6 +2473,11 @@ blockquote {
 @media (max-width: 690px) {
   .u-margin__sp-bot60 {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-topbot5 {
+    margin: 5px 0 5px 0;
   }
 }
 @media (max-width: 690px) {

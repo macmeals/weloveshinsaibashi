@@ -17,26 +17,15 @@
        }
    }
 
-  //グルメアイコン
-    &__sushi {
-        width: 74px;
+  //グルメ,ショップアイコン
+    &__sushiicon {
+        width: 54px;
         height: 40px;
     }
 
-    &__food {
-        width: 52px;
-        height: 62px; 
-    }
-
-    &__chinafood {
-        width: 57px;
-        height: 50px;
-
-    }
-
-    &__cafe {
-        width: 60px;
-        height: 51px;
+    &__foodicon,&__shopicon {
+        width: 50px;
+        height: 50px; 
     }
 
     &__rectant {
@@ -44,13 +33,6 @@
         height: 36px;
     }
   
-  // ショッピングアイコン
-
-    &__shop {
-        widows: 60px;
-        height: 60px;
-    }
-
     &__yokorectant {
         width: 36px;
         height: 10px;
@@ -59,10 +41,6 @@
     &__logo {
         height: 115px;
         width: 115px;
-            @include mixin.smartphone {
-                height: 115px;
-                width: 115px;
-            }
 
     }
 

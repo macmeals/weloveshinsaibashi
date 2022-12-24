@@ -76,8 +76,9 @@
     }
 
     &__pc-topbot115 {
-
+        @include mixin.pc {
         margin: 115px 0 115px 0;
+        }
     }
 
     &__pc-left5 {
@@ -150,15 +151,18 @@
         }
     }
 
+    &__sp-topbot5 {
+        @include mixin.smartphone {
+            margin: 5px 0 5px 0;
+        }     
+    }
+
     &__sp-topbot30 {
         @include mixin.smartphone {
             margin: 30px 0 30px 0;
         }
         
     }
-
-
-
 
     &__sp-topbot40 {
         @include mixin.smartphone {
