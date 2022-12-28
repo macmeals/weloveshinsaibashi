@@ -2,6 +2,15 @@
 
 // 文字や数字、記号（▶︎）に関するスタイル
 
+//スマホ時、文字の大きさを変更
+.c-sp {
+    &__text16px {
+        @include mixin.smartphone {
+            font-size: 16px;
+        }
+    }
+}
+
 // サブタイトルの数字
 .c-topnumber {
     &__red ,&__yellow ,&__orange  {
@@ -144,6 +153,7 @@
      }
 
 } 
+
 
 // 場所のラベルのスタイリング
 .c-location {
