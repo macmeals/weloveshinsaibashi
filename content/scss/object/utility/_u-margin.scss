@@ -101,6 +101,13 @@
 
 
 //////smartPhone
+    &__sp-top10 {
+        @include mixin.smartphone {
+            margin-top: 10px;
+        }
+        
+    }
+
     &__sp-top30 {
         @include mixin.smartphone {
             margin-top: 30px;
@@ -148,6 +155,18 @@
     &__sp-bot60 {
         @include mixin.smartphone {
             margin-bottom: 60px;
+        }
+    }
+
+    &__sp-left5 {
+        @include mixin.smartphone {
+            margin-left: 5px;
+        }
+    }
+
+    &__sp-left10 {
+        @include mixin.smartphone {
+            margin-left: 10px;
         }
     }
 

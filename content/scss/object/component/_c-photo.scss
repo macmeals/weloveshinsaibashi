@@ -67,5 +67,10 @@
         width: 600px;
         height: 600px;
 
+        @include mixin.smartphone {
+            width: 340px;
+            height: 340px;
+        }
+
     }
   }

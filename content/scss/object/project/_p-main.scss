@@ -544,6 +544,7 @@
             }
     }
 
+//フードとショップのリンク
     &__shoplink {
         @include mixin.pc {
             display: grid;
@@ -553,7 +554,7 @@
 
         @include mixin.smartphone {
             display: grid;
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(1, 340px);
             grid-template-rows: repeat(4,70px);
         }
     }
@@ -730,6 +731,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows : repeat(3, 1fr);
     gap: 20px 20px;
+
+    @include mixin.smartphone {
+        width: 340px;
+        height: 520px;
+    }
 }
 
 ////////グルメ一覧ページ////////////////////////////////////////////////////////////// 
@@ -740,11 +746,20 @@
     background-position: 10px 60px;
     width: 100%;
 
+    @include mixin.smartphone {
+        background:#fff url(/content/img/Gourmet.png) no-repeat  80px/250px;
+        background-position: 10px 10px;
+    }
+
     &__subtitle {
         width: 440px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include mixin.smartphone {
+            width: 100%;
+        }
     }
 
     &__shopname {
@@ -753,18 +768,44 @@
 
         >P {
             font-size: 32px;
+
+            @include mixin.smartphone {
+                font-size: 24px;
+            }
         }
     }
+
+    &__wallet {
+        width: 100%;
+    } 
 
     &__contentstitle  {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 440px;
+
+        @include mixin.smartphone {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        >h3 {
+            @include mixin.smartphone {
+                font-size: 16px;
+            }
+        }
+
+
     }
 
     &__text {
         width: 440px;
         @include mixin.verticalcenter;
+
+        @include mixin.smartphone {
+            width: 100%;
+            font-size: 15px;
+        }
 
     }
 
@@ -772,12 +813,21 @@
        width: 920px;
        display: flex;
        justify-content: space-between;
+
+       @include mixin.smartphone {
+           width: 340px;
+           flex-direction: column;
+       }
     }
 
     &__artcle {
         width: 440px;
         @include mixin.verticalcenter;
         justify-content: space-between;
+
+        @include mixin.smartphone {
+            width: 100%;
+        }
     }
 
 }
@@ -794,24 +844,47 @@
         gap: 20px 20px;
 
     }
+
+    @include mixin.smartphone {
+        width: 350px;
+        height: 260px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows : repeat(3, 1fr);
+        gap: 10px 10px;
+
+    }
+
+
 }
 
 ///////////グルメショップ、ショッピングのショップの各種情報のグリッド//////////////
 .p-shopcontentgrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows : repeat(2, 1fr);
-    gap: 40px 0;
 
-    >div {
-        @include mixin.verticalcenter;
+    @include mixin.pc  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows : repeat(2, 1fr);
+        gap: 40px 0;
+    
+        >div {
+            @include mixin.verticalcenter;
+        }
     }
+
+    @include mixin.smartphone {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows : repeat(4, 1fr);
+        gap: 20px 0;
+    }
+    
 
 }
 
 .p-shopcontents {
      width: 440px;
-     justify-content: space-between;
+     @include mixin.verticalcenter;
 
      &__title {
          width: 250px;
@@ -836,38 +909,67 @@
     background:#fff url(/content/img/Gourmet.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
+      
+        @include mixin.smartphone {
+            background:#fff url(/content/img/Gourmet.png) no-repeat  80px/250px;
+            background-position: 10px 10px;
+        }
+       
 
     &__location {
         width: 680px;
         display: flex;
         justify-content: space-between;
+
+            @include mixin.smartphone {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
     }
 
     &__access {
         width: 400px;
         display: flex;
         align-items: center;
+
+            @include mixin.smartphone {
+                width: 300px;
+            }
+
+
     }
 
     &__special {
         @include mixin.verticalcenter;
         width: 760px;
+
+            @include mixin.smartphone {
+                width: 300px;
+            }
+        
     }
 
     &__specialtitle {
         display: flex;
         align-items: center;
-    }
-
-    &__specialtitle {
         width: 440px;
 
+            @include mixin.smartphone {
+                width: 300px;
+                font-size: 15px;
+            }
     }
 
     &__sns {
         width: 920px;
         display: flex;
         justify-content: space-between;
+
+        @include mixin.smartphone {
+            @include mixin.verticalcenter
+        }
+        
     }
 
     &__tiktok {

@@ -69,17 +69,32 @@
      &__crown {
          height: 40px;
          width: 48px;
+
+         @include mixin.smartphone {
+             height: 29px;
+             width: 38px;
+         }
      }
 
      // グルメ、ショッピングの詳細のロケーションアイコン
      &__location {
          height: 48px;
          width: 34px;
+
+            @include mixin.smartphone {
+                height: 42px;
+                width: 31px;
+            }
      }
 
      &__wallet {
          height: 43px;
          width: 43px;
+
+            @include mixin.smartphone {
+                height: 36px;
+                width: 36px;
+            }
      }
      
 
@@ -88,18 +103,35 @@
      &__titleshikaku {
          height: 40px;
          width: 20px;
+
+            @include mixin.smartphone {
+                height: 20px;
+                width: 10px;
+            }
      }
 
      // グルメ用のコメントアイコン 
      &__comment {
         height: 50px;
         width: 50px;
+          
+            @include mixin.smartphone {
+                height: 42px;
+                width: 42px;
+            }
      }
 
      // スペシャル映像用のアイコン 
      &__camera {
          height: 60px;
          width: 60px;
+
+         @include mixin.smartphone { 
+             height: 42px;
+             width: 42px;
+         }
+
+            
      } 
 
      //縦のスペシャル動画のあしらい
@@ -119,6 +151,10 @@
      &__snsbar {
          height: 700px;
          width: 20px;
+
+         @include mixin.smartphone {
+             display: none;
+         }
      }
 
      //ショッピング一覧のアイコン
