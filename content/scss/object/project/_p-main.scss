@@ -891,6 +891,10 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
+
+            @include mixin.smartphone {
+                width: 200px;
+            }
      }
 
      &__text {
@@ -988,6 +992,11 @@
     background-position: 10px 60px;
     width: 100%;
 
+        @include mixin.smartphone {
+            background:#fff url(/content/img/Shopping.png) no-repeat  80px/250px;
+            background-position: 10px 10px;
+        }
+
     &__item {
         width: 100%;
     }
@@ -1001,10 +1010,19 @@
     background-position: 10px 60px;
     width: 100%;
 
+        @include mixin.smartphone {
+            background:#fff url(/content/img/Shopping.png) no-repeat  80px/250px;
+            background-position: 10px 10px;
+        }
+
     &__contentstitle { 
         display: flex;
         align-items: center;
         width: 400px;
+
+            @include mixin.smartphone {
+                width: 305px;
+            }
     }
 
     &__tiktok {
