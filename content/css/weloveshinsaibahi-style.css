@@ -1320,6 +1320,12 @@ blockquote {
   width: 50px;
 }
 
+@media (max-width: 690px) {
+  .c-illust__goods {
+    height: 43px;
+    width: 41px;
+  }
+}
 .c-illust__admissionflow {
   height: 135px;
   width: 655px;
@@ -2167,7 +2173,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-foodlist__text {
-    width: 100%;
+    width: 340px;
     font-size: 15px;
   }
 }
