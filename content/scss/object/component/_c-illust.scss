@@ -161,6 +161,11 @@
      &__goods {
         height: 53px;
         width: 50px;
+
+        @include mixin.smartphone {
+            height: 43px;
+            width: 41px;
+        }
      }
 
      //入会の流れのフロー
