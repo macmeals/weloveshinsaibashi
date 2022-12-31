@@ -706,10 +706,21 @@ blockquote {
   width: 760px;
 }
 
+@media (max-width: 690px) {
+  .c-underline__price {
+    height: 30px;
+    width: 300px;
+  }
+}
 .c-underline__price::after {
   width: 760px;
 }
 
+@media (max-width: 690px) {
+  .c-underline__price::after {
+    width: 300px;
+  }
+}
 .c-underline__regulation {
   width: 240px;
 }
@@ -719,6 +730,11 @@ blockquote {
   bottom: 25px;
 }
 
+@media (min-width: 691px) {
+  .c-pc__text32px {
+    font-size: 32px;
+  }
+}
 @media (max-width: 690px) {
   .c-sp__text16px {
     font-size: 16px;
@@ -955,6 +971,11 @@ blockquote {
   font-size: 24px;
 }
 
+@media (max-width: 690px) {
+  .c-admission__price {
+    font-size: 16px;
+  }
+}
 .c-admission__must {
   background-color: #FFAD33;
   border-radius: 10px;
@@ -976,10 +997,20 @@ blockquote {
   width: 440px;
 }
 
+@media (max-width: 690px) {
+  .c-admission__largebox {
+    width: 300px;
+  }
+}
 .c-admission__middlebox {
   width: 210px;
 }
 
+@media (max-width: 690px) {
+  .c-admission__middlebox {
+    width: 134px;
+  }
+}
 .c-admission__shortbox {
   width: 60px;
 }
@@ -993,6 +1024,11 @@ blockquote {
   width: 920px;
 }
 
+@media (max-width: 690px) {
+  .c-admission__text {
+    width: 300px;
+  }
+}
 .c-inquiry__textarea, .c-inquiry__commentarea {
   border-radius: 2px;
   height: 120px;
@@ -1331,6 +1367,12 @@ blockquote {
   width: 655px;
 }
 
+@media (max-width: 690px) {
+  .c-illust__admissionflow {
+    height: 65px;
+    width: 330px;
+  }
+}
 .c-fadeTriger {
   opacity: 0;
 }
@@ -1898,7 +1940,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-main__subnumber {
-    width: 130px;
+    width: 180px;
   }
 }
 .p-main__subshopnumber {
@@ -1911,13 +1953,13 @@ blockquote {
   }
 }
 .p-main__category {
-  width: 220px;
+  width: 225px;
 }
 
 @media (max-width: 690px) {
   .p-main__category {
     font-size: 16px;
-    width: 80px;
+    width: 120px;
   }
 }
 .p-main__shopcategory {
@@ -2062,7 +2104,7 @@ blockquote {
   top: 50%;
   left: 200%;
   content: "";
-  width: 40px;
+  width: 35px;
   height: 1px;
 }
 
@@ -2412,16 +2454,28 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/content/img/Admission.png) no-repeat 300px/950px;
+  background: #fff url(/img/Admission.png) no-repeat 300px/950px;
   background-position: 10px 60px;
   width: 100%;
 }
 
+@media (max-width: 690px) {
+  .p-admission {
+    background: #fff url(/img/Admission.png) no-repeat 80px/270px;
+    background-position: 10px 10px;
+  }
+}
 .p-admission__title {
   width: 220px;
   font-size: 24px;
 }
 
+@media (max-width: 690px) {
+  .p-admission__title {
+    font-size: 16px;
+    width: 130px;
+  }
+}
 .p-admission__text {
   width: 760px;
   display: flex;
@@ -2429,26 +2483,45 @@ blockquote {
   align-items: center;
 }
 
-.p-admission__applyforms {
-  display: flex;
-  flex-direction: column;
-  height: 660px;
-  justify-content: space-between;
+@media (max-width: 690px) {
+  .p-admission__text {
+    width: 300px;
+  }
 }
-
 .p-admission__apply, .p-admission__applytitle, .p-admission__radio, .p-admission__choice {
   display: flex;
   align-items: center;
 }
 
+@media (max-width: 690px) {
+  .p-admission__apply, .p-admission__applytitle, .p-admission__radio, .p-admission__choice {
+    width: 300px;
+  }
+}
+@media (max-width: 690px) {
+  .p-admission__apply {
+    width: 300px;
+    flex-direction: column;
+  }
+}
 .p-admission__applytitle {
   width: 240px;
 }
 
+@media (max-width: 690px) {
+  .p-admission__applytitle {
+    width: 300px;
+  }
+}
 .p-admission__radio, .p-admission__post {
   width: 440px;
 }
 
+@media (max-width: 690px) {
+  .p-admission__radio, .p-admission__post {
+    width: 300px;
+  }
+}
 .p-admission__choice {
   width: 160px;
 }
@@ -2519,7 +2592,7 @@ blockquote {
 }
 
 .p-side__text {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .p-footer {
@@ -2574,6 +2647,10 @@ blockquote {
 
 .u-margin__top15 {
   margin-top: 15px;
+}
+
+.u-margin__left10 {
+  margin-left: 10px;
 }
 
 @media (min-width: 691px) {
@@ -2657,6 +2734,11 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
+  .u-margin__sp-top15 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 690px) {
   .u-margin__sp-top30 {
     margin-top: 30px;
   }
@@ -2704,6 +2786,11 @@ blockquote {
 @media (max-width: 690px) {
   .u-margin__sp-topbot5 {
     margin: 5px 0 5px 0;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-topbot15 {
+    margin: 15px 0 15px 0;
   }
 }
 @media (max-width: 690px) {

@@ -2,6 +2,16 @@
 
 // 文字や数字、記号（▶︎）に関するスタイル
 
+//PC事の文字の大きさを変更
+
+.c-pc {
+    &__text32px {
+        @include mixin.pc {
+            font-size: 32px;
+        }
+    }
+}
+
 //スマホ時、文字の大きさを変更
 .c-sp {
     &__text16px {
@@ -305,6 +315,10 @@
 .c-admission {
     &__price {
         font-size: 24px;
+           
+           @include mixin.smartphone {
+               font-size: 16px;
+           }
     }
 
     &__must {
@@ -328,10 +342,18 @@
 
     &__largebox {
         width: 440px;
+
+        @include mixin.smartphone {
+            width: 300px;
+        }
     }
 
     &__middlebox {
         width: 210px;
+
+        @include mixin.smartphone {
+            width: 134px;
+        }
     }
 
     &__shortbox {
@@ -345,6 +367,9 @@
 
     &__text {
         width: 920px;
+            @include mixin.smartphone {
+                width: 300px;
+            }
     }
 
 }

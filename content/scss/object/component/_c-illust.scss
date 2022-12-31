@@ -173,6 +173,11 @@
          height: 135px;
          width: 655px;
 
+         @include mixin.smartphone {
+             height: 65px;
+             width: 330px;
+         }
+
      }
 
 }

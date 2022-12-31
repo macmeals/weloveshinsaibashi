@@ -51,9 +51,16 @@
 
     &__price {
        width: 760px;
+            @include mixin.smartphone {
+              height: 30px;
+              width: 300px;
+            }
 
           &::after{
             width: 760px;
+              @include mixin.smartphone {
+                width: 300px;
+              }
           }
     }
 
