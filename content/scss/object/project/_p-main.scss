@@ -1119,6 +1119,7 @@
 
     &__infotitle {
         display: flex;
+        align-items: center;
         > P {
             font-size: 24px;
         }
@@ -1130,7 +1131,7 @@
 
 .p-inquiry  {
     @include mixin.verticalcenter;
-    background:#fff url(/content/img/Inquiry.png) no-repeat  300px/770px;
+    background:#fff url(/img/Inquiry.png) no-repeat  300px/770px;
     background-position: 10px 60px;
     width: 100%; 
 

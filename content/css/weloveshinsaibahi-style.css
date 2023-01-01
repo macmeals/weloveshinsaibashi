@@ -1261,6 +1261,12 @@ blockquote {
   width: 45px;
 }
 
+@media (max-width: 690px) {
+  .c-illust__decoshikaku {
+    height: 25px;
+    width: 25px;
+  }
+}
 .c-illust__crown {
   height: 40px;
   width: 48px;
@@ -2533,6 +2539,7 @@ blockquote {
 
 .p-admission__infotitle {
   display: flex;
+  align-items: center;
 }
 
 .p-admission__infotitle > P {
@@ -2543,7 +2550,7 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/content/img/Inquiry.png) no-repeat 300px/770px;
+  background: #fff url(/img/Inquiry.png) no-repeat 300px/770px;
   background-position: 10px 60px;
   width: 100%;
 }

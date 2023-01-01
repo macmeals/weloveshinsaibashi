@@ -63,6 +63,11 @@
      &__decoshikaku {
          height: 45px;
          width: 45px;
+
+         @include mixin.smartphone {
+            height: 25px;
+            width: 25px;
+        }
      }
 
      // グルメ詳細の王冠アイコン
