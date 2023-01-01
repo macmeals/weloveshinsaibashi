@@ -516,7 +516,7 @@
     &__subnumber {
         width: 300px;
             @include mixin.smartphone {
-                width: 130px;
+                width: 180px;
             }
           
     }
@@ -529,10 +529,10 @@
     }
 
     &__category {
-        width: 220px;
+        width: 225px;
             @include mixin.smartphone {
                 font-size: 16px;
-                width: 80px;
+                width: 120px;
             }
     }
 
@@ -693,7 +693,7 @@
             top: 50%;
             left: 200%;
             content : "";
-            width: 40px;
+            width: 35px;
             height: 1px;
 
             @include mixin.smartphone {
@@ -1041,14 +1041,25 @@
 
 .p-admission  {
     @include mixin.verticalcenter;
-    background:#fff url(/content/img/Admission.png) no-repeat  300px/950px;
+    background:#fff url(/img/Admission.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
+
+       @include mixin.smartphone {
+        background:#fff url(/img/Admission.png) no-repeat  80px/270px;
+        background-position: 10px 10px;
+
+       }
 
 
     &__title {
         width: 220px;
         font-size: 24px;
+
+            @include mixin.smartphone {
+                font-size: 16px;
+                width: 130px;
+            }
     }
 
     &__text {
@@ -1056,26 +1067,45 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+           
+            @include mixin.smartphone {
+                width: 300px;
+            }
     } 
 
-    &__applyforms {
-        display: flex;
-        flex-direction: column;
-        height: 660px;
-        justify-content: space-between;
-    }
 
     &__apply,&__applytitle,&__radio,&__choice {
         display: flex;
         align-items: center;
+
+        @include mixin.smartphone {
+            width: 300px;
+            
+        }
+       
     }
 
+    &__apply {
+        @include mixin.smartphone {
+            width: 300px;
+            flex-direction: column;
+        }
+    }
+
+
     &__applytitle {
-        width: 240px;        
+        width: 240px;    
+        @include mixin.smartphone {
+            width: 300px;
+        }    
     }
 
     &__radio,&__post {
         width: 440px;
+
+        @include mixin.smartphone {
+            width: 300px;
+        }
     }
 
     &__choice {
@@ -1089,6 +1119,7 @@
 
     &__infotitle {
         display: flex;
+        align-items: center;
         > P {
             font-size: 24px;
         }
@@ -1100,7 +1131,7 @@
 
 .p-inquiry  {
     @include mixin.verticalcenter;
-    background:#fff url(/content/img/Inquiry.png) no-repeat  300px/770px;
+    background:#fff url(/img/Inquiry.png) no-repeat  300px/770px;
     background-position: 10px 60px;
     width: 100%; 
 

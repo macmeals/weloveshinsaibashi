@@ -9,6 +9,10 @@
         margin-top: 15px;
     }
 
+    &__left10 {
+        margin-left: 10px;
+    }
+
     &__pc-top35 {
         @include mixin.pc {
             margin-top: 35px;
@@ -108,6 +112,13 @@
         
     }
 
+    &__sp-top15 {
+        @include mixin.smartphone {
+            margin-top: 10px;
+        }
+        
+    }
+
     &__sp-top30 {
         @include mixin.smartphone {
             margin-top: 30px;
@@ -121,7 +132,6 @@
         }
         
     }
-
 
 
     &__sp-top40 {
@@ -173,6 +183,12 @@
     &__sp-topbot5 {
         @include mixin.smartphone {
             margin: 5px 0 5px 0;
+        }     
+    }
+
+    &__sp-topbot15 {
+        @include mixin.smartphone {
+            margin: 15px 0 15px 0;
         }     
     }
 
