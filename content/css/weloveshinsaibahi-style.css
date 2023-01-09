@@ -512,42 +512,42 @@ blockquote {
 }
 
 .c-gridA {
-  background: url(/img/grid1.webp) no-repeat center/cover;
+  background: url(../img/grid1.webp) no-repeat center/cover;
 }
 
 .c-gridB {
-  background: url(/img/grid2.webp) no-repeat center/cover;
+  background: url(../img/grid2.webp) no-repeat center/cover;
 }
 
 .c-gridC {
-  background: url(/img/grid3.webp) no-repeat center/cover;
+  background: url(../img/grid3.webp) no-repeat center/cover;
 }
 
 @media (max-width: 690px) {
   .c-gridC {
-    background: url(/img/grid5.webp) no-repeat center/cover;
+    background: url(../img/grid5.webp) no-repeat center/cover;
   }
 }
 .c-gridD {
-  background: url(/img/grid4.webp) no-repeat center/cover;
+  background: url(../img/grid4.webp) no-repeat center/cover;
 }
 
 @media (max-width: 690px) {
   .c-gridD {
-    background: url(/img/welovelogo2.png) no-repeat center center/95% 95%;
+    background: url(../img/welovelogo2.png) no-repeat center center/95% 95%;
   }
 }
 .c-gridE {
-  background: url(/img/grid5.webp) no-repeat center/cover;
+  background: url(../img/grid5.webp) no-repeat center/cover;
 }
 
 @media (max-width: 690px) {
   .c-gridE {
-    background: url(/img/grid3.webp) no-repeat center/cover;
+    background: url(../img/grid3.webp) no-repeat center/cover;
   }
 }
 .c-gridF {
-  background: url(/img/grid6大.webp) no-repeat center/cover;
+  background: url(../img/grid6大.webp) no-repeat center/cover;
   grid-column: 1/3;
   grid-row: 2/4;
 }
@@ -559,32 +559,32 @@ blockquote {
   }
 }
 .c-gridG {
-  background: url(/img/welovelogo2.png) no-repeat center/cover;
+  background: url(../img/welovelogo2.png) no-repeat center/cover;
 }
 
 @media (max-width: 690px) {
   .c-gridG {
-    background: url(/img/grid4.webp) no-repeat center/cover;
+    background: url(../img/grid4.webp) no-repeat center/cover;
   }
 }
 .c-gridH {
-  background: url(/img/grid8.webp) no-repeat center/cover;
+  background: url(../img/grid8.webp) no-repeat center/cover;
 }
 
 .c-gridI {
-  background: url(/img/grid9.webp) no-repeat center/cover;
+  background: url(../img/grid9.webp) no-repeat center/cover;
 }
 
 .c-gridJ {
-  background: url(/img/grid10.webp) no-repeat center/cover;
+  background: url(../img/grid10.webp) no-repeat center/cover;
 }
 
 .c-gridK {
-  background: url(/img/grid11.webp) no-repeat center/cover;
+  background: url(../img/grid11.webp) no-repeat center/cover;
 }
 
 .c-gridL {
-  background: url(/img/grid12.webp) no-repeat center/cover;
+  background: url(../img/grid12.webp) no-repeat center/cover;
 }
 
 .c-specialfoodgrid, .c-specialgoodsgrid {
@@ -725,11 +725,23 @@ blockquote {
   width: 240px;
 }
 
+@media (max-width: 690px) {
+  .c-underline__regulation {
+    height: 30px;
+    width: 50px;
+  }
+}
 .c-underline__regulation::after {
   width: 240px;
   bottom: 25px;
 }
 
+@media (max-width: 690px) {
+  .c-underline__regulation::after {
+    width: 50px;
+    bottom: 15px;
+  }
+}
 @media (min-width: 691px) {
   .c-pc__text32px {
     font-size: 32px;
@@ -740,6 +752,10 @@ blockquote {
     font-size: 16px;
   }
 }
+.c-fontweight__bold {
+  font-weight: bold;
+}
+
 .c-topnumber__red, .c-topnumber__yellow, .c-topnumber__orange {
   font-size: 96px;
 }
@@ -1053,11 +1069,22 @@ blockquote {
   font-size: 24px;
 }
 
+@media (max-width: 690px) {
+  .c-regulation__title {
+    font-size: 16px;
+  }
+}
 .c-regulation__list {
   list-style-type: decimal;
   width: 880px;
 }
 
+@media (max-width: 690px) {
+  .c-regulation__list {
+    width: 280px;
+    font-size: 15px;
+  }
+}
 .c-photo__newscard {
   width: 280px;
   height: 200px;
@@ -1501,7 +1528,7 @@ blockquote {
 
 .p-topnotice {
   width: 100%;
-  background: #F8F8F8 url(/img/ShinsaiBashi.png) no-repeat 600px/750px;
+  background: #F8F8F8 url(../img/ShinsaiBashi.png) no-repeat 600px/750px;
   background-position: calc(100% - 10px) 60px;
   display: flex;
   align-items: center;
@@ -1510,7 +1537,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-topnotice {
-    background: #F8F8F8 url(/img/ShinsaiBashi.png) no-repeat 280px/340px;
+    background: #F8F8F8 url(../img/ShinsaiBashi.png) no-repeat 280px/340px;
     background-position: calc(100% - 20px) 20px;
   }
 }
@@ -1531,7 +1558,7 @@ blockquote {
 }
 .p-topnews {
   width: 100%;
-  background: #fff url(/img/News.png) no-repeat 300px/600px;
+  background: #fff url(../img/News.png) no-repeat 300px/600px;
   background-position: 10px 60px;
   display: flex;
   align-items: center;
@@ -1540,7 +1567,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-topnews {
-    background: #fff url(/img/News.png) no-repeat 150px/280px;
+    background: #fff url(../img/News.png) no-repeat 150px/280px;
     background-position: 10px 30px;
   }
 }
@@ -1600,7 +1627,7 @@ blockquote {
 }
 .p-topfood {
   width: 100%;
-  background: #F8F8F8 url(/img/Gourmet.png) no-repeat 300px/900px;
+  background: #F8F8F8 url(../img/Gourmet.png) no-repeat 300px/900px;
   background-position: calc(100% - 10px) 60px;
   display: flex;
   align-items: center;
@@ -1609,7 +1636,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-topfood {
-    background: #F8F8F8 url(/img/Gourmet.png) no-repeat 115px/340px;
+    background: #F8F8F8 url(../img/Gourmet.png) no-repeat 115px/340px;
     background-position: calc(100% - 10px) 20px;
   }
 }
@@ -1629,7 +1656,7 @@ blockquote {
 
 .p-topshop {
   width: 100%;
-  background: #ffffff url(/img/Shopping.png) no-repeat 300px/1000px;
+  background: #ffffff url(../img/Shopping.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
   display: flex;
   align-items: center;
@@ -1638,7 +1665,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-topshop {
-    background: #ffffff url(/img/Shopping.png) no-repeat 140px/360px;
+    background: #ffffff url(../img/Shopping.png) no-repeat 140px/360px;
     background-position: 10px 30px;
   }
 }
@@ -1684,7 +1711,7 @@ blockquote {
 }
 .p-tophotel {
   width: 100%;
-  background: #F8F8F8 url(/img/hotel.png) no-repeat 300px/560px;
+  background: #F8F8F8 url(../img/hotel.png) no-repeat 300px/560px;
   background-position: calc(100% - 10px) 60px;
   display: flex;
   align-items: center;
@@ -1693,7 +1720,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-tophotel {
-    background: #F8F8F8 url(/img/hotel.png) no-repeat 100px/240px;
+    background: #F8F8F8 url(../img/hotel.png) no-repeat 100px/240px;
     background-position: calc(100% - 10px) 20px;
   }
 }
@@ -1729,7 +1756,7 @@ blockquote {
 
 .p-toprequest {
   width: 100%;
-  background: #ffffff url(/img/Admission.png) no-repeat 300px/1000px;
+  background: #ffffff url(../img/Admission.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
   display: flex;
   align-items: center;
@@ -1738,7 +1765,7 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-toprequest {
-    background: #ffffff url(/img/Admission.png) no-repeat 160px/370px;
+    background: #ffffff url(../img/Admission.png) no-repeat 160px/370px;
     background-position: 10px 30px;
   }
 }
@@ -1757,14 +1784,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/img/News.png) no-repeat 300px/585px;
+  background: #fff url(../img/News.png) no-repeat 300px/585px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-news {
-    background: #fff url(/img/News.png) no-repeat 150px/280px;
+    background: #fff url(../img/News.png) no-repeat 150px/280px;
     background-position: 10px 20px;
   }
 }
@@ -1815,14 +1842,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/img/main/ShinsaiBashi_main.png) no-repeat 600px/780px;
+  background: #fff url(../img/ShinsaiBashi.png) no-repeat 600px/780px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-main {
-    background: #fff url(/img/ShinsaiBashi.png) no-repeat 80px/150px;
+    background: #fff url(../img/ShinsaiBashi.png) no-repeat 80px/150px;
     background-position: 10px 20px;
   }
 }
@@ -2159,14 +2186,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/img/Gourmet.png) no-repeat 300px/950px;
+  background: #fff url(../img/Gourmet.png) no-repeat 300px/950px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-foodlist {
-    background: #fff url(/img/Gourmet.png) no-repeat 80px/250px;
+    background: #fff url(../img/Gourmet.png) no-repeat 80px/250px;
     background-position: 10px 10px;
   }
 }
@@ -2327,14 +2354,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/img/Gourmet.png) no-repeat 300px/950px;
+  background: #fff url(../img/Gourmet.png) no-repeat 300px/950px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-foodshop {
-    background: #fff url(/img/Gourmet.png) no-repeat 80px/250px;
+    background: #fff url(../img/Gourmet.png) no-repeat 80px/250px;
     background-position: 10px 10px;
   }
 }
@@ -2409,14 +2436,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/content/img/Shopping.png) no-repeat 300px/950px;
+  background: #fff url(../img/Shopping.png) no-repeat 300px/950px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-goodslist {
-    background: #fff url(/content/img/Shopping.png) no-repeat 80px/250px;
+    background: #fff url(../img/Shopping.png) no-repeat 80px/250px;
     background-position: 10px 10px;
   }
 }
@@ -2428,14 +2455,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/content/img/Shopping.png) no-repeat 300px/950px;
+  background: #fff url(../img/Shopping.png) no-repeat 300px/950px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-goodsshop {
-    background: #fff url(/content/img/Shopping.png) no-repeat 80px/250px;
+    background: #fff url(../img/Shopping.png) no-repeat 80px/250px;
     background-position: 10px 10px;
   }
 }
@@ -2465,14 +2492,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/img/Admission.png) no-repeat 300px/950px;
+  background: #fff url(../img/Admission.png) no-repeat 300px/950px;
   background-position: 10px 60px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-admission {
-    background: #fff url(/img/Admission.png) no-repeat 80px/270px;
+    background: #fff url(../img/Admission.png) no-repeat 80px/270px;
     background-position: 10px 10px;
   }
 }
@@ -2555,14 +2582,14 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/img/Inquiry.png) no-repeat 300px/770px;
+  background: #fff url(../img/Inquiry.png) no-repeat 300px/770px;
   background-position: 10px 30px;
   width: 100%;
 }
 
 @media (max-width: 690px) {
   .p-inquiry {
-    background: #fff url(/img/Inquiry.png) no-repeat 80px/190px;
+    background: #fff url(../img/Inquiry.png) no-repeat 80px/190px;
     background-position: 10px 10px;
   }
 }
@@ -2570,11 +2597,17 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #fff url(/content/img/Regulation.png) no-repeat 300px/770px;
+  background: #fff url(../img/Regulation.png) no-repeat 300px/770px;
   background-position: 10px 60px;
   width: 100%;
 }
 
+@media (max-width: 690px) {
+  .p-regulation {
+    background: #fff url(../img/Regulation.png) no-repeat 80px/290px;
+    background-position: 10px 10px;
+  }
+}
 .p-regulation__title, .p-regulation__subtitle, .p-regulation__subtitlename {
   display: flex;
   align-items: center;
@@ -2585,10 +2618,20 @@ blockquote {
   width: 500px;
 }
 
+@media (max-width: 690px) {
+  .p-regulation__title {
+    width: 300px;
+  }
+}
 .p-regulation__subtitle {
   width: 920px;
 }
 
+@media (max-width: 690px) {
+  .p-regulation__subtitle {
+    width: 300px;
+  }
+}
 .p-regulation__subtitlename {
   display: flex;
   align-items: center;
@@ -2646,7 +2689,7 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
-  .p-footer__list > a {
+  .p-footer__list > li {
     display: flex;
     justify-content: center;
     align-items: center;

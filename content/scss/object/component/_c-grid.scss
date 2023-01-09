@@ -3,37 +3,37 @@
 //topページのファーストビューのグリッド
 
 .c-gridA {
-    background:url(/img/grid1.webp) no-repeat center/cover;
+    background:url(../img/grid1.webp) no-repeat center/cover;
 }
 
 .c-gridB {
-    background:url(/img/grid2.webp) no-repeat center/cover;
+    background:url(../img/grid2.webp) no-repeat center/cover;
 }
 
 .c-gridC {
-    background:url(/img/grid3.webp) no-repeat center/cover;
+    background:url(../img/grid3.webp) no-repeat center/cover;
     @include mixin.smartphone {
-        background:url(/img/grid5.webp) no-repeat center/cover;
+        background:url(../img/grid5.webp) no-repeat center/cover;
     }
 }
 
 .c-gridD {
-    background:url(/img/grid4.webp) no-repeat center/cover;
+    background:url(../img/grid4.webp) no-repeat center/cover;
     @include mixin.smartphone {
-        background:url(/img/welovelogo2.png) no-repeat center center / 95% 95%;
+        background:url(../img/welovelogo2.png) no-repeat center center / 95% 95%;
     }
 }
 
 .c-gridE {
-    background:url(/img/grid5.webp) no-repeat center/cover;
+    background:url(../img/grid5.webp) no-repeat center/cover;
     @include mixin.smartphone {
-        background:url(/img/grid3.webp) no-repeat center/cover;
+        background:url(../img/grid3.webp) no-repeat center/cover;
     }
 
 }
 
 .c-gridF {
-    background:url(/img/grid6大.webp) no-repeat center/cover;
+    background:url(../img/grid6大.webp) no-repeat center/cover;
     grid-column: 1 / 3;
     grid-row: 2 / 4;
 
@@ -44,30 +44,30 @@
 }
 
 .c-gridG {
-    background:url(/img/welovelogo2.png) no-repeat center/cover;
+    background:url(../img/welovelogo2.png) no-repeat center/cover;
     @include mixin.smartphone { 
-        background:url(/img/grid4.webp) no-repeat center/cover;
+        background:url(../img/grid4.webp) no-repeat center/cover;
     }
 }
 
 .c-gridH {
-    background:url(/img/grid8.webp) no-repeat center/cover;
+    background:url(../img/grid8.webp) no-repeat center/cover;
 }
 
 .c-gridI {
-    background:url(/img/grid9.webp) no-repeat center/cover;
+    background:url(../img/grid9.webp) no-repeat center/cover;
 }
 
 .c-gridJ {
-    background:url(/img/grid10.webp) no-repeat center/cover;
+    background:url(../img/grid10.webp) no-repeat center/cover;
 }
 
 .c-gridK {
-    background:url(/img/grid11.webp) no-repeat center/cover;
+    background:url(../img/grid11.webp) no-repeat center/cover;
 }
 
 .c-gridL {
-    background:url(/img/grid12.webp) no-repeat center/cover;
+    background:url(../img/grid12.webp) no-repeat center/cover;
 }
 
 //グルメ一覧のスペシャル写真のグリッド

@@ -66,10 +66,19 @@
 
     &__regulation {
        width: 240px;
+            @include mixin.smartphone {
+              height: 30px;
+              width: 50px;
+            }
 
        &::after{
           width: 240px;
           bottom: 25px;
+              @include mixin.smartphone {
+                width: 50px;
+                bottom: 15px;
+              }
+              
        }
 
 
