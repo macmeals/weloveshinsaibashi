@@ -79,12 +79,12 @@
 
 .p-topnotice {
     width: 100%;
-    background:#F8F8F8 url(/img/ShinsaiBashi.png) no-repeat  600px/750px;
+    background:#F8F8F8 url(../img/ShinsaiBashi.png) no-repeat  600px/750px;
     background-position: calc(100% - 10px) 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background:#F8F8F8 url(/img/ShinsaiBashi.png) no-repeat  280px/340px;
+        background:#F8F8F8 url(../img/ShinsaiBashi.png) no-repeat  280px/340px;
         background-position: calc(100% - 20px) 20px;
     }
 
@@ -106,12 +106,12 @@
 
 .p-topnews {
     width: 100%;
-    background:#fff url(/img/News.png) no-repeat  300px/600px;
+    background:#fff url(../img/News.png) no-repeat  300px/600px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background:#fff url(/img/News.png) no-repeat  150px/280px;
+        background:#fff url(../img/News.png) no-repeat  150px/280px;
         background-position: 10px 30px;
     }
 
@@ -179,12 +179,12 @@
 
 .p-topfood {
     width: 100%;
-    background:#F8F8F8 url(/img/Gourmet.png) no-repeat  300px/900px;
+    background:#F8F8F8 url(../img/Gourmet.png) no-repeat  300px/900px;
     background-position: calc(100% - 10px) 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background:#F8F8F8 url(/img/Gourmet.png) no-repeat  115px/340px;
+        background:#F8F8F8 url(../img/Gourmet.png) no-repeat  115px/340px;
         background-position: calc(100% - 10px) 20px;
     }
 
@@ -205,12 +205,12 @@
 
 .p-topshop {
     width: 100%;
-    background: #ffffff url(/img/Shopping.png) no-repeat  300px/1000px;
+    background: #ffffff url(../img/Shopping.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(/img/Shopping.png) no-repeat  140px/360px;
+        background: #ffffff url(../img/Shopping.png) no-repeat  140px/360px;
         background-position: 10px 30px;
     }
 
@@ -255,12 +255,12 @@
 
 .p-tophotel {
     width: 100%;
-    background:#F8F8F8 url(/img/hotel.png) no-repeat  300px/560px;
+    background:#F8F8F8 url(../img/hotel.png) no-repeat  300px/560px;
     background-position: calc(100% - 10px) 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background:#F8F8F8 url(/img/hotel.png) no-repeat  100px/240px;
+        background:#F8F8F8 url(../img/hotel.png) no-repeat  100px/240px;
         background-position: calc(100% - 10px) 20px;
     }
 
@@ -296,12 +296,12 @@
 
 .p-toprequest {
     width: 100%;
-    background: #ffffff url(/img/Admission.png) no-repeat  300px/1000px;
+    background: #ffffff url(../img/Admission.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(/img/Admission.png) no-repeat  160px/370px;
+        background: #ffffff url(../img/Admission.png) no-repeat  160px/370px;
         background-position: 10px 30px;
     }
 
@@ -318,12 +318,12 @@
 
 .p-news {
     @include mixin.verticalcenter;
-    background:#fff url(/img/News.png) no-repeat  300px/585px;
+    background:#fff url(../img/News.png) no-repeat  300px/585px;
     background-position: 10px 60px;
     width: 100%;
 
     @include mixin.smartphone {
-        background:#fff url(/img/News.png) no-repeat  150px/280px;
+        background:#fff url(../img/News.png) no-repeat  150px/280px;
         background-position: 10px 20px;
     }
 
@@ -379,12 +379,12 @@
 
 .p-main {
     @include mixin.verticalcenter;
-    background:#fff url(/img/main/ShinsaiBashi_main.png) no-repeat  600px/780px;
+    background:#fff url(../img/ShinsaiBashi.png) no-repeat  600px/780px;
     background-position: 10px 60px;
     width: 100%;
 
         @include mixin.smartphone {
-            background:#fff url(/img/ShinsaiBashi.png) no-repeat  80px/150px;
+            background:#fff url(../img/ShinsaiBashi.png) no-repeat  80px/150px;
             background-position: 10px 20px;
         }
 
@@ -742,12 +742,12 @@
 
 .p-foodlist {
     @include mixin.verticalcenter;
-    background:#fff url(/img/Gourmet.png) no-repeat  300px/950px;
+    background:#fff url(../img/Gourmet.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
 
     @include mixin.smartphone {
-        background:#fff url(/img/Gourmet.png) no-repeat  80px/250px;
+        background:#fff url(../img/Gourmet.png) no-repeat  80px/250px;
         background-position: 10px 10px;
     }
 
@@ -910,12 +910,12 @@
 
 .p-foodshop {
     @include mixin.verticalcenter;
-    background:#fff url(/img/Gourmet.png) no-repeat  300px/950px;
+    background:#fff url(../img/Gourmet.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
       
         @include mixin.smartphone {
-            background:#fff url(/img/Gourmet.png) no-repeat  80px/250px;
+            background:#fff url(../img/Gourmet.png) no-repeat  80px/250px;
             background-position: 10px 10px;
         }
        
@@ -988,12 +988,12 @@
 
 .p-goodslist {
     @include mixin.verticalcenter;
-    background:#fff url(/content/img/Shopping.png) no-repeat  300px/950px;
+    background:#fff url(../img/Shopping.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
 
         @include mixin.smartphone {
-            background:#fff url(/content/img/Shopping.png) no-repeat  80px/250px;
+            background:#fff url(../img/Shopping.png) no-repeat  80px/250px;
             background-position: 10px 10px;
         }
 
@@ -1006,12 +1006,12 @@
 
 .p-goodsshop {
     @include mixin.verticalcenter;
-    background:#fff url(/content/img/Shopping.png) no-repeat  300px/950px;
+    background:#fff url(../img/Shopping.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
 
         @include mixin.smartphone {
-            background:#fff url(/content/img/Shopping.png) no-repeat  80px/250px;
+            background:#fff url(../img/Shopping.png) no-repeat  80px/250px;
             background-position: 10px 10px;
         }
 
@@ -1041,12 +1041,12 @@
 
 .p-admission  {
     @include mixin.verticalcenter;
-    background:#fff url(/img/Admission.png) no-repeat  300px/950px;
+    background:#fff url(../img/Admission.png) no-repeat  300px/950px;
     background-position: 10px 60px;
     width: 100%;
 
        @include mixin.smartphone {
-        background:#fff url(/img/Admission.png) no-repeat  80px/270px;
+        background:#fff url(../img/Admission.png) no-repeat  80px/270px;
         background-position: 10px 10px;
 
        }
@@ -1131,12 +1131,12 @@
 
 .p-inquiry  {
     @include mixin.verticalcenter;
-    background:#fff url(/img/Inquiry.png) no-repeat  300px/770px;
+    background:#fff url(../img/Inquiry.png) no-repeat  300px/770px;
     background-position: 10px 30px;
     width: 100%; 
 
     @include mixin.smartphone {
-        background:#fff url(/img/Inquiry.png) no-repeat  80px/190px;
+        background:#fff url(../img/Inquiry.png) no-repeat  80px/190px;
         background-position: 10px 10px;
     }
 
@@ -1147,9 +1147,16 @@
 
 .p-regulation {
     @include mixin.verticalcenter;
-    background:#fff url(/content/img/Regulation.png) no-repeat  300px/770px;
+    background:#fff url(../img/Regulation.png) no-repeat  300px/770px;
     background-position: 10px 60px;
     width: 100%; 
+
+    @include mixin.smartphone {
+        background:#fff url(../img/Regulation.png) no-repeat  80px/290px;
+        background-position: 10px 10px;
+    }
+
+
 
     &__title, &__subtitle, &__subtitlename{
         display: flex;
@@ -1159,10 +1166,16 @@
 
     &__title {
         width: 500px;
+        @include mixin.smartphone {
+            width: 300px;
+        }
     }
 
     &__subtitle {
         width: 920px;
+        @include mixin.smartphone {
+            width: 300px;
+        }
     }
 
     &__subtitlename {

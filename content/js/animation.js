@@ -1,6 +1,6 @@
 jQuery( function( $ ) {
 ////ハンバーガーのアニメーション/////////////////////////////////////////////////////////	
-    $('.c-hambergerbutton').on( "click", function() {
+    $('.c-hambergerbutton,.p-side__text').on( "click", function() {
 			$( ".c-hambergerbutton__upperbar" ).toggleClass( "is-open" );
 			$( ".c-hambergerbutton__middlebar" ).toggleClass( "is-open" );
 			$( ".c-hambergerbutton__underbar" ).toggleClass( "is-open" );
@@ -8,7 +8,18 @@ jQuery( function( $ ) {
 			$( ".l-side" ).toggleClass( "is-open" );
 			$( ".l-header" ).toggleClass( "is-open" );
 			$( ".c-illust__headerlogo" ).toggleClass( "is-open" );
-	})
+		})
+		
+		// $('.p-side__text').on( "click", function() {
+		// 	$( ".c-hambergerbutton__upperbar" ).toggleClass( "is-open" );
+		// 	$( ".c-hambergerbutton__middlebar" ).toggleClass( "is-open" );
+		// 	$( ".c-hambergerbutton__underbar" ).toggleClass( "is-open" );
+		// 	$( ".p-header__mobile" ).toggleClass( "is-open" );
+		// 	$( ".l-side" ).toggleClass( "is-open" );
+		// 	$( ".l-header" ).toggleClass( "is-open" );
+		// 	$( ".c-illust__headerlogo" ).toggleClass( "is-open" );
+
+		// })
 
 ////フワッとアニメーション/////////////////////////////////////////////////////////	
 	function fadeAnime(){
@@ -71,6 +82,9 @@ function GethashID (hashIDName){
 		});
 	}
 }
+
+
+
 
 ////モーダルウィンドウ
 

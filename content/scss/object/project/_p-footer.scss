@@ -34,7 +34,7 @@
            gap: 20px 0;
         }
 
-        >a { 
+        >li { 
            @include mixin.smartphone {
               display: flex;
               justify-content: center;
