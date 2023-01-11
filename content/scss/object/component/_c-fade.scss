@@ -1,13 +1,25 @@
+@use '../../foundation/mixin' as mixin;
+
 .c-fadeTriger {
     opacity: 0;
+
+    @include mixin.smartphone {
+        opacity: 1;
+    }
+
 }
 
 .c-fade {
     &__in  {
+    
+      @include mixin.pc {
       animation-name:fadeUpAnime;
       animation-duration:1s;
       animation-fill-mode:forwards;
       opacity:0;
+
+      }
+
     }
 }
 
