@@ -2,7 +2,7 @@
 
 .c-button {
     // &__small , &__large の共通のスタイリング
-    &__small , &__large {
+    &__small , &__large, &__smallmultilingual ,&__largemultilingual {
         border: #303030 1px solid;
         border-radius: 5px;
         text-align: center;
@@ -100,18 +100,26 @@
     // &__smallと&__largeのそれぞれのスタイリング
 
     &__small { 
-      width: 200px;
-      height: 28px;
-      line-height: 26px;
+        width: 200px;
+        height: 28px;
+        line-height: 26px;
 
       @include mixin.smartphone {
         width: 186px;
         height: 30px;
         font-size: 14px;
         line-height: 28px;
-    }
+      }
 
     }
+
+    &__smallmultilingual {
+        width: 200px;
+        height: 63px;
+        line-height: 31.5px;
+        
+    }
+
 
     &__large { 
         width: 280px;
@@ -125,8 +133,15 @@
             font-size: 16px;
             line-height: 38px;
         }
-
-
-
     }
+
+    &__largemultilingual {
+        width: 280px;
+        height: 85px;
+        line-height: 42.5px;
+    }
+
+
+
+
 }

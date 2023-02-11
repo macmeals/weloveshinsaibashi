@@ -1,74 +1,117 @@
 @use '../../foundation/mixin' as mixin;
 
 //topページのファーストビューのグリッド
+.c-grid {
+    &__topgourmet {
+        grid-column: 1 / 3;
+        background:url(../img/topgrid/gourmet.webp) no-repeat center/cover;
+        @include mixin.bottomright;
 
-.c-gridA {
-    background:url(../img/grid1.webp) no-repeat center/cover;
-}
-
-.c-gridB {
-    background:url(../img/grid2.webp) no-repeat center/cover;
-}
-
-.c-gridC {
-    background:url(../img/grid3.webp) no-repeat center/cover;
-    @include mixin.smartphone {
-        background:url(../img/grid5.webp) no-repeat center/cover;
-    }
-}
-
-.c-gridD {
-    background:url(../img/grid4.webp) no-repeat center/cover;
-    @include mixin.smartphone {
-        background:url(../img/welovelogo2.png) no-repeat center center / 95% 95%;
-    }
-}
-
-.c-gridE {
-    background:url(../img/grid5.webp) no-repeat center/cover;
-    @include mixin.smartphone {
-        background:url(../img/grid3.webp) no-repeat center/cover;
     }
 
-}
-
-.c-gridF {
-    background:url(../img/grid6大.webp) no-repeat center/cover;
-    grid-column: 1 / 3;
-    grid-row: 2 / 4;
-
-    @include mixin.smartphone {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+    &__topshop {
+        @include mixin.pc {
+            grid-column: 3 / 5;
+            background:url(../img/topgrid/shop.webp) no-repeat center/cover;
+            @include mixin.bottomright
+        }
+    
+        @include mixin.smartphone {
+            grid-column: 3 / 4;
+            background:url(../img/topgrid/shop.webp) no-repeat center/cover;
+            @include mixin.bottomright
+        }
     }
-}
 
-.c-gridG {
-    background:url(../img/welovelogo2.png) no-repeat center/cover;
-    @include mixin.smartphone { 
-        background:url(../img/grid4.webp) no-repeat center/cover;
+    &__tophotel {
+        @include mixin.pc {
+            grid-column: 5 / 6;
+            background:url(../img/topgrid/hotel.webp) no-repeat center/cover;
+            @include mixin.bottomright;
+        }
+    
+        @include mixin.smartphone {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background:url(../img/topgrid/hotel.webp) no-repeat center/cover;
+            @include mixin.bottomright
+        }
+
     }
+
+    &__toplogo {
+        @include mixin.verticalcenter;
+        @include mixin.smartphone {
+            @include mixin.verticalcenter;
+            justify-content: center;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        
+    }
+
+    &__topaccess {
+        @include mixin.pc {
+            background:url(../img/topgrid/access.webp) no-repeat center/cover;
+            @include mixin.bottomright
+        }
+
+        @include mixin.smartphone {
+            background:url(../img/topgrid/access.webp) no-repeat center/cover;
+            @include mixin.bottomright;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+
+        }
+
+    }
+
+    &__topevent {
+        @include mixin.pc {
+            background:url(../img/topgrid/event.webp) no-repeat center/cover;
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            @include mixin.bottomright
+        }
+
+        @include mixin.smartphone {
+            background:url(../img/topgrid/event.webp) no-repeat center/cover;
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+            @include mixin.bottomright
+        }
+
+    }
+
+    &__topspa {
+        @include mixin.pc {
+            background:url(../img/topgrid/spa.webp) no-repeat center/cover;
+            @include mixin.bottomright
+        }
+
+        @include mixin.smartphone {
+            background:url(../img/topgrid/spa.webp) no-repeat center/cover;
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+            @include mixin.bottomright
+        }
+    }
+
+
 }
 
-.c-gridH {
-    background:url(../img/grid8.webp) no-repeat center/cover;
+
+
+
+
+.c-topspagrid {
+    @include mixin.pc {
+        background:url(../img/topgrid/spa.webp) no-repeat center/cover;
+        @include mixin.bottomright
+    }
+    
 }
 
-.c-gridI {
-    background:url(../img/grid9.webp) no-repeat center/cover;
-}
-
-.c-gridJ {
-    background:url(../img/grid10.webp) no-repeat center/cover;
-}
-
-.c-gridK {
-    background:url(../img/grid11.webp) no-repeat center/cover;
-}
-
-.c-gridL {
-    background:url(../img/grid12.webp) no-repeat center/cover;
-}
 
 //グルメ一覧のスペシャル写真のグリッド
 .c-specialfoodgrid,.c-specialgoodsgrid {

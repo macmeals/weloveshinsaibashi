@@ -12,9 +12,14 @@
     }
 
     &__list {
-        width: 545px;
+        width: 670px;
         display: flex;
         justify-content: space-between;
+
+    }
+
+    &__link {
+        @include mixin.verticalcenter
     }
 
     &__mobile {
