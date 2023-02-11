@@ -22,3 +22,10 @@ $smartphone: 690px; /* スマホはWidthが690pxより小さい */
   align-items: center;
   flex-direction: column;
 }
+
+// 右下端に寄せる。
+@mixin bottomright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

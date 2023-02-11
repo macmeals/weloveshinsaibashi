@@ -1,6 +1,7 @@
 @use '../../foundation/mixin' as mixin;
 
 .u-margin {
+    //sp,PC共通のスタイリング
     &__top5 {
         margin-top: 5px;
     }
@@ -9,10 +10,20 @@
         margin-top: 15px;
     }
 
+    &__top20 {
+        margin-top: 20px;
+    }
+
     &__left10 {
         margin-left: 10px;
     }
 
+    &__bottom20 {
+        margin-bottom: 20px;
+    }
+
+    
+ //PCのみ共通のスタイリング
     &__pc-top35 {
         @include mixin.pc {
             margin-top: 35px;
@@ -109,6 +120,11 @@
         }
     }
 
+    &__pc-left60 {
+        @include mixin.pc {
+            margin-left: 60px;
+        }
+    }
 
 //////smartPhone
     &__sp-top10 {

@@ -1,15 +1,36 @@
 @use '../../foundation/mixin' as mixin;
 
-// 文字や数字、記号（▶︎）に関するスタイル
+/////////////////// 文字や数字、記号（▶︎）に関するスタイル
 
 //PC時の文字の大きさを変更
-
 .c-pc {
+    &__text14px {
+        @include mixin.pc {
+            font-size: 14px;
+        }
+    }
+
+    &__text16px {
+        @include mixin.pc {
+            font-size: 16px;
+        }
+    }
+
+    &__text24px {
+        @include mixin.pc {
+            font-size: 24px;
+        }
+    }
+
+
+
     &__text32px {
         @include mixin.pc {
             font-size: 32px;
         }
     }
+
+    
 }
 
 //スマホ時、文字の大きさを変更
@@ -22,12 +43,49 @@
 }
 
 //文字の太さを変更
-
 .c-fontweight {
     &__bold {
         font-weight: bold;
     }
 }
+
+//文字の色を変更（赤、黄色、オレンジ）
+.c-fontcolor {
+    &__red {
+        color: #FF3333; 
+    }
+
+    &__yellow {
+        color: #FFD433;
+    }
+
+    &__orange {
+        color: #FFAD33;
+    }
+}
+
+//ヘッダーの文字の高さを調整
+.c-header {
+    &__lineheight {
+        line-height: 1.4;
+    }
+   
+}
+
+//Topページのファーストビューのテキスト
+.c-firstvier  {
+    &__text {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+
+        @include mixin.smartphone {
+            font-size: 14px;
+        }
+    }
+
+}
+
 
 // サブタイトルの数字
 .c-topnumber {
