@@ -198,7 +198,7 @@
     }
 
     &__gheader {
-        height: 62px;
+        height: 80px;
         width: 200px;
         display: flex;
         align-items: center;
@@ -208,7 +208,7 @@
     &__gtitle {
         height: 100%;
         display: flex;
-        // align-items: center;
+        
     }
 
     &__name {
@@ -231,7 +231,6 @@
 
     &__contents, &__gtitle {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
     }
 
@@ -286,7 +285,7 @@
 
     &__gheader {
         width: 200px;
-        height: 80px;
+        height: 180px;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -820,6 +820,10 @@ blockquote {
   font-weight: bold;
 }
 
+.c-lineheight__middle {
+  line-height: 1.4;
+}
+
 .c-fontcolor__red {
   color: #FF3333;
 }
@@ -932,6 +936,12 @@ blockquote {
 
 .c-topfood__title {
   font-size: 24px;
+  line-height: 1.5;
+}
+
+.c-topshop__title {
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .c-newsdetail__title {
@@ -1800,7 +1810,7 @@ blockquote {
   }
 }
 .p-topfood__gheader {
-  height: 62px;
+  height: 80px;
   width: 200px;
   display: flex;
   align-items: center;
@@ -1834,7 +1844,6 @@ blockquote {
 }
 .p-topshop__contents, .p-topshop__gtitle {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -1896,7 +1905,7 @@ blockquote {
 }
 .p-tophotel__gheader {
   width: 200px;
-  height: 80px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
