@@ -288,7 +288,7 @@
         height: 180px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+       
 
     }
 
@@ -307,14 +307,14 @@
 
 }
 
-.p-toprequest {
+.p-topexeprience {
     width: 100%;
-    background: #ffffff url(../img/Admission.png) no-repeat  300px/1000px;
+    background: #ffffff url(../img/Experience.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(../img/Admission.png) no-repeat  160px/370px;
+        background: #ffffff url(../img/Experience.png) no-repeat  160px/370px;
         background-position: 10px 30px;
     }
 
