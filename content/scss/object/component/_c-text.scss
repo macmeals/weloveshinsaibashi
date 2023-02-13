@@ -191,23 +191,13 @@
 
 }
 
-// グルメのジャンルのタイトル
+// グルメ,ショップ、体験のジャンルのタイトル
 
-.c-topfood { 
+.c-topfood,.c-topshop,.c-topexperience {
     &__title {
         font-size: 24px;
         line-height: 1.5;
     }
-}
-
-// ショップのジャンルのタイトル
-
-.c-topshop { 
-    &__title {
-        font-size: 24px;
-        line-height: 1.5;
-    }
-
 }
 
 
