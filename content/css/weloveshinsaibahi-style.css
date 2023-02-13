@@ -820,6 +820,10 @@ blockquote {
   font-weight: bold;
 }
 
+.c-lineheight__middle {
+  line-height: 1.4;
+}
+
 .c-fontcolor__red {
   color: #FF3333;
 }
@@ -930,8 +934,9 @@ blockquote {
   background-color: #FFAD33;
 }
 
-.c-topfood__title {
+.c-topfood__title, .c-topshop__title, .c-topexperience__title {
   font-size: 24px;
+  line-height: 1.5;
 }
 
 .c-newsdetail__title {
@@ -1182,6 +1187,11 @@ blockquote {
   height: 200px;
 }
 
+.c-photo__topexperience {
+  width: 440px;
+  height: 280px;
+}
+
 .c-photo__topfood {
   box-shadow: 5px 5px #FFAD33;
 }
@@ -1427,6 +1437,16 @@ blockquote {
 .c-illust__smallhotel {
   height: 20px;
   width: 24px;
+}
+
+.c-illust__chochinicon {
+  height: 56px;
+  width: 25px;
+}
+
+.c-illust__chikyugi {
+  height: 55px;
+  width: 41px;
 }
 
 .c-illust__decoshikaku {
@@ -1800,7 +1820,7 @@ blockquote {
   }
 }
 .p-topfood__gheader {
-  height: 62px;
+  height: 80px;
   width: 200px;
   display: flex;
   align-items: center;
@@ -1834,7 +1854,6 @@ blockquote {
 }
 .p-topshop__contents, .p-topshop__gtitle {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -1896,10 +1915,9 @@ blockquote {
 }
 .p-tophotel__gheader {
   width: 200px;
-  height: 80px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .p-tophotel__contents {
@@ -1917,9 +1935,9 @@ blockquote {
   line-height: 1.5;
 }
 
-.p-toprequest {
+.p-topexeprience {
   width: 100%;
-  background: #ffffff url(../img/Admission.png) no-repeat 300px/1000px;
+  background: #ffffff url(../img/Experience.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
   display: flex;
   align-items: center;
@@ -1927,22 +1945,57 @@ blockquote {
 }
 
 @media (max-width: 690px) {
-  .p-toprequest {
-    background: #ffffff url(../img/Admission.png) no-repeat 160px/370px;
+  .p-topexeprience {
+    background: #ffffff url(../img/Experience.png) no-repeat 160px/370px;
     background-position: 10px 30px;
   }
 }
-.p-toprequest__text {
+.p-topexeprience__contents {
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topexeprience__gheader {
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topexeprience__gtitle {
+  display: flex;
+}
+
+.p-topaccess {
+  width: 100%;
+  background: #F8F8F8 url(../img/Access.png) no-repeat 600px/750px;
+  background-position: calc(100% - 10px) 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 @media (max-width: 690px) {
-  .p-toprequest__text {
-    width: 300px;
+  .p-topaccess {
+    background: #F8F8F8 url(../img/Access.png) no-repeat 280px/340px;
+    background-position: calc(100% - 20px) 20px;
   }
 }
+.p-topaccess__title {
+  display: flex;
+  width: 920px;
+}
+
+.p-topaccess__text {
+  display: flex;
+}
+
+.p-topaccess__link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .p-news {
   display: flex;
   align-items: center;
@@ -2950,7 +3003,7 @@ blockquote {
   }
 }
 @media (min-width: 691px) {
-  .u-margin__left10 {
+  .u-margin__pc-left10 {
     margin-left: 10px;
   }
 }

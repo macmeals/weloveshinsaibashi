@@ -12,6 +12,11 @@
         
     }
 
+    &__topexperience {
+        width: 440px;
+        height: 280px;
+    }
+
     &__topfood {
         box-shadow: 5px 5px #FFAD33;
     }
@@ -23,6 +28,8 @@
     &__tophotel,&__yellowtiktok {
         box-shadow: 5px 5px #FFD433;
     }
+
+
 
     &__smallview {
         height: 350px;

@@ -49,6 +49,14 @@
     }
 }
 
+//文章の高さ調整
+.c-lineheight {
+    &__middle {
+        line-height: 1.4;
+    }
+}
+
+
 //文字の色を変更（赤、黄色、オレンジ）
 .c-fontcolor {
     &__red {
@@ -68,8 +76,7 @@
 .c-header {
     &__lineheight {
         line-height: 1.4;
-    }
-   
+    }  
 }
 
 //Topページのファーストビューのテキスト
@@ -184,13 +191,17 @@
 
 }
 
-// toppageのグルメの横棒のあしらい
+// グルメ,ショップ、体験のジャンルのタイトル
 
-.c-topfood { 
+.c-topfood,.c-topshop,.c-topexperience {
     &__title {
         font-size: 24px;
+        line-height: 1.5;
     }
 }
+
+
+// toppageのグルメの横棒のあしらい
 
 .c-newsdetail {
     &__title {
@@ -350,11 +361,6 @@
             }
         }
      }
-
-
-
-
-
 }
 
 //リンクを太くするためのスタイル

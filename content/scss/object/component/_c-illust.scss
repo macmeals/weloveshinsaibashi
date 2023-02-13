@@ -62,20 +62,29 @@
 
     }
 
-     // ホテルアイコン
+    // ホテルアイコン
 
     &__hotel {
         height: 50px;
         width: 54px;
     }
 
-
      &__smallhotel {
          height: 20px;
          width: 24px;
      }
 
+    // 体験のアイコン
+     &__chochinicon {
+         height: 56px;
+         width: 25px;
+     }
 
+     //アクセスー地球儀
+     &__chikyugi {
+         height: 55px;
+         width: 41px;
+     }
 
      // グルメ詳細の店名の飾りアイコン
      &__decoshikaku {

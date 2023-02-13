@@ -3,7 +3,7 @@
 
 ////////Topページ////////////////////////////////////////////////////////////// 
 
-//Topページのファーストビューのグリッド
+///Topページのファーストビューのグリッド
 .p-gridcontainer {
     width: 100%;
     display: grid;
@@ -80,6 +80,8 @@
 
 } 
 
+///Topページ:WeLove心斎橋とは
+
 .p-topnotice {
     width: 100%;
     background:#F8F8F8 url(../img/ShinsaiBashi.png) no-repeat  600px/750px;
@@ -103,6 +105,8 @@
     }
 
 }
+
+///Topページ:お知らせ
 
 .p-topnews {
     width: 100%;
@@ -140,12 +144,6 @@
     box-shadow: 2px 2px 4px rgba(48, 48, 48, 0.25);
     @include mixin.verticalcenter;
     justify-content: space-between;
-
-    // >p {
-    //     width: 240px;
-    //     font-weight: 700;
-    //     line-height: 1.4;
-    // }
 
     &__contents {
         @include mixin.verticalcenter;
@@ -185,6 +183,7 @@
     
 }
 
+///Topページ:グルメ
 
 .p-topfood {
     width: 100%;
@@ -198,7 +197,7 @@
     }
 
     &__gheader {
-        height: 62px;
+        height: 80px;
         width: 200px;
         display: flex;
         align-items: center;
@@ -208,7 +207,7 @@
     &__gtitle {
         height: 100%;
         display: flex;
-        // align-items: center;
+        
     }
 
     &__name {
@@ -216,6 +215,8 @@
         flex-direction: column;
     }
 }
+
+///Topページ:ショップ
 
 .p-topshop {
     width: 100%;
@@ -231,7 +232,6 @@
 
     &__contents, &__gtitle {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
     }
 
@@ -267,6 +267,8 @@
     }
 }
 
+///Topページ:ホテル
+
 .p-tophotel {
     width: 100%;
     background:#F8F8F8 url(../img/hotel.png) no-repeat  300px/560px;
@@ -286,10 +288,10 @@
 
     &__gheader {
         width: 200px;
-        height: 80px;
+        height: 180px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+       
 
     }
 
@@ -308,25 +310,66 @@
 
 }
 
-.p-toprequest {
+///Topページ:体験
+
+.p-topexeprience {
     width: 100%;
-    background: #ffffff url(../img/Admission.png) no-repeat  300px/1000px;
+    background: #ffffff url(../img/Experience.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
     @include mixin.verticalcenter;
 
     @include mixin.smartphone {
-        background: #ffffff url(../img/Admission.png) no-repeat  160px/370px;
+        background: #ffffff url(../img/Experience.png) no-repeat  160px/370px;
         background-position: 10px 30px;
     }
 
-    &__text {
-        @include mixin.verticalcenter;
-        @include mixin.smartphone {
-            width: 300px;
-        }
+    &__contents {
+        width: 920px;
+        display: flex;
+        justify-content: space-between;
         
     }
+    
+    &__gheader {
+        width: 440px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__gtitle {
+        display: flex;
+    }
 }
+
+///Topページ:アクセス
+
+.p-topaccess {
+    width: 100%;
+    background:#F8F8F8 url(../img/Access.png) no-repeat  600px/750px;
+    background-position: calc(100% - 10px) 60px;
+    @include mixin.verticalcenter;
+
+    @include mixin.smartphone {
+        background:#F8F8F8 url(../img/Access.png) no-repeat  280px/340px;
+        background-position: calc(100% - 20px) 20px;
+    }
+
+    &__title {
+        display: flex;
+        width: 920px;
+    }
+
+    &__text {
+        display: flex;
+    }
+
+    &__link {
+        @include mixin.verticalcenter;
+    }
+
+
+}
+
 
 /////New一覧ページ/////////////////////////////////
 
