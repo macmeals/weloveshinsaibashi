@@ -90,6 +90,12 @@
         }
     }
 
+    &__pc-bot100 {
+        @include mixin.pc {
+            margin-bottom: 100px;
+        }
+    }
+
     &__pc-topbot100 {
         @include mixin.pc {
             margin: 100px 0 100px 0;
@@ -197,6 +203,12 @@
         }
     }
 
+    &__sp-bot100 {
+        @include mixin.smartphone {
+            margin-bottom: 100px;
+        }
+    }
+
     &__sp-left5 {
         @include mixin.smartphone {
             margin-left: 5px;
@@ -231,6 +243,13 @@
     &__sp-topbot40 {
         @include mixin.smartphone {
             margin: 40px 0 40px 0;
+        }
+        
+    }
+
+    &__sp-topbot50 {
+        @include mixin.smartphone {
+            margin: 50px 0 50px 0;
         }
         
     }

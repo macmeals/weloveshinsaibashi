@@ -1,6 +1,13 @@
 @use '../../foundation/mixin' as mixin;
 
 /////////////////// 文字や数字、記号（▶︎）に関するスタイル
+//PC,SP両方の文字の大きさを変更
+.c-text {
+    &__14px {
+        font-size: 14px;
+    }
+}
+
 
 //PC時の文字の大きさを変更
 .c-pc {
@@ -10,19 +17,11 @@
         }
     }
 
-    &__text16px {
-        @include mixin.pc {
-            font-size: 16px;
-        }
-    }
-
     &__text24px {
         @include mixin.pc {
             font-size: 24px;
         }
     }
-
-
 
     &__text32px {
         @include mixin.pc {
@@ -30,17 +29,51 @@
         }
     }
 
-    
 }
 
 //スマホ時、文字の大きさを変更
 .c-sp {
-    &__text16px {
+    &__text14px {
+        @include mixin.smartphone {
+            font-size: 14px;
+        }
+    }
+
+}
+
+//大きなボタンのテキスト 
+.c-largebuttontext {
+    //中国語 
+    &__china {
+        font-size: 24px;
         @include mixin.smartphone {
             font-size: 16px;
         }
     }
+    //日本語、英語
+    &__JpnEng {
+        font-size: 16px;
+        @include mixin.smartphone {
+            font-size: 15px;
+        }
+
+    }
 }
+
+//小さなボタンのテキスト
+.c-smallbuttontext {
+    //中国語 
+    &__china {
+        font-size: 16px;
+    }
+    //日本語、英語
+    &__JpnEng {
+        font-size: 14px;
+    }
+}
+
+
+
 
 //文字の太さを変更
 .c-fontweight {
@@ -54,6 +87,7 @@
     &__middle {
         line-height: 1.4;
     }
+
 }
 
 
@@ -197,6 +231,12 @@
     &__title {
         font-size: 24px;
         line-height: 1.5;
+    }
+}
+
+.c-topexperience__title {
+    @include mixin.smartphone {
+        font-size: 16px;
     }
 }
 

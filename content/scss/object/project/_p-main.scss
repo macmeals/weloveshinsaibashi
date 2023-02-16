@@ -40,6 +40,10 @@
 
     &__JpnEng {
         display:flex;
+
+        @include mixin.smartphone {
+            flex-direction: column;
+        }
     }
 
 }
@@ -99,7 +103,7 @@
 
         @include mixin.smartphone {
             width: 300px;
-            height: 240px;
+           
         }
 
     }
@@ -145,12 +149,20 @@
     @include mixin.verticalcenter;
     justify-content: space-between;
 
+    @include mixin.smartphone {
+        height: 450px;
+    }
+
     &__contents {
         @include mixin.verticalcenter;
         >p {
             width: 240px;
             font-weight: 700;
             line-height: 1.4;
+
+            @include mixin.smartphone {
+                font-size: 14px;
+            }
         } 
     }
 
@@ -312,7 +324,7 @@
 
 ///Topページ:体験
 
-.p-topexeprience {
+.p-topexprience {
     width: 100%;
     background: #ffffff url(../img/Experience.png) no-repeat  300px/1000px;
     background-position: 10px 60px;
@@ -327,6 +339,11 @@
         width: 920px;
         display: flex;
         justify-content: space-between;
+
+        @include mixin.smartphone {
+            width: 300px;
+            flex-direction: column;
+        }
         
     }
     
@@ -334,6 +351,10 @@
         width: 440px;
         display: flex;
         justify-content: space-between;
+
+        @include mixin.smartphone {
+            width: 300px;
+        }
     }
 
     &__gtitle {
@@ -354,13 +375,33 @@
         background-position: calc(100% - 20px) 20px;
     }
 
-    &__title {
+    &__contents {
         display: flex;
         width: 920px;
+
+        @include mixin.smartphone {
+            width: 300px;
+            flex-direction: column;
+            @include mixin.verticalcenter
+        }
     }
+
+    &__title {
+        @include mixin.smartphone {
+            @include mixin.verticalcenter;
+        }
+
+    }
+
+    
 
     &__text {
         display: flex;
+        @include mixin.smartphone {
+            width: 300px;
+            flex-direction: column;
+            @include mixin.verticalcenter
+        }
     }
 
     &__link {
