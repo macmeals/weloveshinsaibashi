@@ -964,11 +964,6 @@ blockquote {
   line-height: 1.5;
 }
 
-@media (max-width: 690px) {
-  .c-topexperience__title {
-    font-size: 16px;
-  }
-}
 .c-newsdetail__title {
   font-size: 32px;
 }
@@ -1943,16 +1938,6 @@ blockquote {
 @media (max-width: 690px) {
   .p-topshop__gtitle {
     height: 86px;
-  }
-}
-.p-topshop__gtitle > p {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-@media (max-width: 690px) {
-  .p-topshop__gtitle > p {
-    font-size: 16px;
   }
 }
 .p-tophotel {
