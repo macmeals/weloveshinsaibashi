@@ -470,8 +470,8 @@ blockquote {
 }
 
 .c-hambergerbutton {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: relative;
 }
 
@@ -791,14 +791,13 @@ blockquote {
     bottom: 15px;
   }
 }
+.c-text__14px {
+  font-size: 14px;
+}
+
 @media (min-width: 691px) {
   .c-pc__text14px {
     font-size: 14px;
-  }
-}
-@media (min-width: 691px) {
-  .c-pc__text16px {
-    font-size: 16px;
   }
 }
 @media (min-width: 691px) {
@@ -812,10 +811,36 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
-  .c-sp__text16px {
+  .c-sp__text14px {
+    font-size: 14px;
+  }
+}
+.c-largebuttontext__china {
+  font-size: 24px;
+}
+
+@media (max-width: 690px) {
+  .c-largebuttontext__china {
     font-size: 16px;
   }
 }
+.c-largebuttontext__JpnEng {
+  font-size: 16px;
+}
+
+@media (max-width: 690px) {
+  .c-largebuttontext__JpnEng {
+    font-size: 15px;
+  }
+}
+.c-smallbuttontext__china {
+  font-size: 16px;
+}
+
+.c-smallbuttontext__JpnEng {
+  font-size: 14px;
+}
+
 .c-fontweight__bold {
   font-weight: bold;
 }
@@ -939,6 +964,11 @@ blockquote {
   line-height: 1.5;
 }
 
+@media (max-width: 690px) {
+  .c-topexperience__title {
+    font-size: 16px;
+  }
+}
 .c-newsdetail__title {
   font-size: 32px;
 }
@@ -1182,6 +1212,12 @@ blockquote {
   height: 200px;
 }
 
+@media (max-width: 690px) {
+  .c-photo__newscard {
+    object-fit: cover;
+    height: 150px;
+  }
+}
 .c-photo__topfood, .c-photo__topshop, .c-photo__tophotel {
   width: 200px;
   height: 200px;
@@ -1192,6 +1228,13 @@ blockquote {
   height: 280px;
 }
 
+@media (max-width: 690px) {
+  .c-photo__topexperience {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+  }
+}
 .c-photo__topfood {
   box-shadow: 5px 5px #FFAD33;
 }
@@ -1349,7 +1392,7 @@ blockquote {
 .c-button__smallmultilingual {
   width: 200px;
   height: 63px;
-  line-height: 31.5px;
+  line-height: 30px;
 }
 
 .c-button__large {
@@ -1370,9 +1413,16 @@ blockquote {
 .c-button__largemultilingual {
   width: 280px;
   height: 85px;
-  line-height: 42.5px;
+  line-height: 40px;
 }
 
+@media (max-width: 690px) {
+  .c-button__largemultilingual {
+    width: 300px;
+    height: 67px;
+    line-height: 30px;
+  }
+}
 .c-illust__headerlogo {
   width: 225px;
   height: 25px;
@@ -1670,6 +1720,11 @@ blockquote {
   display: flex;
 }
 
+@media (max-width: 690px) {
+  .p-topsubtitle__JpnEng {
+    flex-direction: column;
+  }
+}
 .p-topnumber__redline, .p-topnumber__yellowline, .p-topnumber__orangeline {
   position: relative;
 }
@@ -1726,7 +1781,6 @@ blockquote {
 @media (max-width: 690px) {
   .p-topnotice__text {
     width: 300px;
-    height: 240px;
   }
 }
 .p-topnews {
@@ -1769,6 +1823,11 @@ blockquote {
   justify-content: space-between;
 }
 
+@media (max-width: 690px) {
+  .p-newscard {
+    height: 450px;
+  }
+}
 .p-newscard__contents {
   display: flex;
   align-items: center;
@@ -1781,6 +1840,11 @@ blockquote {
   line-height: 1.4;
 }
 
+@media (max-width: 690px) {
+  .p-newscard__contents > p {
+    font-size: 14px;
+  }
+}
 .p-newscard__top {
   height: 47px;
   width: 100%;
@@ -1935,7 +1999,7 @@ blockquote {
   line-height: 1.5;
 }
 
-.p-topexeprience {
+.p-topexprience {
   width: 100%;
   background: #ffffff url(../img/Experience.png) no-repeat 300px/1000px;
   background-position: 10px 60px;
@@ -1945,24 +2009,35 @@ blockquote {
 }
 
 @media (max-width: 690px) {
-  .p-topexeprience {
+  .p-topexprience {
     background: #ffffff url(../img/Experience.png) no-repeat 160px/370px;
     background-position: 10px 30px;
   }
 }
-.p-topexeprience__contents {
+.p-topexprience__contents {
   width: 920px;
   display: flex;
   justify-content: space-between;
 }
 
-.p-topexeprience__gheader {
+@media (max-width: 690px) {
+  .p-topexprience__contents {
+    width: 300px;
+    flex-direction: column;
+  }
+}
+.p-topexprience__gheader {
   width: 440px;
   display: flex;
   justify-content: space-between;
 }
 
-.p-topexeprience__gtitle {
+@media (max-width: 690px) {
+  .p-topexprience__gheader {
+    width: 300px;
+  }
+}
+.p-topexprience__gtitle {
   display: flex;
 }
 
@@ -1981,15 +2056,40 @@ blockquote {
     background-position: calc(100% - 20px) 20px;
   }
 }
-.p-topaccess__title {
+.p-topaccess__contents {
   display: flex;
   width: 920px;
 }
 
+@media (max-width: 690px) {
+  .p-topaccess__contents {
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 690px) {
+  .p-topaccess__title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .p-topaccess__text {
   display: flex;
 }
 
+@media (max-width: 690px) {
+  .p-topaccess__text {
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .p-topaccess__link {
   display: flex;
   align-items: center;
@@ -2854,25 +2954,19 @@ blockquote {
   align-items: center;
 }
 
-.p-side {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 440px;
-  justify-content: space-around;
-}
-
-.p-side__text {
-  font-size: 16px;
+.p-sidegrid {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  grid-template-rows: repeat(3, 160px);
 }
 
 .p-footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #F8F8F8;
+  background-color: #E8E8E8;
   justify-content: space-between;
-  height: 240px;
+  height: 200px;
 }
 
 .p-footer__company, .p-footer__address, .p-footer__list {
@@ -2901,7 +2995,6 @@ blockquote {
     width: 340px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px 0;
   }
 }
@@ -2988,6 +3081,11 @@ blockquote {
   }
 }
 @media (min-width: 691px) {
+  .u-margin__pc-bot100 {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 691px) {
   .u-margin__pc-topbot100 {
     margin: 100px 0 100px 0;
   }
@@ -3068,6 +3166,11 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
+  .u-margin__sp-bot100 {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 690px) {
   .u-margin__sp-left5 {
     margin-left: 5px;
   }
@@ -3095,6 +3198,11 @@ blockquote {
 @media (max-width: 690px) {
   .u-margin__sp-topbot40 {
     margin: 40px 0 40px 0;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-topbot50 {
+    margin: 50px 0 50px 0;
   }
 }
 @media (max-width: 690px) {

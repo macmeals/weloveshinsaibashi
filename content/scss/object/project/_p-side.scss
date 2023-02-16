@@ -1,12 +1,8 @@
 @use '../../foundation/mixin' as mixin;
 
-.p-side {
-   @include mixin.verticalcenter;
-   height: 440px;
-   justify-content: space-around;
 
-   &__text {
-      font-size: 16px;
-   }
-
+.p-sidegrid {
+   display: grid;
+   grid-template-columns:repeat(2, 160px) ;
+   grid-template-rows:repeat(3, 160px);
 }

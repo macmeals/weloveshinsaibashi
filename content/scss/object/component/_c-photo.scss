@@ -4,6 +4,11 @@
     &__newscard {
         width: 280px;
         height: 200px;
+
+        @include mixin.smartphone {
+            object-fit: cover;
+            height: 150px;
+        }
     }
 
     &__topfood,&__topshop,&__tophotel {
@@ -15,6 +20,12 @@
     &__topexperience {
         width: 440px;
         height: 280px;
+
+        @include mixin.smartphone { 
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+        }
     }
 
     &__topfood {

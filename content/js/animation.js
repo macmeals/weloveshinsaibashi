@@ -1,6 +1,6 @@
 jQuery( function( $ ) {
 ////ハンバーガーのアニメーション/////////////////////////////////////////////////////////	
-    $('.c-hambergerbutton,.p-side__text').on( "click", function() {
+    $('.c-hambergerbutton,.p-side__animation').on( "click", function() {
 			$( ".c-hambergerbutton__upperbar" ).toggleClass( "is-open" );
 			$( ".c-hambergerbutton__middlebar" ).toggleClass( "is-open" );
 			$( ".c-hambergerbutton__underbar" ).toggleClass( "is-open" );
