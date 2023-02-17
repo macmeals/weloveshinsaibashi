@@ -1,0 +1,6 @@
+@use '../../foundation/mixin' as mixin;
+
+//縦垂直に整列する。
+.u-vertical-center {
+   @include mixin.verticalcenter
+}

@@ -2,7 +2,7 @@
 
 .c-button {
     // &__small , &__large の共通のスタイリング
-    &__small , &__large, &__smallmultilingual ,&__largemultilingual {
+    &__small , &__large, &__small-multilingual ,&__large-multilingual {
         border: #303030 1px solid;
         border-radius: 5px;
         text-align: center;
@@ -113,7 +113,7 @@
 
     }
 
-    &__smallmultilingual {
+    &__small-multilingual {
         width: 200px;
         height: 63px;
         line-height: 30px;
@@ -135,7 +135,7 @@
         }
     }
 
-    &__largemultilingual {
+    &__large-multilingual {
         width: 280px;
         height: 85px;
         line-height: 40px;
