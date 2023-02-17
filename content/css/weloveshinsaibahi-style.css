@@ -964,11 +964,6 @@ blockquote {
   line-height: 1.5;
 }
 
-@media (max-width: 690px) {
-  .c-topexperience__title {
-    font-size: 16px;
-  }
-}
 .c-newsdetail__title {
   font-size: 32px;
 }
@@ -1293,7 +1288,7 @@ blockquote {
     height: 340px;
   }
 }
-.c-button__small, .c-button__large, .c-button__smallmultilingual, .c-button__largemultilingual {
+.c-button__small, .c-button__large, .c-button__small-multilingual, .c-button__large-multilingual {
   border: #303030 1px solid;
   border-radius: 5px;
   text-align: center;
@@ -1302,46 +1297,46 @@ blockquote {
 }
 
 @media (min-width: 691px) {
-  .c-button__small, .c-button__large, .c-button__smallmultilingual, .c-button__largemultilingual {
+  .c-button__small, .c-button__large, .c-button__small-multilingual, .c-button__large-multilingual {
     transition: ease 0.2s;
     position: relative;
   }
 }
 @media (max-width: 690px) {
-  .c-button__small, .c-button__large, .c-button__smallmultilingual, .c-button__largemultilingual {
+  .c-button__small, .c-button__large, .c-button__small-multilingual, .c-button__large-multilingual {
     background: linear-gradient(90deg, #303030 11.79%, #6B6B6B 111.79%);
   }
 }
-.c-button__small > span, .c-button__large > span, .c-button__smallmultilingual > span, .c-button__largemultilingual > span {
+.c-button__small > span, .c-button__large > span, .c-button__small-multilingual > span, .c-button__large-multilingual > span {
   display: inline-block;
   height: 100%;
   width: 100%;
 }
 
 @media (min-width: 691px) {
-  .c-button__small > span, .c-button__large > span, .c-button__smallmultilingual > span, .c-button__largemultilingual > span {
+  .c-button__small > span, .c-button__large > span, .c-button__small-multilingual > span, .c-button__large-multilingual > span {
     position: relative;
     color: #303030;
     z-index: 3;
   }
 }
 @media (max-width: 690px) {
-  .c-button__small > span, .c-button__large > span, .c-button__smallmultilingual > span, .c-button__largemultilingual > span {
+  .c-button__small > span, .c-button__large > span, .c-button__small-multilingual > span, .c-button__large-multilingual > span {
     color: white;
   }
 }
 @media (min-width: 691px) {
-  .c-button__small > span:hover, .c-button__large > span:hover, .c-button__smallmultilingual > span:hover, .c-button__largemultilingual > span:hover {
+  .c-button__small > span:hover, .c-button__large > span:hover, .c-button__small-multilingual > span:hover, .c-button__large-multilingual > span:hover {
     color: white;
   }
 }
 @media (max-width: 690px) {
-  .c-button__small > span:hover, .c-button__large > span:hover, .c-button__smallmultilingual > span:hover, .c-button__largemultilingual > span:hover {
+  .c-button__small > span:hover, .c-button__large > span:hover, .c-button__small-multilingual > span:hover, .c-button__large-multilingual > span:hover {
     pointer-events: none;
   }
 }
 @media (min-width: 691px) {
-  .c-button__small::before, .c-button__large::before, .c-button__smallmultilingual::before, .c-button__largemultilingual::before {
+  .c-button__small::before, .c-button__large::before, .c-button__small-multilingual::before, .c-button__large-multilingual::before {
     content: "";
     /*絶対配置で位置を指定*/
     position: absolute;
@@ -1359,19 +1354,19 @@ blockquote {
   }
 }
 @media (max-width: 690px) {
-  .c-button__small::before, .c-button__large::before, .c-button__smallmultilingual::before, .c-button__largemultilingual::before {
+  .c-button__small::before, .c-button__large::before, .c-button__small-multilingual::before, .c-button__large-multilingual::before {
     display: none;
   }
 }
 @media (min-width: 691px) {
-  .c-button__small:hover::before, .c-button__large:hover::before, .c-button__smallmultilingual:hover::before, .c-button__largemultilingual:hover::before {
+  .c-button__small:hover::before, .c-button__large:hover::before, .c-button__small-multilingual:hover::before, .c-button__large-multilingual:hover::before {
     z-index: 2;
     transform-origin: left top;
     transform: scale(1, 1);
   }
 }
 @media (max-width: 690px) {
-  .c-button__small:hover::before, .c-button__large:hover::before, .c-button__smallmultilingual:hover::before, .c-button__largemultilingual:hover::before {
+  .c-button__small:hover::before, .c-button__large:hover::before, .c-button__small-multilingual:hover::before, .c-button__large-multilingual:hover::before {
     pointer-events: none;
   }
 }
@@ -1389,7 +1384,7 @@ blockquote {
     line-height: 28px;
   }
 }
-.c-button__smallmultilingual {
+.c-button__small-multilingual {
   width: 200px;
   height: 63px;
   line-height: 30px;
@@ -1410,14 +1405,14 @@ blockquote {
     line-height: 38px;
   }
 }
-.c-button__largemultilingual {
+.c-button__large-multilingual {
   width: 280px;
   height: 85px;
   line-height: 40px;
 }
 
 @media (max-width: 690px) {
-  .c-button__largemultilingual {
+  .c-button__large-multilingual {
     width: 300px;
     height: 67px;
     line-height: 30px;
@@ -1945,16 +1940,6 @@ blockquote {
     height: 86px;
   }
 }
-.p-topshop__gtitle > p {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-@media (max-width: 690px) {
-  .p-topshop__gtitle > p {
-    font-size: 16px;
-  }
-}
 .p-tophotel {
   width: 100%;
   background: #F8F8F8 url(../img/hotel.png) no-repeat 300px/560px;
@@ -2115,7 +2100,7 @@ blockquote {
   .p-news__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 80px 40px;
   }
 }
@@ -3212,5 +3197,11 @@ blockquote {
 }
 .u-padding__pc-topbot30 {
   padding: 30px 0 30px 0;
+}
+
+.u-vertical-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 /*# sourceMappingURL=weloveshinsaibahi-style.css.map */
