@@ -845,6 +845,10 @@ blockquote {
   font-weight: bold;
 }
 
+.c-lineheight__high {
+  line-height: 2;
+}
+
 .c-lineheight__middle {
   line-height: 1.4;
 }
@@ -859,10 +863,6 @@ blockquote {
 
 .c-fontcolor__orange {
   color: #FFAD33;
-}
-
-.c-header__lineheight {
-  line-height: 1.4;
 }
 
 .c-firstvier__text {
@@ -971,6 +971,15 @@ blockquote {
 @media (max-width: 690px) {
   .c-newsdetail__title {
     font-size: 24px;
+  }
+}
+.c-newsdetail__multi-title {
+  font-size: 24px;
+}
+
+@media (max-width: 690px) {
+  .c-newsdetail__multi-title {
+    font-size: 14px;
   }
 }
 .c-newsdetail__list {
@@ -2125,6 +2134,10 @@ blockquote {
     font-size: 16px;
   }
 }
+.p-newsdetail__title {
+  width: 920px;
+}
+
 @media (max-width: 690px) {
   .p-newsdetail__title {
     width: 300px;
