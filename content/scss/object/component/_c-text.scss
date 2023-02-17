@@ -84,6 +84,10 @@
 
 //文章の高さ調整
 .c-lineheight {
+    &__high {
+        line-height: 2;
+    }
+
     &__middle {
         line-height: 1.4;
     }
@@ -106,12 +110,6 @@
     }
 }
 
-//ヘッダーの文字の高さを調整
-.c-header {
-    &__lineheight {
-        line-height: 1.4;
-    }  
-}
 
 //Topページのファーストビューのテキスト
 .c-firstvier  {
@@ -244,6 +242,14 @@
 
         @include mixin.smartphone {
             font-size: 24px;
+        }
+    }
+
+    &__multi-title {
+        font-size: 24px;
+
+        @include mixin.smartphone {
+            font-size: 14px;
         }
     }
 

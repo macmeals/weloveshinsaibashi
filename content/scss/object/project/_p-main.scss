@@ -452,6 +452,7 @@
         }
 
         &__title {
+            width: 920px;
             @include mixin.smartphone {
                 width: 300px;
             }
