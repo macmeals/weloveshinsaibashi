@@ -209,7 +209,7 @@
     }
 
     &__gheader {
-        height: 80px;
+        height: 50px;
         width: 200px;
         display: flex;
         align-items: center;
@@ -219,12 +219,12 @@
     &__gtitle {
         height: 100%;
         display: flex;
+        flex-direction: column;
         
     }
 
     &__name {
         display: flex;
-        flex-direction: column;
     }
 }
 
@@ -247,13 +247,6 @@
         flex-direction: column;
     }
 
-    &__contents {
-        height: 345px;
-
-        @include mixin.smartphone {
-            height: 300px;
-        }
-    }
 
     &__gheader {
         width: 200px;
@@ -262,11 +255,7 @@
     }
 
     &__gtitle {
-        height: 110px;
-
-        @include mixin.smartphone {
-            height: 86px;
-        }
+        height: 65px;
        
     }
 }
@@ -292,7 +281,7 @@
 
     &__gheader {
         width: 200px;
-        height: 180px;
+        height: 50px;
         display: flex;
         justify-content: space-between;
        
@@ -304,11 +293,11 @@
     }
 
     &__text {
-        @include mixin.verticalcenter;
-        width: 100px;
+        display: flex;
 
         >p { line-height: 1.5;
-        
+              width: 130px;
+              margin-left: 10px;
         }
     }
 
@@ -599,15 +588,21 @@
         
     }
 
+    &__multi-title {
+        display: flex;
+        align-items: center;
+        height: 64px;
+
+    }
+
 // グルメ、ショッピング、ホテルのタイトルナンバー
     &__subnumber, &__subshopnumber {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
     &__subnumber {
-        width: 300px;
+        // width: 300px;
             @include mixin.smartphone {
                 width: 180px;
             }
@@ -642,7 +637,7 @@
         @include mixin.pc {
             display: grid;
             grid-template-columns: repeat(2, 440px);
-            grid-template-rows: repeat(2,70px);
+            grid-template-rows: repeat(2,140px);
         }
 
         @include mixin.smartphone {
@@ -676,6 +671,7 @@
 
     &__shop {
         background: rgba(255, 173, 51, 0.25);
+        border: 1px solid #FFEBCC;
     }
 
     &__store {
@@ -709,22 +705,12 @@
 
     &__shopname  {
         width: 400px;
-        display: flex;
-        justify-content: space-between;
+        @include mixin.verticalcenter ;
 
         @include mixin.smartphone {
             width: 280px;
         }
 
-        > p {
-            width: 200px;
-
-            @include mixin.smartphone {
-                width: 180px;
-            }
-
-
-        }
     }
 
    

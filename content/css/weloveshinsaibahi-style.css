@@ -815,6 +815,39 @@ blockquote {
     font-size: 14px;
   }
 }
+.c-fontweight__bold {
+  font-weight: bold;
+}
+
+.c-lineheight__high {
+  line-height: 2;
+}
+
+.c-lineheight__middle {
+  line-height: 1.4;
+}
+
+.c-fontcolor__red {
+  color: #FF3333;
+}
+
+.c-fontcolor__yellow {
+  color: #FFD433;
+}
+
+.c-fontcolor__orange {
+  color: #FFAD33;
+}
+
+.c-text-change__24-16px {
+  font-size: 24px;
+}
+
+@media (max-width: 690px) {
+  .c-text-change__24-16px {
+    font-size: 16px;
+  }
+}
 .c-largebuttontext__china {
   font-size: 24px;
 }
@@ -839,30 +872,6 @@ blockquote {
 
 .c-smallbuttontext__JpnEng {
   font-size: 14px;
-}
-
-.c-fontweight__bold {
-  font-weight: bold;
-}
-
-.c-lineheight__high {
-  line-height: 2;
-}
-
-.c-lineheight__middle {
-  line-height: 1.4;
-}
-
-.c-fontcolor__red {
-  color: #FF3333;
-}
-
-.c-fontcolor__yellow {
-  color: #FFD433;
-}
-
-.c-fontcolor__orange {
-  color: #FFAD33;
 }
 
 .c-firstvier__text {
@@ -1459,13 +1468,13 @@ blockquote {
   }
 }
 .c-illust__sushiicon {
-  width: 54px;
-  height: 40px;
+  width: 38px;
+  height: 21px;
 }
 
 .c-illust__foodicon, .c-illust__shopicon {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
 }
 
 .c-illust__rectant {
@@ -1484,8 +1493,8 @@ blockquote {
 }
 
 .c-illust__hotel {
-  height: 50px;
-  width: 54px;
+  height: 25px;
+  width: 28px;
 }
 
 .c-illust__smallhotel {
@@ -1493,7 +1502,7 @@ blockquote {
   width: 24px;
 }
 
-.c-illust__chochinicon {
+.c-illust__chochin {
   height: 56px;
   width: 25px;
 }
@@ -1501,6 +1510,11 @@ blockquote {
 .c-illust__chikyugi {
   height: 55px;
   width: 41px;
+}
+
+.c-illust__shuttlebus, .c-illust__plane {
+  height: 50px;
+  width: 50px;
 }
 
 .c-illust__decoshikaku {
@@ -1888,7 +1902,7 @@ blockquote {
   }
 }
 .p-topfood__gheader {
-  height: 80px;
+  height: 50px;
   width: 200px;
   display: flex;
   align-items: center;
@@ -1898,11 +1912,11 @@ blockquote {
 .p-topfood__gtitle {
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .p-topfood__name {
   display: flex;
-  flex-direction: column;
 }
 
 .p-topshop {
@@ -1925,15 +1939,6 @@ blockquote {
   flex-direction: column;
 }
 
-.p-topshop__contents {
-  height: 345px;
-}
-
-@media (max-width: 690px) {
-  .p-topshop__contents {
-    height: 300px;
-  }
-}
 .p-topshop__gheader {
   width: 200px;
   display: flex;
@@ -1941,14 +1946,9 @@ blockquote {
 }
 
 .p-topshop__gtitle {
-  height: 110px;
+  height: 65px;
 }
 
-@media (max-width: 690px) {
-  .p-topshop__gtitle {
-    height: 86px;
-  }
-}
 .p-tophotel {
   width: 100%;
   background: #F8F8F8 url(../img/hotel.png) no-repeat 300px/560px;
@@ -1973,7 +1973,7 @@ blockquote {
 }
 .p-tophotel__gheader {
   width: 200px;
-  height: 180px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -1984,13 +1984,12 @@ blockquote {
 
 .p-tophotel__text {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100px;
 }
 
 .p-tophotel__text > p {
   line-height: 1.5;
+  width: 130px;
+  margin-left: 10px;
 }
 
 .p-topexprience {
@@ -2280,14 +2279,15 @@ blockquote {
     align-items: flex-start;
   }
 }
-.p-main__subnumber, .p-main__subshopnumber {
+.p-main__multi-title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 64px;
 }
 
-.p-main__subnumber {
-  width: 300px;
+.p-main__subnumber, .p-main__subshopnumber {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 690px) {
@@ -2328,7 +2328,7 @@ blockquote {
   .p-main__shoplink {
     display: grid;
     grid-template-columns: repeat(2, 440px);
-    grid-template-rows: repeat(2, 70px);
+    grid-template-rows: repeat(2, 140px);
   }
 }
 @media (max-width: 690px) {
@@ -2358,6 +2358,7 @@ blockquote {
 }
 .p-main__shop {
   background: rgba(255, 173, 51, 0.25);
+  border: 1px solid #FFEBCC;
 }
 
 .p-main__store {
@@ -2385,21 +2386,13 @@ blockquote {
 .p-main__shopname {
   width: 400px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (max-width: 690px) {
   .p-main__shopname {
     width: 280px;
-  }
-}
-.p-main__shopname > p {
-  width: 200px;
-}
-
-@media (max-width: 690px) {
-  .p-main__shopname > p {
-    width: 180px;
   }
 }
 .p-main__hotellink {
@@ -3013,6 +3006,10 @@ blockquote {
 
 .u-margin__top20 {
   margin-top: 20px;
+}
+
+.u-margin__left5 {
+  margin-left: 5px;
 }
 
 .u-margin__left10 {

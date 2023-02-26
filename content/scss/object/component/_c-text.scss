@@ -41,40 +41,6 @@
 
 }
 
-//大きなボタンのテキスト 
-.c-largebuttontext {
-    //中国語 
-    &__china {
-        font-size: 24px;
-        @include mixin.smartphone {
-            font-size: 16px;
-        }
-    }
-    //日本語、英語
-    &__JpnEng {
-        font-size: 16px;
-        @include mixin.smartphone {
-            font-size: 15px;
-        }
-
-    }
-}
-
-//小さなボタンのテキスト
-.c-smallbuttontext {
-    //中国語 
-    &__china {
-        font-size: 16px;
-    }
-    //日本語、英語
-    &__JpnEng {
-        font-size: 14px;
-    }
-}
-
-
-
-
 //文字の太さを変更
 .c-fontweight {
     &__bold {
@@ -110,6 +76,50 @@
     }
 }
 
+.c-text-change {
+    &__24-16px {
+        font-size: 24px;
+        @include mixin.smartphone {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+//大きなボタンのテキスト →汎用的のクラスに同号
+.c-largebuttontext {
+    //中国語 
+    &__china {
+        font-size: 24px;
+        @include mixin.smartphone {
+            font-size: 16px;
+        }
+    }
+    //日本語、英語
+    &__JpnEng {
+        font-size: 16px;
+        @include mixin.smartphone {
+            font-size: 15px;
+        }
+
+    }
+}
+
+//小さなボタンのテキスト
+.c-smallbuttontext {
+    //中国語 
+    &__china {
+        font-size: 16px;
+    }
+    //日本語、英語
+    &__JpnEng {
+        font-size: 14px;
+    }
+}
+
 
 //Topページのファーストビューのテキスト
 .c-firstvier  {
@@ -124,7 +134,6 @@
     }
 
 }
-
 
 // サブタイトルの数字
 .c-topnumber {
@@ -266,6 +275,7 @@
         font-size: 24px;
     }
 }
+
 
 
 // お店一覧のリンクの矢印の色
