@@ -78,11 +78,26 @@
 
 .c-text-change {
     &__24-16px {
-        font-size: 24px;
+        @include mixin.pc {
+            font-size: 24px;
+        }
+       
         @include mixin.smartphone {
             font-size: 16px;
         }
     }
+
+    &__16-12px {
+        @include mixin.pc {
+            font-size: 16px;
+        }
+       
+        @include mixin.smartphone {
+            font-size: 12px;
+        }
+
+    }
+
 }
 
 
@@ -300,11 +315,13 @@
         > P {
             width: 160px;
             height: 30px;
+            line-height: 30px;
             text-align: center;
 
             @include mixin.smartphone {
-                width: 80px;
+                width: 130px;
                 height: 30px;
+                line-height: 30px;
             }
 
             
