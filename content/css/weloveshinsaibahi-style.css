@@ -815,6 +815,50 @@ blockquote {
     font-size: 14px;
   }
 }
+.c-fontweight__bold {
+  font-weight: bold;
+}
+
+.c-lineheight__high {
+  line-height: 2;
+}
+
+.c-lineheight__middle {
+  line-height: 1.4;
+}
+
+.c-fontcolor__red {
+  color: #FF3333;
+}
+
+.c-fontcolor__yellow {
+  color: #FFD433;
+}
+
+.c-fontcolor__orange {
+  color: #FFAD33;
+}
+
+@media (min-width: 691px) {
+  .c-text-change__24-16px {
+    font-size: 24px;
+  }
+}
+@media (max-width: 690px) {
+  .c-text-change__24-16px {
+    font-size: 16px;
+  }
+}
+@media (min-width: 691px) {
+  .c-text-change__16-12px {
+    font-size: 16px;
+  }
+}
+@media (max-width: 690px) {
+  .c-text-change__16-12px {
+    font-size: 12px;
+  }
+}
 .c-largebuttontext__china {
   font-size: 24px;
 }
@@ -839,30 +883,6 @@ blockquote {
 
 .c-smallbuttontext__JpnEng {
   font-size: 14px;
-}
-
-.c-fontweight__bold {
-  font-weight: bold;
-}
-
-.c-lineheight__high {
-  line-height: 2;
-}
-
-.c-lineheight__middle {
-  line-height: 1.4;
-}
-
-.c-fontcolor__red {
-  color: #FF3333;
-}
-
-.c-fontcolor__yellow {
-  color: #FFD433;
-}
-
-.c-fontcolor__orange {
-  color: #FFAD33;
 }
 
 .c-firstvier__text {
@@ -1012,13 +1032,15 @@ blockquote {
 .c-location__orange > P, .c-location__deeporange > P, .c-location__red > P, .c-location__yellow > P, .c-location__white > P, .c-location__foodwhite > P, .c-location__foodorange > P, .c-location__shopwhite > P, .c-location__shopred > P, .c-location__hotelwhite > P, .c-location__hotelyellow > P {
   width: 160px;
   height: 30px;
+  line-height: 30px;
   text-align: center;
 }
 
 @media (max-width: 690px) {
   .c-location__orange > P, .c-location__deeporange > P, .c-location__red > P, .c-location__yellow > P, .c-location__white > P, .c-location__foodwhite > P, .c-location__foodorange > P, .c-location__shopwhite > P, .c-location__shopred > P, .c-location__hotelwhite > P, .c-location__hotelyellow > P {
-    width: 80px;
+    width: 130px;
     height: 30px;
+    line-height: 30px;
   }
 }
 .c-location__orange > p {
@@ -1459,13 +1481,13 @@ blockquote {
   }
 }
 .c-illust__sushiicon {
-  width: 54px;
-  height: 40px;
+  width: 38px;
+  height: 21px;
 }
 
 .c-illust__foodicon, .c-illust__shopicon {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
 }
 
 .c-illust__rectant {
@@ -1484,8 +1506,8 @@ blockquote {
 }
 
 .c-illust__hotel {
-  height: 50px;
-  width: 54px;
+  height: 25px;
+  width: 28px;
 }
 
 .c-illust__smallhotel {
@@ -1493,7 +1515,7 @@ blockquote {
   width: 24px;
 }
 
-.c-illust__chochinicon {
+.c-illust__chochin {
   height: 56px;
   width: 25px;
 }
@@ -1501,6 +1523,11 @@ blockquote {
 .c-illust__chikyugi {
   height: 55px;
   width: 41px;
+}
+
+.c-illust__shuttlebus, .c-illust__plane {
+  height: 50px;
+  width: 50px;
 }
 
 .c-illust__decoshikaku {
@@ -1888,7 +1915,7 @@ blockquote {
   }
 }
 .p-topfood__gheader {
-  height: 80px;
+  height: 50px;
   width: 200px;
   display: flex;
   align-items: center;
@@ -1898,11 +1925,11 @@ blockquote {
 .p-topfood__gtitle {
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .p-topfood__name {
   display: flex;
-  flex-direction: column;
 }
 
 .p-topshop {
@@ -1925,15 +1952,6 @@ blockquote {
   flex-direction: column;
 }
 
-.p-topshop__contents {
-  height: 345px;
-}
-
-@media (max-width: 690px) {
-  .p-topshop__contents {
-    height: 300px;
-  }
-}
 .p-topshop__gheader {
   width: 200px;
   display: flex;
@@ -1941,14 +1959,9 @@ blockquote {
 }
 
 .p-topshop__gtitle {
-  height: 110px;
+  height: 65px;
 }
 
-@media (max-width: 690px) {
-  .p-topshop__gtitle {
-    height: 86px;
-  }
-}
 .p-tophotel {
   width: 100%;
   background: #F8F8F8 url(../img/hotel.png) no-repeat 300px/560px;
@@ -1973,7 +1986,7 @@ blockquote {
 }
 .p-tophotel__gheader {
   width: 200px;
-  height: 180px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -1984,13 +1997,12 @@ blockquote {
 
 .p-tophotel__text {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100px;
 }
 
 .p-tophotel__text > p {
   line-height: 1.5;
+  width: 130px;
+  margin-left: 10px;
 }
 
 .p-topexprience {
@@ -2264,37 +2276,29 @@ blockquote {
 
 @media (max-width: 690px) {
   .p-main__contentheader {
-    width: 300px;
-    align-items: baseline;
+    width: 340px;
   }
 }
-.p-main__subtitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @media (max-width: 690px) {
   .p-main__subtitle {
     flex-direction: column;
-    align-items: flex-start;
+  }
+}
+.p-main__multi-title {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 691px) {
+  .p-main__multi-title {
+    height: 64px;
   }
 }
 .p-main__subnumber, .p-main__subshopnumber {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.p-main__subnumber {
-  width: 300px;
-}
-
-@media (max-width: 690px) {
-  .p-main__subnumber {
-    width: 180px;
-  }
-}
 .p-main__subshopnumber {
   width: 500px;
 }
@@ -2325,14 +2329,14 @@ blockquote {
   }
 }
 @media (min-width: 691px) {
-  .p-main__shoplink {
+  .p-main__shopgrid {
     display: grid;
     grid-template-columns: repeat(2, 440px);
     grid-template-rows: repeat(2, 70px);
   }
 }
 @media (max-width: 690px) {
-  .p-main__shoplink {
+  .p-main__shopgrid {
     display: grid;
     grid-template-columns: repeat(1, 340px);
     grid-template-rows: repeat(4, 70px);
@@ -2358,6 +2362,7 @@ blockquote {
 }
 .p-main__shop {
   background: rgba(255, 173, 51, 0.25);
+  border: 1px solid #FFEBCC;
 }
 
 .p-main__store {
@@ -2382,24 +2387,25 @@ blockquote {
     background: #FFF4CC;
   }
 }
-.p-main__shopname {
-  width: 400px;
+.p-main__shop-information {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 400px;
 }
 
 @media (max-width: 690px) {
-  .p-main__shopname {
+  .p-main__shop-information {
     width: 280px;
   }
 }
-.p-main__shopname > p {
+.p-main__shop-title {
   width: 200px;
 }
 
 @media (max-width: 690px) {
-  .p-main__shopname > p {
-    width: 180px;
+  .p-main__shop-title {
+    width: 130px;
   }
 }
 .p-main__hotellink {
@@ -3015,6 +3021,10 @@ blockquote {
   margin-top: 20px;
 }
 
+.u-margin__left5 {
+  margin-left: 5px;
+}
+
 .u-margin__left10 {
   margin-left: 10px;
 }
@@ -3176,6 +3186,11 @@ blockquote {
 @media (max-width: 690px) {
   .u-margin__sp-left10 {
     margin-left: 10px;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-left30 {
+    margin-left: 30px;
   }
 }
 @media (max-width: 690px) {

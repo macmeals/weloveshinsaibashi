@@ -209,7 +209,7 @@
     }
 
     &__gheader {
-        height: 80px;
+        height: 50px;
         width: 200px;
         display: flex;
         align-items: center;
@@ -219,12 +219,12 @@
     &__gtitle {
         height: 100%;
         display: flex;
+        flex-direction: column;
         
     }
 
     &__name {
         display: flex;
-        flex-direction: column;
     }
 }
 
@@ -247,13 +247,6 @@
         flex-direction: column;
     }
 
-    &__contents {
-        height: 345px;
-
-        @include mixin.smartphone {
-            height: 300px;
-        }
-    }
 
     &__gheader {
         width: 200px;
@@ -262,11 +255,7 @@
     }
 
     &__gtitle {
-        height: 110px;
-
-        @include mixin.smartphone {
-            height: 86px;
-        }
+        height: 65px;
        
     }
 }
@@ -292,7 +281,7 @@
 
     &__gheader {
         width: 200px;
-        height: 180px;
+        height: 50px;
         display: flex;
         justify-content: space-between;
        
@@ -304,11 +293,11 @@
     }
 
     &__text {
-        @include mixin.verticalcenter;
-        width: 100px;
+        display: flex;
 
         >p { line-height: 1.5;
-        
+              width: 130px;
+              margin-left: 10px;
         }
     }
 
@@ -572,7 +561,6 @@
             @include mixin.smartphone {
                 font-size: 16px;   
             }
-        
 
     }
 
@@ -581,38 +569,33 @@
         align-items: center;
 
             @include mixin.smartphone {
-                width: 300px;  
-                align-items: baseline;
+                width: 340px;  
             }
     }
 
     &__subtitle {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-            @include mixin.smartphone {
-                flex-direction: column;
-                align-items: flex-start;
+        @include mixin.smartphone {
+            flex-direction: column;
+        }   
+    }
 
-            }
-        
+
+    &__multi-title {
+        display: flex;
+        align-items: center;
+
+        @include mixin.pc {
+            height: 64px;
+    
+        }
     }
 
 // グルメ、ショッピング、ホテルのタイトルナンバー
     &__subnumber, &__subshopnumber {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
-    &__subnumber {
-        width: 300px;
-            @include mixin.smartphone {
-                width: 180px;
-            }
-          
-    }
 
     &__subshopnumber {
         width: 500px;
@@ -638,7 +621,7 @@
     }
 
 //フードとショップのリンク
-    &__shoplink {
+    &__shopgrid {
         @include mixin.pc {
             display: grid;
             grid-template-columns: repeat(2, 440px);
@@ -676,6 +659,7 @@
 
     &__shop {
         background: rgba(255, 173, 51, 0.25);
+        border: 1px solid #FFEBCC;
     }
 
     &__store {
@@ -706,24 +690,23 @@
         
     }
 
-
-    &__shopname  {
-        width: 400px;
+    &__shop-information  {
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        width: 400px;
 
         @include mixin.smartphone {
             width: 280px;
         }
 
-        > p {
-            width: 200px;
+    }
 
-            @include mixin.smartphone {
-                width: 180px;
-            }
+    &__shop-title {
+        width: 200px;
 
-
+        @include mixin.smartphone {
+            width: 130px;
         }
     }
 
