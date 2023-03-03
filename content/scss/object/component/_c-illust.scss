@@ -41,7 +41,7 @@
         height: 21px;
     }
 
-    &__foodicon,&__shopicon {
+    &__foodicon,&__shopicon,&__budget {
         width: 25px;
         height: 25px; 
     }
@@ -194,6 +194,15 @@
          @include mixin.smartphone {
              display: none;
          }
+     }
+
+     &__youtube-bar {
+         height: 20px;
+         width: 360px;
+
+         @include mixin.smartphone {
+            display: none;
+        }
      }
 
      //ショッピング一覧のアイコン

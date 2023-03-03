@@ -840,6 +840,16 @@ blockquote {
 }
 
 @media (min-width: 691px) {
+  .c-text-change__32-24px {
+    font-size: 32px;
+  }
+}
+@media (max-width: 690px) {
+  .c-text-change__32-24px {
+    font-size: 24px;
+  }
+}
+@media (min-width: 691px) {
   .c-text-change__24-16px {
     font-size: 24px;
   }
@@ -1485,7 +1495,7 @@ blockquote {
   height: 21px;
 }
 
-.c-illust__foodicon, .c-illust__shopicon {
+.c-illust__foodicon, .c-illust__shopicon, .c-illust__budget {
   width: 25px;
   height: 25px;
 }
@@ -1628,6 +1638,16 @@ blockquote {
 
 @media (max-width: 690px) {
   .c-illust__snsbar {
+    display: none;
+  }
+}
+.c-illust__youtube-bar {
+  height: 20px;
+  width: 360px;
+}
+
+@media (max-width: 690px) {
+  .c-illust__youtube-bar {
     display: none;
   }
 }
@@ -2518,74 +2538,29 @@ blockquote {
     background-position: 10px 10px;
   }
 }
-.p-foodlist__subtitle {
-  width: 440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 690px) {
-  .p-foodlist__subtitle {
-    width: 100%;
-  }
-}
-.p-foodlist__shopname {
-  display: flex;
-  align-items: center;
-}
-
-.p-foodlist__shopname > P {
-  font-size: 32px;
-}
-
-@media (max-width: 690px) {
-  .p-foodlist__shopname > P {
-    font-size: 24px;
-  }
-}
-.p-foodlist__wallet {
-  width: 100%;
-}
-
-.p-foodlist__contentstitle {
-  display: flex;
-  align-items: center;
-  width: 440px;
-}
-
-@media (max-width: 690px) {
-  .p-foodlist__contentstitle {
-    width: 100%;
-    font-size: 15px;
-  }
-}
-@media (max-width: 690px) {
-  .p-foodlist__contentstitle > h3 {
-    font-size: 16px;
-  }
-}
-.p-foodlist__text {
-  width: 440px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media (max-width: 690px) {
-  .p-foodlist__text {
-    width: 340px;
-    font-size: 15px;
-  }
-}
 .p-foodlist__contents {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-foodlist__content {
+  background: #fff url(../img/main/groumet_back.png) no-repeat 300px/300px;
+  background-position: bottom right;
+  background-position: bottom right;
   width: 920px;
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 690px) {
-  .p-foodlist__contents {
+  .p-foodlist__content {
+    background: #fff url(../img/main/groumet_back.png) no-repeat 200px/200px;
+    background-position: bottom right;
+  }
+}
+@media (max-width: 690px) {
+  .p-foodlist__content {
     width: 340px;
     flex-direction: column;
   }
@@ -2595,12 +2570,57 @@ blockquote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
 }
 
+@media (min-width: 691px) {
+  .p-foodlist__artcle {
+    gap: 40px 0;
+  }
+}
 @media (max-width: 690px) {
   .p-foodlist__artcle {
     width: 100%;
+  }
+}
+.p-foodlist__subtitle, .p-foodlist__text {
+  width: 440px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 690px) {
+  .p-foodlist__subtitle, .p-foodlist__text {
+    width: 100%;
+  }
+}
+@media (max-width: 690px) {
+  .p-foodlist__text {
+    font-size: 15px;
+  }
+}
+.p-foodlist__shopname, .p-foodlist__wallet {
+  display: flex;
+  align-items: center;
+}
+
+.p-foodlist__wallet {
+  width: 100%;
+}
+
+@media (max-width: 690px) {
+  .p-foodlist__wallet {
+    width: 300px;
+  }
+}
+.p-foodlist__location {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 690px) {
+  .p-foodlist__location {
+    font-size: 15px;
   }
 }
 @media (min-width: 691px) {
@@ -2641,7 +2661,7 @@ blockquote {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px 0;
+    gap: 40px 0;
   }
 }
 .p-shopcontents {
@@ -2687,7 +2707,7 @@ blockquote {
   }
 }
 .p-foodshop__location {
-  width: 680px;
+  width: 920px;
   display: flex;
   justify-content: space-between;
 }
@@ -2699,10 +2719,14 @@ blockquote {
     align-items: center;
   }
 }
+.p-foodshop__place {
+  width: 440px;
+  justify-content: center;
+}
+
 .p-foodshop__access {
-  width: 400px;
+  width: 440px;
   display: flex;
-  align-items: center;
 }
 
 @media (max-width: 690px) {
@@ -2753,6 +2777,25 @@ blockquote {
   flex-direction: column;
 }
 
+.p-foodshop__youtube {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-foodshop__youtube > iframe {
+  width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 690px) {
+  .p-foodshop__youtube > iframe {
+    width: 80%;
+    height: 80%;
+  }
+}
 .p-goodslist {
   display: flex;
   align-items: center;

@@ -828,65 +828,20 @@
         background-position: 10px 10px;
     }
 
-    &__subtitle {
-        width: 440px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @include mixin.smartphone {
-            width: 100%;
-        }
-    }
-
-    &__shopname {
-        display: flex;
-        align-items: center;
-
-        >P {
-            font-size: 32px;
-
-            @include mixin.smartphone {
-                font-size: 24px;
-            }
-        }
-    }
-
-    &__wallet {
-        width: 100%;
-    } 
-
-    &__contentstitle  {
-        display: flex;
-        align-items: center;
-        width: 440px;
-
-        @include mixin.smartphone {
-            width: 100%;
-            font-size: 15px;
-        }
-
-        >h3 {
-            @include mixin.smartphone {
-                font-size: 16px;
-            }
-        }
-
-
-    }
-
-    &__text {
-        width: 440px;
-        @include mixin.verticalcenter;
-
-        @include mixin.smartphone {
-            width: 340px;
-            font-size: 15px;
-        }
-
-    }
-
     &__contents {
+        @include mixin.verticalcenter;
+    }
+
+    &__content {
+       background:#fff url(../img/main/groumet_back.png) no-repeat  300px/300px;
+       background-position: bottom right;
+
+        @include mixin.smartphone {
+            background:#fff url(../img/main/groumet_back.png) no-repeat  200px/200px;
+            background-position: bottom right;
+        }
+
+       background-position: bottom right;
        width: 920px;
        display: flex;
        justify-content: space-between;
@@ -900,13 +855,54 @@
     &__artcle {
         width: 440px;
         @include mixin.verticalcenter;
-        justify-content: space-between;
+
+        @include mixin.pc {
+            gap: 40px 0;
+        }
 
         @include mixin.smartphone {
             width: 100%;
         }
     }
 
+    &__subtitle ,&__text {
+        width: 440px;
+        @include mixin.verticalcenter;
+
+        @include mixin.smartphone {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        @include mixin.smartphone {
+            font-size: 15px;
+        }
+    }
+
+    &__shopname ,&__wallet{
+        display: flex;
+        align-items: center; 
+    }
+
+    &__wallet {
+        width: 100%;
+        @include mixin.smartphone {
+            width: 300px;
+        }
+
+    } 
+
+    &__location  {
+        display: flex;
+        width: 100%;
+
+        @include mixin.smartphone {
+            
+            font-size: 15px;
+        }
+
+    }
 }
 
 
@@ -953,7 +949,7 @@
         display:grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows : repeat(4, 1fr);
-        gap: 20px 0;
+        gap: 40px 0;
     }
     
 
@@ -998,7 +994,7 @@
        
 
     &__location {
-        width: 680px;
+        width: 920px;
         display: flex;
         justify-content: space-between;
 
@@ -1009,10 +1005,15 @@
             }
     }
 
+    &__place {
+        width: 440px;
+        justify-content: center;
+    }
+
+
     &__access {
-        width: 400px;
+        width: 440px;
         display: flex;
-        align-items: center;
 
             @include mixin.smartphone {
                 width: 300px;
@@ -1056,6 +1057,23 @@
     &__tiktok {
         @include mixin.verticalcenter;
         
+    }
+
+    &__youtube {
+        width: 100%;
+        aspect-ratio: 16/9;
+        @include mixin.verticalcenter;
+
+        > iframe {
+            width: 50%;
+            height: 50%;
+
+            @include mixin.smartphone {
+                width: 80%;
+                height: 80%;
+            }
+
+        }
     }
 
 }
