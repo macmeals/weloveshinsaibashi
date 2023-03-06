@@ -398,7 +398,7 @@ p, li {
 
 @media (max-width: 690px) {
   p, li {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 blockquote {
@@ -1026,14 +1026,6 @@ blockquote {
     font-size: 24px;
   }
 }
-.c-allow__orange {
-  color: #FFAD33;
-}
-
-.c-allow__red {
-  color: #FF3333;
-}
-
 .c-location__orange, .c-location__deeporange, .c-location__red, .c-location__yellow, .c-location__white, .c-location__foodwhite, .c-location__foodorange, .c-location__shopwhite, .c-location__shopred, .c-location__hotelwhite, .c-location__hotelyellow {
   display: flex;
   align-items: center;
@@ -1136,11 +1128,21 @@ blockquote {
   color: #FFAD33;
 }
 
+@media (max-width: 690px) {
+  .c-tiktok__yellow {
+    font-size: 16px;
+  }
+}
 .c-tiktok__red {
   font-size: 24px;
   color: #FF3333;
 }
 
+@media (max-width: 690px) {
+  .c-tiktok__red {
+    font-size: 16px;
+  }
+}
 .c-admission__price {
   font-size: 24px;
 }
@@ -2096,13 +2098,6 @@ blockquote {
     flex-direction: column;
   }
 }
-@media (max-width: 690px) {
-  .p-topaccess__title {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
 .p-topaccess__text {
   display: flex;
 }
@@ -2110,9 +2105,6 @@ blockquote {
 @media (max-width: 690px) {
   .p-topaccess__text {
     width: 300px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
     flex-direction: column;
   }
 }
@@ -2363,13 +2355,16 @@ blockquote {
   }
 }
 .p-main__shop, .p-main__store, .p-main__yellowhotel, .p-main__whitehotel {
-  display: block;
   display: flex;
-  align-items: center;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
+@media (max-width: 690px) {
+  .p-main__shop, .p-main__store, .p-main__yellowhotel, .p-main__whitehotel {
+    flex-direction: column;
+  }
+}
 @media (min-width: 691px) {
   .p-main__shop:nth-child(2), .p-main__shop:nth-child(3), .p-main__store:nth-child(2), .p-main__store:nth-child(3) {
     background-color: transparent;
@@ -2387,10 +2382,12 @@ blockquote {
 
 .p-main__store {
   background: rgba(255, 51, 51, 0.25);
+  border: 1px solid #F8C5C5;
 }
 
 .p-main__yellowhotel {
   background: #FFF4CC;
+  border: 1px solid #FFF4CC;
 }
 
 @media (max-width: 690px) {
@@ -2400,6 +2397,7 @@ blockquote {
 }
 .p-main__whitehotel {
   background: transparent;
+  border: 1px solid #FFF4CC;
 }
 
 @media (max-width: 690px) {
@@ -2428,34 +2426,36 @@ blockquote {
     width: 130px;
   }
 }
-.p-main__hotellink {
+.p-main__hotelgrid {
   display: grid;
 }
 
 @media (min-width: 691px) {
-  .p-main__hotellink {
+  .p-main__hotelgrid {
     grid-template-columns: repeat(2, 440px);
-    grid-template-rows: repeat(6, 70px);
+    grid-template-rows: repeat(4, 70px);
   }
 }
 @media (max-width: 690px) {
-  .p-main__hotellink {
+  .p-main__hotelgrid {
     grid-template-columns: repeat(1, 340px);
-    grid-template-rows: repeat(8, 70px);
+    grid-template-rows: repeat(8, 100px);
   }
 }
-.p-main__hotelcontents, .p-main__hotelname {
+.p-main__hotel-information {
   display: flex;
-}
-
-.p-main__hotelname {
-  width: 230px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 400px;
 }
 
-.p-main__hotelname > p {
+@media (max-width: 690px) {
+  .p-main__hotel-information {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.p-main__hotelname {
   width: 200px;
 }
 
@@ -2599,23 +2599,13 @@ blockquote {
     font-size: 15px;
   }
 }
-.p-foodlist__shopname, .p-foodlist__wallet {
+.p-foodlist__shopname {
   display: flex;
   align-items: center;
 }
 
-.p-foodlist__wallet {
-  width: 100%;
-}
-
-@media (max-width: 690px) {
-  .p-foodlist__wallet {
-    width: 300px;
-  }
-}
 .p-foodlist__location {
   display: flex;
-  width: 100%;
 }
 
 @media (max-width: 690px) {
@@ -2749,12 +2739,10 @@ blockquote {
 .p-foodshop__specialtitle {
   display: flex;
   align-items: center;
-  width: 440px;
 }
 
 @media (max-width: 690px) {
   .p-foodshop__specialtitle {
-    width: 300px;
     font-size: 15px;
   }
 }
@@ -2778,7 +2766,7 @@ blockquote {
 }
 
 .p-foodshop__youtube {
-  width: 100%;
+  width: 70%;
   aspect-ratio: 16/9;
   display: flex;
   align-items: center;
@@ -2786,8 +2774,8 @@ blockquote {
 }
 
 .p-foodshop__youtube > iframe {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 690px) {
@@ -2811,8 +2799,35 @@ blockquote {
     background-position: 10px 10px;
   }
 }
+.p-goodslist__content {
+  background: #fff url(../img/main/shop_back.png) no-repeat 300px/300px;
+  background-position: bottom right;
+  background-position: bottom right;
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 690px) {
+  .p-goodslist__content {
+    background: #fff url(../img/main/shop_back.png) no-repeat 200px/200px;
+    background-position: bottom right;
+  }
+}
+@media (max-width: 690px) {
+  .p-goodslist__content {
+    width: 340px;
+    flex-direction: column;
+  }
+}
 .p-goodslist__item {
   width: 100%;
+}
+
+.p-goodslist__product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .p-goodsshop {
@@ -2833,14 +2848,8 @@ blockquote {
 .p-goodsshop__contentstitle {
   display: flex;
   align-items: center;
-  width: 400px;
 }
 
-@media (max-width: 690px) {
-  .p-goodsshop__contentstitle {
-    width: 305px;
-  }
-}
 .p-goodsshop__tiktok {
   display: flex;
   align-items: center;
@@ -3064,6 +3073,10 @@ blockquote {
   margin-top: 20px;
 }
 
+.u-margin__top40 {
+  margin-top: 40px;
+}
+
 .u-margin__left5 {
   margin-left: 5px;
 }
@@ -3074,6 +3087,10 @@ blockquote {
 
 .u-margin__bottom20 {
   margin-bottom: 20px;
+}
+
+.u-margin__bottom60 {
+  margin-bottom: 60px;
 }
 
 @media (min-width: 691px) {
@@ -3204,6 +3221,11 @@ blockquote {
 @media (max-width: 690px) {
   .u-margin__sp-top60 {
     margin-top: 60px;
+  }
+}
+@media (max-width: 690px) {
+  .u-margin__sp-top80 {
+    margin-top: 80px;
   }
 }
 @media (max-width: 690px) {

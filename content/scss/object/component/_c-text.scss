@@ -112,10 +112,6 @@
 
 }
 
-
-
-
-
 //大きなボタンのテキスト →汎用的のクラスに同号
 .c-largebuttontext {
     //中国語 
@@ -255,8 +251,6 @@
         background-color: #FFAD33;
     }   
 
-   
-
 }
 
 // グルメ,ショップ、体験のジャンルのタイトル
@@ -302,21 +296,6 @@
         font-size: 24px;
     }
 }
-
-
-
-// お店一覧のリンクの矢印の色
-.c-allow {
-    &__orange {
-       color :  #FFAD33;
-    }
-
-    &__red {
-       color :  #FF3333;
-     }
-
-} 
-
 
 // 場所のラベルのスタイリング
 .c-location {
@@ -453,11 +432,20 @@
     &__yellow {
         font-size: 24px;
         color: #FFAD33;
+
+        @include mixin.smartphone {
+            font-size: 16px;
+        }
+      
     }
 
     &__red {
         font-size: 24px;
         color: #FF3333;
+
+        @include mixin.smartphone {
+            font-size: 16px;
+        }
     }
 }
 
